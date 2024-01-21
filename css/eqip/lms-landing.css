@@ -252,9 +252,9 @@
 
   .nav-list.show {
       display: flex;
-      width: 30%;
-      height: 100%;
-      padding-top: 60px;
+      width: 50%;
+      height: 80%;
+      padding-top: 40px;
       z-index: 1000;
   }
 
@@ -338,13 +338,14 @@
 
   .hero-writeup-container .unlock-your-potential {
     display: block;
-    width: 90%;
+    width: 97%;
+    font-size: 30px;
     margin-top: -20px;
   }
 
   .hero-writeup-container .sub-text {
     display: block;
-    width: 100%;
+    width: 95%;
     font-size: 20px;
     line-height: 20px;
     margin-top: -25px;
