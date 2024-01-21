@@ -1,0 +1,410 @@
+.header,
+.header * {
+  box-sizing: border-box;
+}
+
+.header {
+    background: #ffffff;
+    padding: 16px 80px 16px 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: sticky;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .header img {
+    flex-shrink: 0;
+    width: 127px;
+    height: 48px;
+    position: relative;
+    object-fit: cover;
+  }
+
+  .header .top-right {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+.top-right .profile {
+    flex-shrink: 0;
+    width: 180px;
+    height: 64px;
+    position: static;
+}
+
+.top-right .profile img {
+    border-radius: 100px;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.top-right .name {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 116px;
+    height: 38px;
+    position: absolute;
+    left: 64px;
+    top: 0px;
+}
+
+.top-right .name p  {
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 13px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+}
+
+.top-right .student-id {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    height: 26px;
+    position: absolute;
+    left: 64px;
+    top: 38px;
+}
+
+.top-right .student-id p {
+    color: #ced4da;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 11px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.content {
+    display: block;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.content .product-left {
+    display: block;
+}
+
+.content .product-image {
+    background: #000000;
+    border-radius: 8px;
+    width: 492px;
+    height: 392px;
+    position: relative;
+    overflow: hidden;
+    padding: 40px;
+    margin-top: 100px;
+}
+
+.product-image img {
+    width: 592px;
+    height: 416px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    object-fit: cover;
+}
+
+.product-left p {
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    padding: 8px 16px 8px 16px;
+} 
+
+.product-left .specification {
+    display: block;
+    width: 43%;
+    padding: 8px 16px 8px 16px;
+}
+
+.specification .title {
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    position: relative;
+    margin-left: -15px;
+    margin-top: -20px;
+}
+
+.specification .sub-title {
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    position: relative;
+    width: 592px;
+    margin-left: -15px;
+    margin-top: -20px;
+}
+
+.product-left .price-label {
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    position: relative;
+    margin-top: -20px;
+}
+
+.product-left .price {
+    color: #ffa76d;
+  text-align: left;
+  font-family: "Roboto-Bold",sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 700;
+  margin-top: -20px;
+}
+
+.content .product-details {
+    display: block;
+    padding: 8px 16px 8px 16px;
+    width: 572px;
+    /* position: relative; */
+    position: absolute;
+    top: 105px;
+    right: 50px;
+}
+
+.product-details .title {
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 500;
+    position: relative;
+}
+
+.product-details .sub-title {
+    /* display: block; */
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: -20px;
+}
+
+.product-details .product-options {
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.product-options .income {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.income p {
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    position: relative;
+}
+
+.product-details .selection {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 338px;
+    height: 48px;
+    position: relative;
+}
+
+.selection select {
+    display: block;
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 15px;
+    width: 400px;
+    margin: -30px 0 0 -10px;
+}
+
+.product-options .payment {
+    display: block;
+    gap: 8px;
+    position: relative;
+    margin-left: -15px;
+    margin-top: -20px;
+}
+
+.product-details .product-btn {
+    background: #275c6f;
+    border-radius: 8px;
+    padding: 12px;
+    width: 126px;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: -10px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        justify-content: space-between;
+    }
+    .header img  {
+        width: 90%;
+        margin-left: -40px;
+    }
+
+    .header .top-right {
+        width: 20%;
+        /* margin-right: -20px; */
+    }
+
+    .name p {
+        margin-left: -90px;
+    }
+
+    .student-id p {
+        margin-top: -10px;
+        margin-left: -40px;
+    }
+
+    .header .content {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .content .product-left {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        margin: 40px auto 0 auto;
+        position: relative;
+    }
+
+    .content .product-image {
+        display: block;
+        width: 80%;
+        height: fit-content;
+        position: relative;
+    }
+
+    .product-image img {
+        display: block;
+        width: 350px;
+        height: 200px;
+        position: relative;
+    }
+
+    .product-left .specification {
+        display: block;
+        width: 90%;
+        padding: 8px 16px 8px 16px;
+    }
+
+    .specification .sub-title {
+        display: block;
+        width: 100%;
+        word-wrap: break-word;
+        position: relative;
+        text-align: justify;
+    }
+
+    .product-left .price-label {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .product-left .price {
+        font-size: 40px;
+    }
+
+    .content .product-details {
+        display: block;
+        width: 90%;
+        margin: -130px 0 170px 60px;
+        position: relative;
+    }
+
+    .product-options .income {
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+
+    .payment .selection select {
+        border: 1px solid grey;
+    }
+    .selection select {
+        display: block;
+        color: #495057;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: 400;
+        width: 100%;
+        margin: -30px 0 0 -10px;
+    }
+}

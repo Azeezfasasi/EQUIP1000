@@ -1,0 +1,782 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.register-container {
+  background: #f5f5f5;
+  width: 100%;
+  position: relative;
+}
+
+.register-container .left-side {
+    background: #275c6f;
+    width: 40%;
+    height: 1024px;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.register-container .r-left-side {
+    background: #275c6f;
+    width: 40%;
+    height: 1024px;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 500px;
+}
+
+.r-left-side p {
+    text-align: left;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 700;
+    width: 448px;
+    margin: 60px 0 0 20px;
+    color: white;
+}
+
+.left-side p {
+    text-align: left;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 700;
+    width: 448px;
+    margin: 60px 0 0 20px;
+    color: white;
+}
+
+.r-left-side span {
+    color: #ffa76d;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 700;
+}
+
+.left-side span {
+    color: #ffa76d;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 700;
+}
+
+.r-left-side .refer {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    width: 448px;
+    height: 281px;
+    position: relative;
+    overflow: hidden;
+    margin: 120px 0 0 30px;
+    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4);
+    text-align: center;
+}
+
+.left-side .refer {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    width: 448px;
+    height: 281px;
+    position: relative;
+    overflow: hidden;
+    margin: 120px 0 0 30px;
+    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4);
+    text-align: center;
+}
+
+.r-refer img {
+    background: #275c6f;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    margin-top: 20px;
+}
+
+.refer img {
+    background: #275c6f;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    margin-top: 20px;
+}
+
+.r-left-side .refer-text {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    position: relative;
+    /* margin: 12px 0 0 -8px; */
+    display: block;
+    margin: 10px auto 0 auto;
+}
+
+.refer .refer-text {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    position: relative;
+    /* margin: 12px 0 0 -8px; */
+    display: block;
+    margin: 10px auto 0 auto;
+}
+
+.r-left-side .refer-subtext {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    position: relative;
+    width: 80%;
+    margin: 12px 0 0 40px;
+    display: block;
+    margin: 10px auto 0 auto;
+}
+
+.refer .refer-subtext {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    position: relative;
+    width: 80%;
+    margin: 12px 0 0 40px;
+    display: block;
+    margin: 10px auto 0 auto;
+}
+
+.r-left-side .refer-btn {
+    display: block;
+    background: #275c6f;
+    border-radius: 8px;
+    padding: 12px;
+    width: 132px;
+    /* height: 48px; */
+    color: #ffffff;
+    text-align: center;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    position: relative;
+    text-decoration: none;
+    margin: 40px auto 0 auto;
+    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4);
+}
+
+.left-side .refer-btn {
+    display: block;
+    background: #275c6f;
+    border-radius: 8px;
+    padding: 12px;
+    width: 132px;
+    /* height: 48px; */
+    color: #ffffff;
+    text-align: center;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    position: relative;
+    text-decoration: none;
+    margin: 40px auto 0 auto;
+    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4);
+}
+
+.register-container .right-side {
+    background: #ffffff;
+    width: 60%;
+    /* height: 2024px; */
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    padding-bottom: 100px;
+}
+
+.register-container .right-side .login {
+    background: #275c6f;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 111px;
+    height: 48px;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4);
+}
+
+.right-side .login a {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    position: relative;
+    text-decoration: none;
+}
+
+.right-side .form-title {
+    padding: 0px 16px 0px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    margin: 90px 0 0 20px;
+}
+
+.form-title .title {
+    display: block;
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 32px;
+    line-height: 140%;
+    font-weight: 700;
+    position: relative;
+}
+
+.form-title .sub-title {
+    display: block;
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    position: relative;
+    margin-top: -20px;
+}
+
+.right-side .reg-form-container {
+    padding: 0px 16px 0px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    margin-left: 20px;
+}
+
+.reg-form-container form {
+    padding-bottom: 90px;
+}
+
+.reg-form-container form .col-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    width: 400px;
+}
+
+.col-1 label {
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    position: relative;
+}
+
+.col-1 input[type=text], input[type=email] {
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #cfcfcf;
+    border-width: 1px;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    width: 90%;
+    height: 48px;
+    position: relative;
+}
+
+.col-1 select {
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #cfcfcf;
+    border-width: 1px;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 226px;
+    height: 48px;
+    position: relative;
+}
+
+.reg-form-container .institution {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.reg-form-container form .col-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    width: 300px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.col-2 input[type=text], input[type=email], input[type=password] {
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #cfcfcf;
+    border-width: 1px;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    width: 90%;
+    height: 48px;
+    position: relative;
+}
+
+.col-2 select {
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #cfcfcf;
+    border-width: 1px;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 226px;
+    height: 48px;
+    position: relative;
+}
+
+.col-2 label {
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    position: relative;
+}
+
+form .next-btn button {
+    background: #275c6f;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 135px;
+    height: 48px;
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+
+/* Style for finishing registration */
+form .finish-next-btn button {
+    background: #275c6f;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 135px;
+    height: 48px;
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+/* Style for verifying */
+.right-side .verify-container {
+    padding: 0px 16px 0px 16px;
+    display: block;
+    width: 752px;
+    height: 423px;
+    position: relative;
+    margin-top: 100px;
+}
+
+form .verify-top {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.verify-top .title {
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 42px;
+    line-height: 72px;
+    font-weight: bold;
+    position: relative;
+}
+
+.verify-top .sub-title {
+    display: block;
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    position: relative;
+    margin-top: -40px;
+}
+
+.verify-top .code {
+    width: 10%;
+    display: flex;
+    width: 100%;
+}
+
+.code input[type=text] {
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #cfcfcf;
+    border-width: 1px;
+    padding: 50px 0;
+    margin: 0 5px;
+    text-align: center;
+    font-size: 28px;
+    width: 20%;
+}
+
+.confirm-btn button {
+    background: #275c6f;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 8px;
+    width: 97%;
+    height: 48px;
+    text-align: center;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+/* syle for confirmation */
+form .confirm-box {
+    padding: 0px 16px 0px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    /* width: 752px; */
+    width: 100%;
+    position: relative;
+    margin-top: 170px;
+
+ }
+
+ .confirm-box img {
+    flex-shrink: 0;
+    width: 258px;
+    height: 258px;
+    position: relative;
+    overflow: visible;
+ }
+
+ .confirm-box p {
+    color: #495057;
+    text-align: center;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 13px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+    margin-top: -10px;
+ }
+
+ .confirm-box button {
+    display: block;
+    background: #275c6f;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 8px;
+    width: 97%;
+    height: 48px;
+    text-align: center;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    position: relative;
+ }
+
+ /* style for small screen devices */
+@media (max-width: 768px) {
+    .register-container {
+        display: block;
+        width: 100%;
+        margin-top: -70px;
+    }  
+    .reg-form-container {
+        display: block;
+        width: 100%;
+        margin: 0 auto 0 auto;
+        box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4);
+    }
+    .register-container .left-side {
+        display: block;
+        background: #275c6f;
+        width: 100%;
+        height: 53%;
+        margin: 70px auto 0 auto;
+        text-align: center;
+        position: relative;
+        padding-bottom: 20px;
+    }
+
+    .register-container .r-left-side {
+        display: block;
+        background: #275c6f;
+        width: 100%;
+        height: 53%;
+        margin: 70px auto 0 auto;
+        text-align: center;
+        position: relative;
+        padding-bottom: 20px;
+    }
+
+    .r-left-side p {
+        display: block;
+        font-size: 30px;
+        line-height: 52px;
+    }
+
+    .left-side p {
+        display: block;
+        font-size: 30px;
+        line-height: 52px;
+    }
+
+    .r-left-side span {
+        font-size: 30px;
+    }
+
+    .left-side span {
+        font-size: 30px;
+    }
+
+    .r-left-side .refer {
+        display: block;
+        width: 90%;
+        margin: 0 auto 20px auto;
+    }
+
+    .left-side .refer {
+        display: block;
+        width: 90%;
+        margin: 0 auto 20px auto;
+    }
+
+    .r-left-side .refer-btn {
+        margin-top: 20px;
+    }
+
+    .left-side .refer-btn {
+        margin-top: 20px;
+    }
+
+    .register-container .right-side {
+        display: block;
+        width: 100%;
+        height: 53%;
+        border-radius: 12px;
+        margin: 30px auto 0 auto;
+        text-align: center;
+        position: relative;
+    }
+
+    .right-side .reg-form-container {
+        display: block;
+        width: 85%;
+        margin: 30px auto 10px auto;
+        height: 53%;
+        border-radius: 12px;
+        text-align: center;
+        position: relative;
+    }
+
+    .reg-form-container form {
+        display: block;
+        position: inherit;
+        text-align: left;
+        padding: 40px 0;
+    }
+
+    .reg-form-container form .col-1 {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .col-1 input[type=text], input[type=email] {
+        display: block;
+        width: 90%;
+    }
+
+    .col-1 select {
+        display: block;
+        width: 90%;
+    }
+
+    .reg-form-container form .col-2 {
+        display: block;
+        width: 90%;
+        /* height: 53%; */
+        border-radius: 12px;
+        margin: 0px auto 70px auto;
+        text-align: center;
+        position: relative;
+    }
+
+    .col-2 select, input[type=text], input[type=email], input[type=password]{
+        display: block;
+        position: inherit;
+        width: 90%;
+    }
+
+    .col-1 label, .col-2 label {
+        display: block;
+        margin-top: 25px;
+        position: relative;
+        font-weight: 600;
+    }
+
+    .col-2 select {
+        display: block;
+    }
+
+    form .next-btn {
+        display: block;
+        position: inherit;
+        margin-top: 90px;
+    }
+
+    form .finish-next-btn button {
+        display: block;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    /* style for verifying email */
+    .right-side .verify-container {
+        display: block;
+        width: 90%;
+        /* height: 100%; */
+        margin: 0 auto 100px auto;
+        text-align: center;
+        padding-top: 70px;
+        position: relative;
+    }
+
+    .verify-container form {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        position: inherit;
+    }
+
+    form .code {
+        display: flex;
+        width: 100%;
+        margin-left: 12px;
+    }
+    .code input[type=text] {
+        font-size: 28px;
+        width: 20%;
+    }
+
+    /* syle for confirmation */
+    .confirm-container {
+        margin-bottom: 100px;
+    }
+
+    .confirm-container .confirm-box {
+        display: block;
+        width: 90%;
+        margin: 200px auto 50px auto;
+        position: inherit;
+    }
+
+}
