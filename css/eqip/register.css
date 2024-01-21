@@ -629,6 +629,8 @@ form .confirm-box {
         display: block;
         font-size: 30px;
         line-height: 52px;
+        width: 90%;
+        margin: 20px auto 0 auto;
     }
 
     .r-left-side span {
