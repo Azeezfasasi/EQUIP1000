@@ -258,7 +258,7 @@
     font-weight: 400;
     padding: 15px;
     width: 400px;
-    margin: -30px 0 0 -10px;
+    margin: -20px 0 0 -10px;
     border: 1px solid black;
 
 }
@@ -375,6 +375,7 @@
         display: block;
         width: 100%;
         margin: 0 auto;
+        margin-left: -16px;
     }
 
     .product-details .selection {
@@ -393,9 +394,10 @@
         display: block;
         border: 1px solid grey;
         /* position: initial; */
-        width: 100%;
+        width: 250px;
         margin-left: -20px;
         margin-top: -20px;
+        padding: 5px;
     }
 
     .payment p {
