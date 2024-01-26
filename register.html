@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/eqip/lms-landing.css">
 </head>
 <body>
-    <div class="small-screen-navbar">
+    <div class="small-screen-navbar" style="background-color: #275c6f;">
         <div class="menu-toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -24,8 +24,7 @@
             <li class="mobile-cta"><a href="home-login.html">Log In</a></li>
         </ul>
         <div class="header-cta-container">
-            <a class="sign-up2" href="register.html">Sign up</a>
-            <a class="log-in" href="home-login.html">Log in</a>
+            <a class="r-log-in" href="home-login.html">Log in</a>
       </div>
     </div>
 
@@ -44,9 +43,9 @@
 
         <!-- Right side -->
         <div class="right-side">
-            <div class="login">
+            <!-- <div class="login">
                 <a href="">Log In</a>
-            </div>
+            </div> -->
             <div class="form-title">
                 <p class="title">Register</p>
                 <p class="sub-title">Input your details, so we can get to know you, and serve you better</p>
@@ -55,10 +54,10 @@
                 <form action="finish-register.html">
                     <div class="col-1">
                         <label for="fname">Full name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Type in your full name">
+                        <input type="text" id="fname" name="firstname" placeholder="Type in your full name" required>
 
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Type in your email address">
+                        <input type="email" id="email" name="email" placeholder="Type in your email address" required>
 
                         <label for="gender">Gender</label>
                         <select name="gender" id="gender">
@@ -108,10 +107,10 @@
                         </select>
 
                         <label for="whatsapp">WhatsApp number</label>
-                        <input type="text" id="whatsapp" name="whatsapp" placeholder="Type in your whatsapp number">
+                        <input type="text" id="whatsapp" name="whatsapp" placeholder="Type in your whatsapp number" required>
 
                         <label for="designation">Designation</label>
-                        <input type="text" id="designation" name="designation" placeholder="Role at work">
+                        <input type="text" id="designation" name="designation" placeholder="Role at work" required>
                     </div>
                     <div>
 
@@ -138,8 +137,44 @@
             </div>
               
         </div>
+
+        <!-- For small screen devices -->
+        <div class="mobile-side">
+            <p>Join the empowerment train, by equipped by <span>EQUIP1000</span> Project</p>
+            <div class="mobile-refer">
+                <img src="img/refer-icon.png" alt="">
+                <p class="refer-text">Refer your friends</p>
+                <p class="refer-subtext">Refer your friends and families who are educators to be part of this empowerement train and get some incentives</p>
+                <a class="refer-btn" href="">Refer Now</a> 
+            </div>
+        </div>
     </div>
 
+    <!-- Start of Footer Section -->
+    <footer class="footer-container" style="margin-top: 0;">
+        <div class="col-1">
+        <div class="logo-title">
+            <img src="img/logo.png" alt="">
+            <p class="logo-text">EQUIP1000</p>
+            <p class="sub-text">Empowering teacher’s professionalism for better productivity</p>
+        </div>
+        </div>
+        <div class="col-2">
+        <div class="contact-links">
+            <p>Contact Us</p>
+            <a href="mailto:Email: Uniekideasconsulting@gmail.com">Email: Uniekideasconsulting@gmail.com</a>
+            <a href="">Twitter: @uniekideas</a>
+            <a href="">Instagram: @Uniek</a>
+        </div>
+        <div class="about-links">
+            <p>About Us</p>
+            <a href="#">Transparency</a>
+            <a href="#">Business consult</a>
+            <a href="#">Empowerment</a>
+            <a href="#">Education</a>
+        </div>
+        </div>
+    </footer>
     <script src="js/header.js"></script>
 </body>
 </html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/eqip/product-checkout.css">
+    <link rel="stylesheet" href="css/eqip/lms-landing.css">
+    <link rel="stylesheet" href="css/eqip/welcome.css">
+    <link rel="stylesheet" href="css/eqip/checkout-pop-up.css">
+
+    <style>
+        .order-confirmation {
+      display: none;
+      background: #ffffff;
+      border-radius: 24px;
+      border-style: solid;
+      border-color: #c4c4c4;
+      border-width: 1px;
+      width: 576px;
+      height: 668px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .cancel-btn {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      left: 68px;
+      top: 41px;
+      overflow: hidden;
+    }
+
+    .order-confirmation .title-text {
+      color: #000000;
+      text-align: center;
+      font-family: "Roboto-Medium", sans-serif;
+      font-size: 28px;
+      line-height: 32px;
+      font-weight: 500;
+      position: relative;
+      text-align: center;
+    }
+
+    .title .divider {
+      display: block;
+      margin: 0 auto;
+      border-style: solid;
+      border-color: #b5b5b5;
+      border-width: 1px 0 0 0;
+      flex-shrink: 0;
+      width: 438px;
+      height: 0px;
+      position: relative;
+      text-align: center;
+    }
+
+    .order-confirmation .close {
+      border-radius: 4px;
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .order-confirmation .confirm-text {
+      display: block;
+      margin: 30px auto 0 auto;
+      color: #5d5d5d;
+      text-align: center;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      position: relative;
+      width: 438px;
+      text-align: center;
+      /* margin-top: 0px; */
+    }
+
+    .order-confirmation .product-info {
+      padding: 8px 16px 8px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: relative;
+      margin-left: 30px;
+    }
+
+    .product-info .amount-label {
+      color: #5d5d5d;
+      text-align: center;
+      font-family: "Roboto-Medium", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      position: relative;
+    }
+
+    .product-info .amount {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-shrink: 0;
+      color: #1e1e1e;
+      text-align: left;
+      font-family: "Roboto-SemiBold", sans-serif;
+      font-size: 28px;
+      line-height: 36px;
+      font-weight: 600;
+      position: relative;
+      margin-top: -20px;
+    }
+
+    .product-info .amount-in-word {
+      background: rgba(0, 153, 51, 0.2);
+      border-radius: 4px;
+      padding: 8px 12px 8px 12px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: #005f20;
+      text-align: left;
+      font-family: "Roboto-Medium", sans-serif;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 500;
+      position: relative;
+      margin-top: -40px;
+    }
+
+    .product-info .product-paid-for {
+      color: #5d5d5d;
+      text-align: center;
+      font-family: "Roboto-Medium", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      position: relative;
+      margin-top: -15px;
+    }
+
+    .product-info .laptop {
+      color: #1e1e1e;
+      text-align: left;
+      font-family: "Raleway-SemiBold", sans-serif;
+      font-size: 28px;
+      line-height: 36px;
+      font-weight: 600;
+      position: relative;
+      margin-top: -20px;
+    }
+
+    .order-confirmation .payment {
+      padding: 8px 16px 8px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: relative;
+      margin-top: -20px;
+      margin-left: 30px;
+    }
+
+    .payment .payment-due-date {
+      color: #5d5d5d;
+      text-align: center;
+      font-family: "Roboto-Medium", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      position: relative;
+    }
+
+    .payment .payment-date {
+      color: #1e1e1e;
+      text-align: left;
+      font-family: "Raleway-SemiBold", sans-serif;
+      font-size: 28px;
+      line-height: 36px;
+      font-weight: 600;
+      position: relative;
+    }
+
+    .order-confirmation .go-to-dashboard {
+      background: #275c6f;
+      border-radius: 8px;
+      padding: 16px 10px 16px 10px;
+      display: block;
+      margin: 0 auto;
+      /* flex-direction: row;
+      gap: 10px;
+      align-items: center;
+      justify-content: center; */
+      width: 496px;
+      color: #ffffff;
+      text-align: center;
+      font-family: "Raleway-SemiBold", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 600;
+      position: relative;
+      text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+     <!-- Start of the checkout pop up -->
+     <div class="col s12 m4 offset-m4">
+        <button id="login" class="btn waves-effect waves-light">Apply Now</button>
+    </div>
+    <div class="login-popup">
+    <i class="fa fa-times-circle close-icon" aria-hidden="true"></i>
+        <!-- start of the form -->
+        <form action="">
+            <div class="order-confirmation">
+                <div class="cancel-btn"></div>
+                <div class="title">
+                <p class="title-text">Purchase confirmation</p>
+                <div class="divider"></div>
+                <img class="close" src="img/Close.png" alt="close">
+                <p class="confirm-text">Your Laptop will be delivered to you</p>
+                <img class="confirm" src="img/payment confirm.png" alt="confirm">
+                </div>
+                <div class="product-info">
+                <p class="amount-label">Amount paid</p>
+                <p class="amount">NGN 300,000.00</p>
+                <p class="amount-in-word">Three Hundred and Fifteen Thousand Naira Only</p>
+                <p class="product-paid-for">Product paid for:</p>
+                <p class="laptop">Laptop</p>
+                </div>
+                <div class="payment">
+                <div class="payment-due-date">Payment due date:</div>
+                <div class="payment-date">22nd Dec, 2023</div>
+                </div>
+                <a class="go-to-dashboard" href="welcome.html">Go to Dashboard</a>
+            </div>
+        </form>
+        <!-- end of the form -->
+    </div>
+    <!-- End of Checkout popup -->
+
+    <script src="js/checkout-pop-up.js"></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js'></script>
+    <script>
+        $(document).ready(function () {
+    'user strict';
+    
+    (function () {
+        var login = {
+          init: function () {
+            this.cacheDom();
+            this.addEvents();
+          },
+          cacheDom: function () {
+            this.$loginBtn    = $('#login');
+            this.$loginPopup  = $('.login-popup');
+            this.$closePopup  = $('.close-icon');
+          },
+          addEvents: function () {
+            this.$loginBtn.on('click', this.showLogin.bind(this));
+            this.$closePopup.on('click', this.hideLogin.bind(this));
+          },
+          showLogin: function (e) {
+            e.preventDefault();
+            this.$loginPopup.fadeIn('fast');
+          },
+          hideLogin: function () {
+            this.$loginPopup.fadeOut('fast');
+          }
+        }
+        login.init();
+  
+    })();
+  });
+    </script>
+</body>
+</html>

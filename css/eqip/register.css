@@ -3,8 +3,12 @@ body {
     padding: 0;
 }
 
+.mobile-side {
+    display: none;
+}
+
 .register-container {
-  background: #f5f5f5;
+  background: #ffffff;
   width: 100%;
   position: relative;
 }
@@ -28,7 +32,7 @@ body {
     position: relative;
     overflow: hidden;
     text-align: center;
-    padding-bottom: 500px;
+    padding-bottom: 270px;
 }
 
 .r-left-side p {
@@ -38,7 +42,7 @@ body {
     line-height: 52px;
     font-weight: 700;
     width: 448px;
-    margin: 60px 0 0 20px;
+    margin: 190px 0 0 20px;
     color: white;
 }
 
@@ -51,6 +55,18 @@ body {
     width: 448px;
     margin: 60px 0 0 20px;
     color: white;
+}
+
+.left-side .welcome-sub-text {
+    color:#ffffff;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 33px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    width: 374px;
+    margin-top: 0px;
 }
 
 .r-left-side span {
@@ -76,8 +92,8 @@ body {
     height: 281px;
     position: relative;
     overflow: hidden;
-    margin: 120px 0 0 30px;
-    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4);
+    margin: 140px 0 0 30px;
+    /* box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4); */
     text-align: center;
 }
 
@@ -89,7 +105,7 @@ body {
     position: relative;
     overflow: hidden;
     margin: 120px 0 0 30px;
-    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4);
+    /* box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4); */
     text-align: center;
 }
 
@@ -179,7 +195,7 @@ body {
     position: relative;
     text-decoration: none;
     margin: 40px auto 0 auto;
-    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4);
+    /* box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4); */
 }
 
 .left-side .refer-btn {
@@ -198,7 +214,7 @@ body {
     position: relative;
     text-decoration: none;
     margin: 40px auto 0 auto;
-    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4);
+    /* box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4); */
 }
 
 .register-container .right-side {
@@ -212,10 +228,10 @@ body {
     position: absolute;
     top: 0;
     right: 0px;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
 }
 
-.register-container .right-side .login {
+/* .register-container .right-side .login {
     background: #275c6f;
     border-radius: 8px;
     padding: 8px;
@@ -231,9 +247,9 @@ body {
     right: 50px;
     z-index: 1;
     box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4);
-}
+} */
 
-.right-side .login a {
+/* .right-side .login a {
     color: #ffffff;
     text-align: left;
     font-family: "Roboto-Bold", sans-serif;
@@ -242,7 +258,7 @@ body {
     font-weight: 700;
     position: relative;
     text-decoration: none;
-}
+} */
 
 .right-side .form-title {
     padding: 0px 16px 0px 16px;
@@ -540,9 +556,10 @@ form .confirm-box {
     align-items: center;
     justify-content: center;
     /* width: 752px; */
-    width: 100%;
+    width: 90%;
     position: relative;
     margin-top: 170px;
+    margin-left: 20px;
 
  }
 
@@ -587,27 +604,25 @@ form .confirm-box {
     .register-container {
         display: block;
         width: 100%;
-        margin-top: -70px;
+        position: inherit;
     }  
     .reg-form-container {
         display: block;
         width: 100%;
         margin: 0 auto 0 auto;
-        box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4);
+        /* box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4); */
     }
     .register-container .left-side {
-        display: block;
-        background: #275c6f;
-        width: 100%;
-        height: 53%;
-        margin: 70px auto 0 auto;
-        text-align: center;
-        position: relative;
-        padding-bottom: 20px;
+        display: none;
     }
 
     .register-container .r-left-side {
-        display: block;
+        display: none;
+    }
+
+
+    /* .register-container .r-left-side {
+        display: none;
         background: #275c6f;
         width: 100%;
         height: 53%;
@@ -615,37 +630,116 @@ form .confirm-box {
         text-align: center;
         position: relative;
         padding-bottom: 20px;
-    }
-
-    .r-left-side p {
-        display: block;
-        font-size: 30px;
-        line-height: 52px;
-        width: 90%;
-        margin: 20px auto 0 auto;
     }
 
     .left-side p {
         display: block;
-        font-size: 30px;
+        font-size: 32px;
         line-height: 52px;
         width: 90%;
         margin: 20px auto 0 auto;
     }
 
-    .r-left-side span {
-        font-size: 30px;
-    }
-
     .left-side span {
         font-size: 30px;
+    } */
+
+    .mobile-side {
+        display: block;
+        width: 100%;
+        background: #275c6f;
+        width: 100%;
+        height: 53%;
+        margin: 0px auto 0 auto;
+        text-align: center;
+        position: relative;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
 
-    .r-left-side .refer {
+    .mobile-side p {
         display: block;
+        font-size: 32px;
+        line-height: 52px;
         width: 90%;
+        font-weight: 700;
+        margin: 20px auto 0 auto;
+    }
+
+    .mobile-side span {
+        color: #ffa76d;
+        font-family: "Roboto-Bold", sans-serif;
+        font-size: 32px;
+        line-height: 72px;
+        font-weight: 700;
+    }
+
+    .mobile-side .mobile-refer {
+        display: block;
+        width: 95%;
         margin: 0 auto 20px auto;
-        padding-bottom: 30px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        /* width: 448px; */
+        height: 281px;
+        position: relative;
+        overflow: hidden;
+        margin: 30px auto 0 auto;
+        /* box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4); */
+        text-align: center;
+    }
+
+    .mobile-refer img {
+        background: #275c6f;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        margin-top: 20px;
+    }
+
+    .mobile-refer .refer-text {
+        color: #ffffff;
+        text-align: center;
+        font-family: "Roboto-Bold", sans-serif;
+        font-size: 20px;
+        line-height: 36px;
+        font-weight: 700;
+        position: relative;
+        display: block;
+        /* width: 100%; */
+        margin: 10px auto 0 auto;
+    }
+
+    .mobile-refer .refer-subtext {
+        color: #ffffff;
+        text-align: center;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+        position: relative;
+        width: 90%;
+        margin: 12px 0 0 40px;
+        display: block;
+        margin: 10px auto 0 auto;
+    }
+
+    .mobile-refer .refer-btn {
+        display: block;
+        background: #275c6f;
+        border-radius: 8px;
+        padding: 12px;
+        width: 132px;
+        /* height: 48px; */
+        color: #ffffff;
+        text-align: center;
+        font-family: "Roboto-Bold", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        position: relative;
+        text-decoration: none;
+        margin: 20px auto 0 auto;
     }
 
     .left-side .refer {
@@ -654,12 +748,9 @@ form .confirm-box {
         margin: 0 auto 20px auto;
     }
 
-    .r-left-side .refer-btn {
-        margin-top: 20px;
-    }
-
     .left-side .refer-btn {
-        margin-top: 20px;
+        /* margin-top: 20px; */
+        position: inherit;
     }
 
     .register-container .right-side {
@@ -667,15 +758,19 @@ form .confirm-box {
         width: 100%;
         height: 53%;
         border-radius: 12px;
-        margin: 30px auto 0 auto;
+        margin: 0px auto 0 auto;
         text-align: center;
-        position: relative;
+        position: inherit;
+    }
+
+    .form-title .title {
+        margin-top: -40px;
     }
 
     .right-side .reg-form-container {
         display: block;
         width: 85%;
-        margin: 30px auto 10px auto;
+        margin: -40px auto 10px auto;
         height: 53%;
         border-radius: 12px;
         text-align: center;
@@ -749,7 +844,7 @@ form .confirm-box {
         display: block;
         width: 90%;
         /* height: 100%; */
-        margin: 0 auto 100px auto;
+        margin: -40px auto 100px auto;
         text-align: center;
         padding-top: 70px;
         position: relative;
@@ -768,8 +863,10 @@ form .confirm-box {
         margin-left: 12px;
     }
     .code input[type=text] {
+        /* display: block; */
         font-size: 28px;
-        width: 20%;
+        height: 0px;
+        padding: 35px 0;
     }
 
     /* syle for confirmation */
@@ -780,8 +877,12 @@ form .confirm-box {
     .confirm-container .confirm-box {
         display: block;
         width: 90%;
-        margin: 200px auto 50px auto;
+        margin: 80px auto 50px auto;
         position: inherit;
+    }
+
+    .confirm-box img {
+        margin-bottom: 30px;
     }
 
 }

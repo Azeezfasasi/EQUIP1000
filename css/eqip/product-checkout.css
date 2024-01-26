@@ -42,17 +42,18 @@
     width: 180px;
     height: 64px;
     position: static;
+    position: absolute;
+    right: 10px;
+    top: 16px;
 }
 
 .top-right .profile img {
     border-radius: 100px;
     width: 54px;
     height: 54px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
     overflow: hidden;
     object-fit: cover;
+    text-decoration: none;
 }
 
 .top-right .name {
@@ -65,44 +66,19 @@
     width: 116px;
     height: 38px;
     position: absolute;
-    left: 64px;
-    top: 0px;
+    right: 5px;
+    top: 16px;
 }
 
-.top-right .name p  {
-    color: #495057;
+.top-right .name a  {
+    color: black;
     text-align: left;
     font-family: "Roboto-Bold", sans-serif;
     font-size: 13px;
     line-height: 140%;
     font-weight: 400;
     position: relative;
-}
-
-.top-right .student-id {
-    padding: 8px;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    height: 26px;
-    position: absolute;
-    left: 64px;
-    top: 38px;
-}
-
-.top-right .student-id p {
-    color: #ced4da;
-    text-align: left;
-    font-family: "Roboto-Regular", sans-serif;
-    font-size: 11px;
-    line-height: 140%;
-    font-weight: 400;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    text-decoration: none;
 }
 
 .content {
@@ -113,6 +89,7 @@
 
 .content .product-left {
     display: block;
+    margin-left: 30px;
 }
 
 .content .product-image {
@@ -123,7 +100,7 @@
     position: relative;
     overflow: hidden;
     padding: 40px;
-    margin-top: 100px;
+    margin-top: 17px;
 }
 
 .product-image img {
@@ -282,17 +259,23 @@
     padding: 15px;
     width: 400px;
     margin: -30px 0 0 -10px;
+    border: 1px solid black;
+
+}
+
+.product-options {
+    margin-left: -20px;
 }
 
 .product-options .payment {
     display: block;
     gap: 8px;
     position: relative;
-    margin-left: -15px;
+    /* margin-left: -15px; */
     margin-top: -20px;
 }
 
-.product-details .product-btn {
+.product-details button {
     background: #275c6f;
     border-radius: 8px;
     padding: 12px;
@@ -305,6 +288,7 @@
     font-weight: 500;
     text-decoration: none;
     margin-top: -10px;
+    border: none;
 }
 
 @media (max-width: 768px) {
@@ -316,18 +300,8 @@
         margin-left: -40px;
     }
 
-    .header .top-right {
-        width: 20%;
-        /* margin-right: -20px; */
-    }
-
-    .name p {
-        margin-left: -90px;
-    }
-
-    .student-id p {
-        margin-top: -10px;
-        margin-left: -40px;
+    .small-screen-navbar .top-right {
+        display: none;
     }
 
     .header .content {
@@ -340,13 +314,14 @@
         display: block;
         width: 90%;
         margin: 0 auto;
-        margin: 40px auto 0 auto;
+        margin: 0 auto 0 auto;
         position: relative;
     }
 
     .content .product-image {
         display: block;
-        width: 80%;
+        width: 100%;
+        margin: 0px auto 0 auto;
         height: fit-content;
         position: relative;
     }
@@ -354,14 +329,16 @@
     .product-image img {
         display: block;
         width: 350px;
+        /* width: 100%; */
         height: 200px;
+        margin-left: -70px;
         position: relative;
     }
 
     .product-left .specification {
         display: block;
-        width: 90%;
-        padding: 8px 16px 8px 16px;
+        width: 100%;
+        /* padding: 8px 16px 8px 16px; */
     }
 
     .specification .sub-title {
@@ -384,27 +361,64 @@
     .content .product-details {
         display: block;
         width: 90%;
-        margin: -130px 0 170px 60px;
-        position: relative;
+        margin: -40px auto 0 auto;
+        position: initial;
+        padding: 5px;
     }
 
-    .product-options .income {
-        padding-left: 10px;
-        padding-top: 5px;
-    }
-
-    .payment .selection select {
-        border: 1px solid grey;
-    }
-    .selection select {
+    .product-details p {
         display: block;
-        color: #495057;
-        text-align: left;
-        font-family: "Roboto-Regular", sans-serif;
-        font-size: 12px;
-        line-height: 24px;
-        font-weight: 400;
         width: 100%;
-        margin: -30px 0 0 -10px;
+    }
+
+    .product-details .product-options {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .product-details .selection {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .product-options .payment {
+        display: block;
+        width: 100%;
+        margin: 30px auto 0 auto;
+    }
+
+    .income .selection select {
+        display: block;
+        border: 1px solid grey;
+        /* position: initial; */
+        width: 100%;
+        margin-left: -20px;
+        margin-top: -20px;
+    }
+
+    .payment p {
+        margin-top: -30px;
+        margin-left: -10px;
+        font-weight: bold;
+    }
+
+    .income p {
+        margin-left: -10px;
+    }
+
+    .payment select {
+        display: block;
+        border: 1px solid grey;
+        position: initial;
+        width: 100%;
+        margin-left: -20px;
+        margin-top: -15px;
+    }
+
+    .product-details button {
+        margin-top: 10px;
+        margin-left: -10px;
     }
 }

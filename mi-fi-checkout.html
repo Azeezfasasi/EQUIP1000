@@ -4,21 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="css/eqip/product-checkout.css">
+    <link rel="stylesheet" href="css/eqip/lms-landing.css">
+    <link rel="stylesheet" href="css/eqip/welcome.css">
+    <link rel="stylesheet" href="css/eqip/checkout-pop-up.css">
 </head>
 <body>
-    <div class="header">
-        <a href=""><img src="img/EQUIP logo.png" alt="logo"></a>
+    <div class="small-screen-navbar" style="background-color: #275c6f;">
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <a class="logo" href="index.html"><img src="img/logo.png" /></a>
+        <div class="mobile-profile">
+            <a href="welcome.html"><img src="img/image-icon.png" alt=""></a>
+        </div>  
+        <ul class="nav-list" id="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">LMS</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li class="mobile-cta" style="display: none;"><a href="register.html">Sign Up</a></li>
+            <li class="mobile-cta" style="display: none;"><a href="home-login.html">Log In</a></li>
+        </ul>
         <div class="top-right">
             <div class="profile">
-                <img src="img/image-icon.png" alt="">
+                <a href="welcome.html"><img src="img/image-icon.png" alt=""></a>
             </div>
             <div class="name">
-                <p>PRINCE AKACHI</p>
-            </div>
-            <div class="student-id">
-                <p>2023/Q4/7223</p>
-            </div>          
+                <a href="welcome.html"><p style="margin-top: 50px;">PRINCE AKACHI</p></a>
+            </div>       
         </div>
     </div>
 
@@ -36,35 +54,134 @@
             <p class="price">N20000</p>
         </div>
         
-
         <div class="product-details">
             <p class="title">Eligibility confirmation</p>
             <p class="sub-title">We need these details on your financial earnings to see if you are good fit for the laptop</p>
 
             <div class="product-options">
-                <div class="income">
-                  <p>Monthly Income</p>
-                    <div class="selection">
-                        <select name="" id="">
-                            <option value="less">Below than 100,000</option>
-                            <option value="more">Above than 100,000</option>
-                        </select>
+                <form action="">
+                    <div class="income">
+                        <p>Monthly Income</p>
+                          <div class="selection">
+                              <select name="" id="">
+                                  <option value="less">Below than 100,000</option>
+                                  <option value="more">Above than 100,000</option>
+                              </select>
+                          </div>
+                      <div class="product-options">
+                          <div class="payment">
+                            <p>How do you want to pay?</p>
+                              <div class="selection">
+                                  <select name="" id="">
+                                      <option value="6-month">6 Month Installments</option>
+                                      <option value="1-year">1 Year Installments</option>
+                                  </select>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col s12 m4 offset-m4">
+                        <button id="login" class="product-btn waves-effect waves-light">Apply Now</button>
                     </div>
-                <div class="product-options">
-                    <div class="payment">
-                      <p>Monthly Income</p>
-                        <div class="selection">
-                            <select name="" id="">
-                                <option value="less">Below than 100,000</option>
-                                <option value="more">Above than 100,000</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                
-
-                <a class="product-btn" href="">Apply Now</a>
+                  </div>
+                </form>             
             </div>
+        </div>
     </div>
+
+    <!-- Start of the checkout pop up -->
+    <div class="login-popup">
+        <!-- start of the form -->
+        <form action="">
+            <!-- <i class="fa fa-times-circle close-icon" aria-hidden="true"></i> -->
+            <div class="order-confirmation">
+                <div class="cancel-btn"></div>
+                <div class="title">
+                <p class="title-text">Purchase confirmation</p>
+                <div class="divider"></div>
+                <!-- <i class="fa fa-times-circle close-icon" aria-hidden="true"></i> -->
+                <img class="close-icon" src="img/x-mark-transparent-24.png" alt="close">
+                <p class="confirm-text">Your Mi-fi will be delivered to you</p>
+                <img class="confirm" src="img/payment confirm.png" alt="confirm">
+                </div>
+                <div class="product-info">
+                <p class="amount-label">Amount paid</p>
+                <p class="amount">NGN 20,000.00</p>
+                <p class="amount-in-word">Twenty Thousand Naira Only</p>
+                <p class="product-paid-for">Product paid for:</p>
+                <p class="laptop">Mi-fi</p>
+                </div>
+                <div class="payment">
+                <div class="payment-due-date">Payment due date:</div>
+                <div class="payment-date">22nd Dec, 2024</div>
+                </div>
+                <a class="go-to-dashboard" href="welcome.html">Go to Dashboard</a>
+            </div>
+        </form>
+    </div>
+    <!-- End of Checkout popup -->
+
+<!-- Start of Footer Section -->
+<footer class="footer-container" style="margin-top: 0;">
+    <div class="col-1">
+      <div class="logo-title">
+        <img src="img/logo.png" alt="">
+        <p class="logo-text">EQUIP1000</p>
+        <p class="sub-text">Empowering teacher’s professionalism for better productivity</p>
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="contact-links">
+        <p>Contact Us</p>
+        <a href="mailto:Email: Uniekideasconsulting@gmail.com">Email: Uniekideasconsulting@gmail.com</a>
+        <a href="">Twitter: @uniekideas</a>
+        <a href="">Instagram: @Uniek</a>
+      </div>
+      <div class="about-links">
+        <p>About Us</p>
+        <a href="#">Transparency</a>
+        <a href="#">Business consult</a>
+        <a href="#">Empowerment</a>
+        <a href="#">Education</a>
+      </div>
+    </div>
+   </footer>
+
+   <script src="js/header.js"></script>
+   <script src="js/checkout-pop-up.js"></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js'></script>
+
+    <script>
+        $(document).ready(function () {
+    'user strict';
+    
+    (function () {
+        var login = {
+          init: function () {
+            this.cacheDom();
+            this.addEvents();
+          },
+          cacheDom: function () {
+            this.$loginBtn    = $('#login');
+            this.$loginPopup  = $('.login-popup');
+            this.$closePopup  = $('.close-icon');
+          },
+          addEvents: function () {
+            this.$loginBtn.on('click', this.showLogin.bind(this));
+            this.$closePopup.on('click', this.hideLogin.bind(this));
+          },
+          showLogin: function (e) {
+            e.preventDefault();
+            this.$loginPopup.fadeIn('fast');
+          },
+          hideLogin: function () {
+            this.$loginPopup.fadeOut('fast');
+          }
+        }
+        login.init();
+  
+    })();
+  });
+    </script>
 </body>
 </html>
