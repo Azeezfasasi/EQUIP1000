@@ -327,6 +327,7 @@
         margin: 0px auto 0 auto;
         height: fit-content;
         position: relative;
+        margin-top: 50px;
     }
 
     .product-image img {
