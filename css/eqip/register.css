@@ -35,6 +35,11 @@ body {
     padding-bottom: 270px;
 }
 
+.reg-form-container .dash-left-side {
+    width: 10%;
+    overflow: visible;
+}
+
 .r-left-side p {
     text-align: left;
     font-family: "Roboto-Bold", sans-serif;
@@ -53,8 +58,32 @@ body {
     line-height: 52px;
     font-weight: 700;
     width: 448px;
-    margin: 60px 0 0 20px;
+    margin: 60px 0 0 40px;
     color: white;
+}
+
+.login-side p {
+    margin-top: 150px;
+}
+
+.finish-side p {
+    margin-top: 150px;
+}
+
+.verify-side p {
+    margin-top: 150px;
+}
+
+.confirm-side p {
+    margin-top: 150px;
+}
+
+.welcome-side p {
+    margin-top: 150px;
+}
+
+.choose-side {
+    padding-top: 100px;
 }
 
 .left-side .welcome-sub-text {
@@ -659,6 +688,7 @@ form .confirm-box {
 
     .mobile-side p {
         display: block;
+        color: white;
         font-size: 32px;
         line-height: 52px;
         width: 90%;
@@ -761,6 +791,19 @@ form .confirm-box {
         margin: 0px auto 0 auto;
         text-align: center;
         position: inherit;
+        margin-top: 50px;
+    }
+
+    .register-container .right-finish {
+        margin-top: 0px;
+    }
+
+    .register-container .verify-mobile {
+        margin-top: 0;
+    }
+
+    .register-container .confirm-mobile {
+        margin-top: 0;
     }
 
     .form-title .title {

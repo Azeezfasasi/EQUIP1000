@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/eqip/register.css">
+    <link rel="stylesheet" href="css/eqip/welcome.css">
+    <link rel="stylesheet" href="css/eqip/lms-landing.css">
+    <link rel="stylesheet" href="css/eqip/product-checkout.css">
+</head>
+<body>
+    <div class="sticky">
+        <div class="small-screen-navbar" style="background-color: #275c6f;">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <a class="logo" href="index.html"><img src="img/logo.png" /></a>
+                <div class="mobile-profile">
+                    <a href="dashboard.html"><img src="img/image-icon.png" alt="profile"></a>
+                </div>                  
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">LMS</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li class="mobile-cta" style="display: none;"><a href="register.html">Sign Up</a></li>
+                <li class="mobile-cta" style="display: none;"><a href="home-login.html">Log In</a></li>
+            </ul>
+            <div class="top-right">
+                <div class="profile">
+                    <a href="dashboard.html"><img src="img/image-icon.png" alt=""></a>
+                </div>
+                <div class="name">
+                    <a href="dashboard.html"><p>PRINCE AKACHI</p></a>
+                </div>       
+            </div>
+        </div>
+    </div>
+    
+    <div class="register-container">
+        <!-- left side -->
+        <div class="left-side dash-left-side" style="padding-bottom: 270px">
+            <p>Welcome to your <span>Dashboard</span></p>
+            <p class="welcome-sub-text">You can find your purchased devices and payment status here</p>
+            <p class="sub-text">You can find your purchased devices and payment status here</p>
+            <div class="refer">
+                <img src="img/refer-icon.png" alt="">
+                <p class="refer-text">Refer your friends</p>
+                <p class="refer-subtext">Refer your friends and families who are educators to be part of this empowerement train and get some incentives</p>
+                <a class="refer-btn" href="">Refer Now</a>
+                
+            </div>
+        </div>
+
+        <!-- Right side -->
+        <div class="dash-right-side">
+            <div class="dashborad-title">
+                <a class="title-text" href="welcome.html">Purchase a Device <i class="fa-solid fa-arrow-right purchase"></i></a>
+            </div>
+            <div class="dashboard-info">
+                <div class="dashboard-products">
+                    <p class="title">Your Devices - 3</p>
+                    <div class="purchased-products">
+                        <div class="items">
+                            <img src="img/dell-xps-laptop.png" alt="">
+                            <div class="item-description">
+                                <p class="model">Dell XPS Laptop</p>
+                                <p class="amount">N300,000</p>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <img src="img/hp-pavilion-laptop.png" alt="">
+                            <div class="item-description">
+                                <p class="model">HP Pavilion Laptop</p>
+                                <p class="amount">N500,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-container">
+                    <div class="payment-box">
+                        <div class="payment-status">
+                            <p class="status">Payment Status</p>
+                        </div>
+                        <div class="color-code">
+                            <div class="code-box">
+                                <div class="green"></div>
+                                <p>Payment Complete</p>
+                            </div>
+                        </div>
+                        <div class="color-code" style="margin-left: -20px;">
+                            <div class="code-box">
+                                <div class="orange"></div>
+                                <p class="orange-text">Payment In Progress</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dash-breakdown">
+                    <div class="breakdown-box">
+                        <div class="accordion-item payment-item">
+                            <div class="accordion-header dash-header" onclick="toggleAccordion(this)">
+                                <div class="green-color-box"></div>
+                                <p>Dell XPS Laptop</p>
+                                <span class="arrow">&#9654;</span>
+                            </div>
+                            <div class="accordion-content dash-content">
+                                <div class="payment-content">
+                                    <div class="row">
+                                        <p class="word">Total amount payable</p>
+                                        <p class="figure">N300,000</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="word">Installment agreement</p>
+                                        <p class="figure">6</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="word">Installment Paid</p>
+                                        <p class="figure">1/6</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="breakdown-box">
+                        <div class="accordion-item payment-item">
+                            <div class="accordion-header dash-header" onclick="toggleAccordion(this)">
+                                <div class="green-color-box"></div>
+                                <p>MTN Mi-Fi</p>
+                                <span class="arrow">&#9654;</span>
+                            </div>
+                            <div class="accordion-content dash-content">
+                                <div class="payment-content">
+                                    <div class="row">
+                                        <p class="word">Total amount payable</p>
+                                        <p class="figure">N20,000</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="word">Installment agreement</p>
+                                        <p class="figure">4</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="word">Installment Paid</p>
+                                        <p class="figure">1/4</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="breakdown-box">
+                        <div class="accordion-item payment-item">
+                            <div class="accordion-header dash-header" onclick="toggleAccordion(this)">
+                                <div class="orange-color-box"></div>
+                                <p>Dell XPS Laptop</p>
+                                <span class="arrow">&#9654;</span>
+                            </div>
+                            <div class="accordion-content dash-content">
+                                <div class="payment-content">
+                                    <div class="row">
+                                        <p class="word">Total amount payable</p>
+                                        <p class="figure">N500,000</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="word">Installment agreement</p>
+                                        <p class="figure">6</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="word">Installment Paid</p>
+                                        <p class="figure">1/6</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+            <!-- For small screen devices -->
+            <div class="mobile-side dash-mobile-side">
+                <p>Welcome to your <span>Dashboard</span></p>
+                <p class="sub-text">You can find your purchased devices and payment status here</p>
+                <div class="mobile-refer">
+                    <img src="img/refer-icon.png" alt="">
+                    <p class="refer-text">Refer your friends</p>
+                    <p class="refer-subtext">Refer your friends and families who are educators to be part of this empowerement train and get some incentives</p>
+                    <a class="refer-btn" href="">Refer Now</a> 
+                </div>
+            </div> 
+        </div>
+
+
+
+        </div>
+    </div>
+
+    <script src="js/header.js"></script>
+    <script src="js/accordion.js"></script>
+</body>
+</html>

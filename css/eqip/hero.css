@@ -21,6 +21,7 @@
     height: 520px;
     position: relative;
     overflow: hidden;
+
 }
 
 .hero-container .hero-writeup-container {
@@ -152,4 +153,5 @@
     position: relative;
     object-fit: cover;
     margin-left: -420px;
+    margin-top: 900px;
 }
