@@ -3,21 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/eqip/header.css">
-    <link rel="stylesheet" href="css/eqip/hero.css">
-    <link rel="stylesheet" href="css/eqip/about.css">
+    <title>LMS - EQUIP1000</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/lms/header.css">
+    <link rel="stylesheet" href="css/lms/hero.css">
+    <link rel="stylesheet" href="css/lms/about.css">
+    <link rel="stylesheet" href="css/lms/footer.css">
+    <link rel="stylesheet" href="css/lms/pop-up.css">
 </head>
 <body>
-    <!-- Start of Header section -->
-    <div class="header-section">
-        <img class="logo" src="img/logo.png" />
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="">About Us</a>
-            <a href="">Contact Us</a>
+    <!-- Start of header section -->
+    <div class="sticky">
+        <div class="header-section">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <a class="logo" href="index.html"><img src="img/logo.png" /></a>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li class=""><a href="#">Contact Us</a></li>
+            </ul>
         </div>
-    </div>
+      </div>
 
     <div class="hero-container">
         <div class="hero">
@@ -25,18 +35,53 @@
                 <h1>Welcome to <span>QUIP1000</span> Learning Management System (LMS)</h1>
                 <p class="unlock-your-potential">Unlock Your Potential</p>
                 <p class="sub-text">This is your gateway to endless knowledge, transformative skills, and personal growth. Explore a world of curated courses, interactive learning experiences, and a supportive community, all conveniently accessible right here on our Learning Management System (LMS).</p>
-                <div class="cta">
-                    <div class="onboarding-cta">
-                        <a class="sign-up" href="">Sign Up</a>
-                    </div>
-                    <div class="onboarding-cta2">
-                        <a class="login" href="">Login</a>
-                    </div>
+                  <div class="cta" id="blur">
+                    <a href="javascript:void" class="sign-up" onclick="togglePopup()">Sign Up
+                    </a>
+                    <a href="javascript:void" class="login" id="show-login" onclick="toggle()">Login</a>
+                  </div>
                 </div>
+                
+                <!-- START OF POP UP FOR LOGIN SECTION -->
+                <div class="popup">
+                  <div class="close-btn" onclick="toggle()"><b>X</b></div>
+                  <div class="form-element">
+                    <h2>Login</h2>
+                      <form action="">
+                        <div class="email">
+                          <i class="fa-regular fa-envelope"></i>
+                          <input type="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="password">
+                          <i class="fa-solid fa-lock"></i>
+                          <input type="password" id="pwd" placeholder="Password">
+                        </div>
+                        <div class="check-container">
+                          <input type="checkbox">
+                          <div class="remember-me">Remember me</div>
+                        </div>
+                        <div class="forget-container">
+                          <a class="forgot-password" href="">Forgot Password</a>
+                        </div>
+                        <button class="submit-container">
+                          <p class="login">Login</p>
+                        </button>
+                        <div class="bottom-account">
+                          <p>Don’t have an account yet?</p>
+                          <a class="sign-up" href=""> Sign Up</a>
+                        </div>
+                      </form>
+                    </div>
             </div>
-        </div>
-        <img class="hero-image" src="img/Hero Image.jpg" />
-    </div>
+                    <!-- end of login pop up -->
+
+                    <!-- START OF POP UP FOR SIGNUP SECTION -->
+                    
+                    <!-- end of sigup pop up -->
+              </div>
+                <img class="hero-image" src="img/Hero Image.jpg" />
+        </div>  
+        <!-- end of hero section -->
 
     <!-- Start of About Section -->
     <div class="about-section">
@@ -44,12 +89,66 @@
           <div class="about-header">About Us</div>
           <div class="about-body">
             <p class="about-text">Equip 1000 is a transformative project dedicated to bridging the digital divide and empowering educators with the tools and knowledge they need to thrive in the global digital arena. Our mission is simple: Equip 1,000 educators with laptops, Wi-Fi access, and comprehensive training programs to unlock their potential and revolutionize education.</p>
-          </div>
-          <div class="about-cta">
-            <a class="read-more" href="">Read more...</a>
+            <p id="moreText" class="hidden">We believe that every educator
+            deserves the resources and support
+            necessary to deliver high-quality education in today&#039;s digital world.
+            By providing laptops, reliable internet access, and cutting-edge training,
+            we empower educators to:
+            <br />
+            Embrace innovative teachingmethods:
+            Equip educators with the skills and
+            tools to integrate technology into their classrooms and develop engaging
+            and interactive learning experiences.
+            <br />
+            Enhance student engagement: Foster a dynamic learning environment where
+            students are actively involved in their learning and develop essential
+            skills for the 21st century.
+            <br />
+            Promote digital literacy: Equip students and educators with the necessary
+            knowledge and skills to navigate the digital world safely and effectively,
+            preparing them for success in a technology-driven future.
+            <br />
+            Bridge the digital divide: Ensure that educators and students have access
+            to essential technology, regardless of their socio-economic background.
+            <br />
+            Empower a global community of educators: Connect and collaborate with
+            educators from around the world, sharing best practices and fostering a
+            culture of innovation within the education sector.
+            </p>
+            <p class="read-togle" onclick="toggleReadMore()">Read more...</p>
           </div>
         </div>
       </div>
+
+       <!-- Start of Footer Section -->
+   <footer class="footer-container">
+    <div class="col-1">
+      <div class="logo-title">
+        <img src="img/logo.png" alt="">
+        <p class="logo-text">EQUIP1000</p>
+        <p class="sub-text">Empowering teacher’s professionalism for better productivity</p>
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="contact-links">
+        <p>Contact Us</p>
+        <a href="mailto:Email: Uniekideasconsulting@gmail.com">Email: Uniekideasconsulting@gmail.com</a>
+        <a href="">Twitter: @uniekideas</a>
+        <a href="">Instagram: @Uniek</a>
+      </div>
+      <div class="about-links">
+        <p>About Us</p>
+        <a href="#">Transparency</a>
+        <a href="#">Business consult</a>
+        <a href="#">Empowerment</a>
+        <a href="#">Education</a>
+      </div>
+    </div>
+   </footer>
     
+      <script src="js/header.js"></script>
+      <script src="js/read-more.js"></script>
+      <script src="js/login-pup-up.js"></script>
+      <script src="js/signup-pop-up.js"></script>
 </body>
 </html>

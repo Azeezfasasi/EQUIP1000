@@ -74,7 +74,21 @@
     margin-top: -20px;
   }
 
-  .about-cta .read-more {
+  .about-container .read-togle {
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 23px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    margin-top: -30px;
+    margin-left: -6px;
+    cursor: pointer;
+  }
+
+  .hidden {
+    display: none;
     color: #495057;
     text-align: left;
     font-family: "Roboto-Regular", sans-serif;
@@ -83,5 +97,65 @@
     font-weight: 400;
     position: relative;
     align-self: stretch;
-    text-decoration: none;
+    text-align: justify;
+    margin-top: -30px;
+  }
+
+  .more-text {
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 23px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+    text-align: justify;
+  }
+
+  @media (max-width: 768px) {
+    .about-section {
+      display: block;
+      width: 100%;
+      position: initial;
+      padding: 52px 0px 40px 10px;
+    }
+
+    .about-container {
+      display: block;
+      width: 95%;
+      margin: 0 auto;
+      position: initial;
+    }
+
+    .about-container .about-header {
+      font-size: 26px;
+      margin-left: -8px;
+    }
+
+    .about-container .about-body {
+      display: block;
+      width: 100%;
+      margin: -40px 0 0 -8px;
+    }
+
+    .about-body .about-text {
+      font-size: 20px;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .about-container .read-togle {
+      margin-left: 0px;
+      margin-top: 0px;
+      font-size: 20px;
+    }
+
+    .hidden {
+      font-size: 20px;
+      margin-top: -10px;
+      /* text-align: justify; */
+      text-align: justify;
+    }
   }

@@ -969,6 +969,7 @@
 
   .nav-list a {
     font-size: 18px;
+    font-family: "Roboto-Regular", sans-serif;
   }
   .nav-list .mobile-cta {
     color: #ffffff;
