@@ -27,7 +27,7 @@
     height: 462px;
     opacity: 0;
     transform: translate(-50%, -50%) scale(1.25);
-    width: 500px;
+    width: 400px;
     padding: 25px 35px;
     visibility:hidden;
     transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms,
@@ -301,8 +301,12 @@
   @media (max-width: 768px) {
     .popup {
       position: absolute;
-      top: 30px;
+      top: 170px;
       width: 240px;
+    }
+
+    .popup.active {
+      margin-top: 170px;
     }
 
     .popup .close-btn {
