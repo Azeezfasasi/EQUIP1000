@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/lms/lms-dashboard.css">
+    <link rel="stylesheet" href="css/lms/header.css">
+</head>
+<body>
+    <!-- start of the header section -->
+    <div class="sticky">
+        <div class="header">
+            <a class="logo-link" href="lms.html"><img class="logo" src="img/logo.png" /></a>
+            <!-- <img class="logo" src="img/logo.png" /> -->
+            <div class="nav-links" id="nav-list">
+              <a href=""><i class="fa-regular fa-bell"></i></a>
+              <div class="line"></div>
+              <div class="top-right">
+                <a href="lms-dashboard.html"><img class="profile-image" src="img/Image 2.jpg" /></a>
+                <div class="student-name">
+                  <p class="name">PRINCE AKACHI</p>
+                </div>
+                <div class="student-id">
+                  <p>2023/Q4/7223</p>
+                </div>
+              </div>
+              <div class="dropdown" onclick="toggleDropdown()">
+                <a href="javascript:void"><i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="#">Profile</a>
+                  <a href="#">Option 2</a>
+                  <a href="#">Option 3</a>
+                </div>
+              </div>              
+            </div>
+          </div>
+    </div>
+    <!-- End of the header section -->
+
+    <!-- Start of the Left side bar -->
+    <!-- Mobile menu toggle button -->
+    <div id="mobile-menu-toggle">&#9776;</div>
+    <div class="sidebar-active">
+        <a class="side-link active" href="">
+            <img src="img/Dashboard Icon.png" alt="Dashboard Icon">
+            <p>Dashboard</p>
+        </a>
+        <a class="side-link" href="">
+          <img src="img/course icon.png" alt="Couse Icon">
+          <p>Courses</p>
+        </a>
+        <a class="side-link" href="">
+          <img src="img/Assessment Icon.png" alt="Assessment Icon">
+          <p>Assessment</p>
+        </a>
+        <a class="side-link" href="">
+          <img src="img/Certificates Icon.png" alt="Certificate Icon">
+          <p>Certificates</p>
+        </a>
+        <a class="side-link" href="">
+          <img src="img/Messaging Icon.png" alt="Message Icon">
+          <p>Messaging</p>
+        </a>
+        <a class="side-link" href="">
+          <img src="img/Instructors Icon.png" alt="Instructors Icon">
+          <p>Instructors</p>
+        </a>
+        <a class="side-link" href="">
+          <img src="img/community.png" alt="Community Icon">
+          <p>Community</p>
+        </a>
+        <a class="side-link" href="">
+          <img src="img/Settings Icon.png" alt="Settings Icon">
+          <p>Settings</p>
+        </a>
+        <a class="side-link logout" href="lms.html">
+          <img src="img/Logout Icon.png" alt="Logout Icon">
+          <p>Logout</p>
+        </a>
+    </div>
+    <!-- Start of the Left side bar -->
+
+    <!-- Start of Right Side Content -->
+    <div class="content">
+      <div class="dashboard-header">
+        <p class="welcome-text">Welcome, Prince!</p>
+        <p class="welcome-sub-text"> It is time to continue learning. Take a step closer to Mastery!</p>
+      </div>
+      <div class="in-progress-classes">
+        <div class="progress-box">
+          <div class="box">
+            <p>Microsoft Suite</p>
+            <img src="img/ms suite img.png" alt="ms suite">
+          </div>
+        </div>
+        <div class="progress-box">
+          <div class="box">
+            <p>Google Suite</p>
+            <img src="img/Google Suite img.png" alt="G suite">
+          </div>
+        </div>
+        <div class="progress-box">
+          <div class="box">
+            <p>Canva for Educators</p>
+            <img src="img/canva img.png" alt="Canva">
+          </div>
+        </div>
+        <div class="progress-box">
+          <div class="box">
+            <p>Kahoot for Educators</p>
+            <img src="img/Kahoot img.png" alt="ms suite">
+          </div>
+        </div>
+      </div>
+
+      <!-- Announcement Section -->
+      <div class="announcement-section">
+        <div class="announcement-header">
+          <p>Announcements</p>
+        </div>
+        <div class="announcements-container">
+          <div class="announcements-group">
+            <p class="label">Important!!</p>
+            <div class="text">
+              <li>Your registration expires in 3 weeks, do well to complete your courses and claim your certificate.</li>
+            </div>
+          </div>
+          <div class="announcements-group">
+            <p style="color: #20a612;" class="label">Notice</p>
+            <div class="text">
+              <li>You are 40 minutes away from your first certification. Keep going!</li>
+            </div>
+          </div>
+          <div class="announcements-group">
+            <p style="color: #e6900f;" class="label">Notice</p>
+            <div class="text">
+              <li>Don't miss our mandatory Orientation Program taking place on [Date] at [Time] in [Location]. This program will provide you with an overview of any subject of your choice.</li>
+            </div>
+          </div>
+        </div>
+        <div class="announcement-btn-wrapper">
+          <a href="">Expand to fill screen</a>
+        </div> 
+      </div>
+      <!-- End of announcement section -->
+
+      <!-- Start of completed courses -->
+      <div class="completed-courses">
+        <div class="completed-courses-header">
+          <p>Completed Courses</p>
+        </div>
+        <div class="completed-courses-container">
+          <div class="box">
+            <p>Microsoft Innovative Prog...</p>
+            <div class="stats">
+              <img src="img/full stats.png" alt="100%">
+            </div>
+          </div>
+          <div class="box">
+            <p>Social Media Tools...</p>
+            <div class="stats">
+              <img src="img/full stats.png" alt="100%">
+            </div>
+          </div>
+          <div class="box">
+            <p>AI Tools for Educators</p>
+            <div class="stats">
+              <img src="img/full stats.png" alt="100%">
+            </div>
+          </div>
+          <div class="box">
+            <p>Virtual Learning tools...</p>
+            <div class="stats">
+              <img src="img/full stats.png" alt="100%">
+            </div>
+          </div>
+        </div>
+        <div class="courses-btn-wrapper">
+          <a href="">View more</a>
+        </div>
+      </div>
+      <!-- End of completed courses section -->
+
+      <!-- Start of the note section -->
+      <div class="notes-section">
+        <div class="notes-header">
+          <p>Notes</p>
+        </div>
+        <div class="notes-container">
+          <div class="notes-group">
+            <div class="label">Add your Title here</div>
+            <input type="text" placeholder="Add your notes here">
+          </div>
+        </div>
+        <div class="notes-btn-wrapper">
+          <a>Expand to fill screen</a>
+        </div>
+      </div>
+    </div>
+    <!-- End of the middle contetnts -->
+
+    <!-- Start of the right content -->
+    <div class="right-content">
+      <div class="translate-button">
+        <a href=""><img src="img/g_translate.png" alt="Translate"> TRANSLATE PAGE</a>
+      </div>
+      <div class="calendar-widget">
+        <div id="month-year"></div>
+        <div id="prev-month">&lt;</div>
+        <div id="next-month">&gt;</div>
+        <table id="calendar">
+          <thead>
+            <tr>
+              <!-- <th style="color: red;">Sun</th> -->
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+              <th style="color: red;">Sun</th>
+            </tr>
+          </thead>
+          <tbody id="calendar-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="js/calendar-widget.js"></script>
+    <script src="js/menu-drop-down.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/lms-mobile-menu.js"></script>
+</body>
+</html>

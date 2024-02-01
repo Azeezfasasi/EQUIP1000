@@ -47,7 +47,7 @@
                   <div class="close-btn" onclick="toggle()"><b>X</b></div>
                   <div class="form-element">
                     <h2>Login</h2>
-                      <form action="">
+                      <form action="lms-dashboard.html">
                         <div class="email">
                           <i class="fa-regular fa-envelope"></i>
                           <input type="email" id="email" placeholder="Email">
@@ -71,16 +71,27 @@
                           <a class="sign-up" href=""> Sign Up</a>
                         </div>
                       </form>
+
+                      <form id="signup-form" action="lms-dashboard.html" style="display: none;">
+                        <div class="email">
+                          <i class="fa-regular fa-envelope"></i>
+                          <input type="email" id="signup-email" placeholder="Email">
+                        </div>
+                        <div class="password">
+                          <i class="fa-solid fa-lock"></i>
+                          <input type="password" id="signup-pwd" placeholder="Password">
+                        </div>
+                      </form>
                     </div>
             </div>
-                    <!-- end of login pop up -->
+            <!-- end of login pop up -->
 
-                    <!-- START OF POP UP FOR SIGNUP SECTION -->
-                    
-                    <!-- end of sigup pop up -->
-              </div>
-                <img class="hero-image" src="img/Hero Image.jpg" />
-        </div>  
+            <!-- START OF POP UP FOR SIGNUP SECTION -->
+            
+            <!-- end of sigup pop up -->
+        </div>
+            <img class="hero-image" src="img/Hero Image.jpg" />
+      </div>  
         <!-- end of hero section -->
 
     <!-- Start of About Section -->
@@ -150,5 +161,19 @@
       <script src="js/read-more.js"></script>
       <script src="js/login-pup-up.js"></script>
       <script src="js/signup-pop-up.js"></script>
+
+      <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/65b535410ff6374032c5932c/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 </body>
 </html>
