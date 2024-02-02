@@ -13,6 +13,7 @@
     flex-shrink: 0;
     position: relative;
     width: 100%;
+    padding-bottom: 30px;    
 }
 
 .hero-container .hero {
@@ -23,7 +24,7 @@
     position: relative;
     overflow: hidden;
     margin-top: 80px;
-
+    padding-bottom: 60px;
 }
 
 .hero-container .hero-writeup-container {
@@ -137,7 +138,8 @@
 .hero-image {
     flex-shrink: 0;
     width: 410px;
-    height: 520px;
+    /* height: 520px; */
+    height: 620px;
     position: relative;
     object-fit: cover;
     position: absolute;
@@ -152,7 +154,8 @@
         height: 540px;
         margin-top: -20px;
         overflow: hidden;
-        padding-top: 50px;
+        padding-top: 20px;
+        padding-bottom: 90px;
     }
 
     .hero-container .hero {
