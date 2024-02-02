@@ -190,6 +190,7 @@ body {
     flex-shrink: 0;
     height: 209px;
     position: relative;
+    margin-top: 50px;
   }
 
   .available-courses .course-box {
