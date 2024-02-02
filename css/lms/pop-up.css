@@ -389,12 +389,35 @@
     }
 
     .form-element .bottom-account {
-      display: block;
+      /* display: block;
       text-align: center;
-      width: 100%;
+      width: 100%; */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
     }
 
     .bottom-account p {
-      margin-left: -15px;
+      display: block;
+      width: 89%;
+      text-align: left;
+      padding: 0;
+      margin-left: 90px;
+    }
+    .bottom-account a {
+      width: 27%;
+      display: block;
+      text-decoration: none;
+      color: #000000;
+      text-align: left;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 16px;
+      line-height: 140%;
+      font-weight: 400;
+      position: relative;
+      padding: 0;
+      /* margin-left: -3px; */
+      text-align: right;
     }
   }

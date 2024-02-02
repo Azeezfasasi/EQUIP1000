@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-content .microsoft-office-suite-header {
+    background: #ffffff;
+    height: 928px;
+    position: relative;
+}
+
+.microsoft-office-suite-header p {
+    padding: 8px 16px 0px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: center;
+    color: #275c6f;
+    text-align: left;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 48px;
+    line-height: 140%;
+    font-weight: 700;
+    position: relative;
+    flex: 1;
+    margin-top: 0px;
+}
+
+.microsoft-office-suite-header .microsoft-office-suite-description {
+    padding: 0px 16px 8px 16px;
+    /* display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center; */
+    position: relative;
+    margin-top: -100px;
+    display: block;
+
+}
+
+.microsoft-office-suite-description p {
+    color:#495057;
+    text-align: left;
+    position: relative;
+    flex: 1;
+}
+
+.microsoft-office-suite-description .one {
+    color: var(--neutral-300, #495057);
+    font-family: var(--desktop-h-5-bold-font-family, "Roboto-Bold", sans-serif);
+    font-size: var(--desktop-h-5-bold-font-size, 23px);
+    line-height: var(--desktop-h-5-bold-line-height, 140%);
+    font-weight: var(--desktop-h-5-bold-font-weight, 700)
+}

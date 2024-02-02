@@ -346,7 +346,8 @@ body {
   padding: 8px 16px 8px 16px;
   position: relative;
   height: 363px;
-  width: 73%;
+  /* width: 73%; */
+  width: 68%;
 }
 
 .announcement-section .announcement-header {
@@ -386,13 +387,15 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   border: 1px solid black;
-  width: 760px;
+  /* width: 760px; */
+  width: 668px;
   margin-left: -15px;
 }
 
 .announcements-group {
   flex-shrink: 0;
-  width: 731px;
+  /* width: 731px; */
+  width: 100%;
   height: 262px;
   position: initial;
   margin: 0 0 -180px 0;
@@ -757,7 +760,7 @@ input::placeholder {
   color: #ffffff;
   padding: 30px 0px;
   border-radius: 16px;
-  height: 260px;
+  height: 280px;
   position: relative;
   width: 300px;
   margin: 30px 0 0 0;
@@ -768,17 +771,15 @@ border-collapse: collapse;
 margin-top: 20px;
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 overflow: hidden;
-background: #000000;
 color: white;
 width: 100%;
 padding: 30px;
-
+margin-left: 0px;
 }
 
 th, td {
-padding: 8px;
+padding: 10px;
 text-align: center;
-
 color: #ffffff;
 text-align: center;
 font-family: "Roboto-Regular", sans-serif;
@@ -790,8 +791,6 @@ width: 100%;
 }
 
 th {
-background-color: #000000;
-
 color: #ced4da;
 text-align: center;
 font-family: "Roboto-Regular", sans-serif;
