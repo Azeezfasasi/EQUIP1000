@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools - EQUIP1000</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/lms/lms-dashboard.css">
+    <link rel="stylesheet" href="css/lms/header.css">
+    <link rel="stylesheet" href="css/lms/lms-courses.css">
+    <link rel="stylesheet" href="css/lms/courses-for-educators.css">
+    <link rel="stylesheet" href="css/lms/microsoft-office-tools.css">
+</head>
+<body>
+    <!-- start of the header section -->
+    <div class="sticky">
+        <div class="header">
+            <a class="logo-link" href="lms.html"><img class="logo" src="img/logo.png" /></a>
+            <!-- <img class="logo" src="img/logo.png" /> -->
+            <div class="nav-links" id="nav-list">
+              <a href=""><i class="fa-regular fa-bell"></i></a>
+              <div class="line"></div>
+              <div class="top-right">
+                <a href="lms-dashboard.html"><img class="profile-image" src="img/Image 2.jpg" /></a>
+                <div class="student-name">
+                  <p class="name">PRINCE AKACHI</p>
+                </div>
+                <div class="student-id">
+                  <p>2023/Q4/7223</p>
+                </div>
+              </div>
+              <div class="dropdown" onclick="toggleDropdown()">
+                <a href="javascript:void"><i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="#"><i class="fa-solid fa-circle-user"></i> Profile</a>
+                  <a href="#"><i class="fa-solid fa-lock"></i> Security</a>
+                  <a href="#"><i class="fa-solid fa-list-check"></i> Preferences</a>
+                  <a href="lms.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+                </div>
+              </div>              
+            </div>
+          </div>
+    </div>
+    <!-- End of the header section -->
+
+    <!-- Start of the Left side bar -->
+    <!-- Mobile menu toggle button -->
+    <div id="mobile-menu-toggle">&#9776;</div>
+    <div class="sidebar-active">
+        <a class="side-link" href="lms-dashboard.html">
+            <img src="img/Dashboard Icon.png" alt="Dashboard Icon">
+            <p>Dashboard</p>
+        </a>
+        <a class="side-link active" href="lms-courses.html">
+          <img src="img/course icon.png" alt="Couse Icon">
+          <p>Courses</p>
+        </a>
+        <a class="side-link" href="/">
+          <img src="img/Assessment Icon.png" alt="Assessment Icon">
+          <p>Assessment</p>
+        </a>
+        <a class="side-link" href="/">
+          <img src="img/Certificates Icon.png" alt="Certificate Icon">
+          <p>Certificates</p>
+        </a>
+        <a class="side-link" href="/">
+          <img src="img/Messaging Icon.png" alt="Message Icon">
+          <p>Messaging</p>
+        </a>
+        <a class="side-link" href="/">
+          <img src="img/Instructors Icon.png" alt="Instructors Icon">
+          <p>Instructors</p>
+        </a>
+        <a class="side-link" href="/">
+          <img src="img/community.png" alt="Community Icon">
+          <p>Community</p>
+        </a>
+        <a class="side-link" href="/">
+          <img src="img/Settings Icon.png" alt="Settings Icon">
+          <p>Settings</p>
+        </a>
+        <a class="side-link logout" href="lms.html">
+          <img src="img/Logout Icon.png" alt="Logout Icon">
+          <p>Logout</p>
+        </a>
+    </div>
+    <!-- end of the Left side bar -->
+
+    <!-- Start of main content -->
+    <div class="main-content mobile-course-content">
+      <div class="microsoft-container">
+        <div class="microsoft-office-suite-header">
+          <p>AI Tools for Educators</p>
+        </div>
+        <div class="microsoft-office-suite-description">
+          <p><span class="one">Unleashing the Power of AI:
+          <br /></span>
+          <span class="two">A Teacher&#039;s Guide to Revolutionary Tools<br /></span>
+          <span class="three">Imagine a classroom where personalized learning, instant feedback, and engaging lesson plans are the norm. This isn&#039;t science fiction;it&#039;s the reality within reach thanks to AI tools for educators.<br /></span>
+          </p>
+        </div>
+        <div class="microsoft-office-suite-image">
+          <img src="img/ai-tools.png" alt="AI Tool"/>
+        </div>
+        <div class="course-description">
+          <p class="desc">This comprehensive tutorial course will equip you with the knowledge and skills to harness the power of AI and transform your teaching practice.</p>
+          <p class="course-duration">Course Duration: 56 Hrs</p>
+        </div>
+        <div class="course-status">
+          <div class="status-color"></div>
+          <p>NOT STARTED</p>
+        </div>
+        <div class="listed-courses top-course">
+          <p class="course-header">Quillionz</p>
+          <p class="course-short-description">Tired of writer's block when crafting engaging questions? Quillionz is here to save the day!</p>
+          <div class="course-image">
+            <img src="img/quillionz.png" alt="Quillionz" />
+          </div>
+          <a href="">Enroll</a>
+        </div>
+        <div class="listed-courses">
+          <p class="course-header">Grammarly</p>
+          <p class="course-short-description">Your Guide to Writing Confidence</p>
+          <div class="course-image">
+            <img src="img/grammarly.png" alt="Grammarly" />
+          </div>
+          <a href="">Enroll</a>
+        </div>
+        <div class="listed-courses">
+          <p class="course-header">Google Classroom</p>
+          <p class="course-short-description">Conquer the Classroom</p>
+          <div class="course-image">
+            <img src="img/google-classroom.png" alt="Google classroom" />
+          </div>
+          <a href="">Enroll</a>
+        </div>
+        <div class="listed-courses">
+            <p class="course-header">Chat GPT</p>
+            <p class="course-short-description">Unleash the Power of ChatGPT</p>
+            <div class="course-image">
+              <img src="img/chat-gpt.png" alt="Chat GPT" />
+            </div>
+            <a href="">Enroll</a>
+        </div>  
+      </div>
+    </div>
+    <!-- End of the main contents -->
+
+    <!-- Start of the right content -->
+    <div class="right-content right-ms">
+      <a class="course-translate-btn" href=""><img src="img/g_translate.png" alt="Translate"> TRANSLATE PAGE</a>
+      <a class="course-read-btn" href=""><img src="img/read.png" alt="Translate"> READ SCREEN</a>
+      <div class="calendar-widget">
+        <div id="month-year"></div>
+        <div id="prev-month">&lt;</div>
+        <div id="next-month">&gt;</div>
+        <table id="calendar">
+          <thead>
+            <tr>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+              <th style="color: red;">Sun</th>
+            </tr>
+          </thead>
+          <tbody id="calendar-body"></tbody>
+        </table>
+      </div>
+    <!-- End of calendar widget -->
+
+
+
+    <script src="js/menu-drop-down.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/lms-mobile-menu.js"></script>
+    <script src="js/calendar-widget.js"></script>
+    <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/65b535410ff6374032c5932c/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+</html>

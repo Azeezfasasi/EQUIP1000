@@ -33,7 +33,6 @@ body {
     position: relative;
     /* margin-top: -100px; */
     display: block;
-
 }
 
 .microsoft-office-suite-description p {
@@ -43,6 +42,7 @@ body {
     flex: 1;
     margin-top: -50px;
     margin-left: 10px;
+    width: 90%;
 }
 
 .microsoft-office-suite-description .one {
@@ -333,6 +333,10 @@ body {
 
     .microsoft-office-suite-description {
         display: block;
+        width: 95%;
+    }
+
+    .microsoft-office-suite-description p {
         width: 95%;
     }
 
