@@ -309,6 +309,51 @@ body {
     margin-left: 90px;
   }
 
+  .course-video-intro {
+    width: 95%; 
+    margin-left: 15px;
+    position: relative;
+  }
+
+  .course-video-intro iframe {
+    border-radius: 16px;
+    width: 660px;
+    height: 315px;
+  }
+
+  .course-video-intro .mark-as-complete {
+    background: #275c6f;
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 42px;
+    color:#ffffff;
+    font-family: "Roboto-SemiBold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    position: relative;
+    margin-left: 420px;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+
+  .course-document {
+    background: #e7e5e5;
+    border-radius: 16px;
+    height: 301px;
+    width: 680px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+
   @media (max-width: 768px) {
     /* mobile style for middle contents */
     .mobile-course-content {
@@ -433,6 +478,48 @@ body {
         height: 25px;
         margin-top: -18px;
     }
+
+    .course-video-intro {
+        display: block;
+        width: 95%; 
+        margin: 0 auto;
+        /* margin-left: 15px; */
+      }
+    
+      .course-video-intro iframe {
+        border-radius: 16px;
+        display: block;
+        width: 100%;
+        height: 315px;
+      }
+
+      .course-video-intro .mark-as-complete {
+        background: #275c6f;
+        border-radius: 8px;
+        padding: 5px 10px 5px 10px;
+        width: 170px;
+        height: 26px;
+        color:#ffffff;
+        font-family: "Roboto-SemiBold", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        position: relative;
+        margin-left: 120px;
+        margin-bottom: 10px;
+        text-decoration: none;
+      }
+
+      .course-document {
+        background: #e7e5e5;
+        border-radius: 16px;
+        display: block;
+        height: 301px;
+        width: 95%;
+        position: relative;
+        overflow: hidden;
+        margin: 30px auto 0 auto;
+      }
 
     /* mobile style for right side contents */
     .right-content {
