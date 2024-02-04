@@ -952,7 +952,9 @@ font-size: 25px;
   left: -256px;
   z-index: 2;
   height: 750px;
+  width: 60%;
   overflow: hidden;
+  padding-top: 70px;
 }
 
 .sidebar-active.active {
@@ -969,18 +971,22 @@ font-size: 25px;
   color: black;
 }
 
+.sidebar-active .side-link {
+  margin-left: -10px;
+}
+
 .side-link img {
-  width: 28px;
-  height: 28px;
+  width: 18px;
+  height: 18px;
 }
 
 .side-link p {
   color: #ffffff;
   text-align: left;
   font-family: "Roboto-Bold", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 140%;
-  font-weight: 700;
+  font-weight: 500;
   position: relative;
 }
 
