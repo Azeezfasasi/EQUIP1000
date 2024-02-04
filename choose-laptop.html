@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/eqip/welcome.css">
     <link rel="stylesheet" href="css/eqip/lms-landing.css">
     <link rel="stylesheet" href="css/eqip/product-checkout.css">
+    <link rel="stylesheet" href="css/eqip/search.css">
 </head>
 <body>
     <div class="sticky">
@@ -52,7 +53,7 @@
             <div class="choose-container">
                 <div class="top">
                     <div class="search">
-                        <input type="search" placeholder="Search for a laptop">
+                        <input type="search" id="searchInput" placeholder="Search for a laptop">
                         <div class="filter"></div>
                     </div>
                 </div>
@@ -61,6 +62,12 @@
                     <div class="underline"></div>
                 </div>
                 <div class="bottom">
+                    <ul id="itemList">
+                        <li class="hidden"><a href="choose-laptop.html"><img src="img/hp-pavilion-laptop.png" alt=""> HP Laptop</a></li>
+                        <li class="hidden"><a href="choose-laptop.html"><img src="img/dell-xps-laptop.png" alt=""> Dell Laptop</a></li>
+                        <li class="hidden"><a href="choose-mifi.html"><img src="img/mifi 1.png" alt=""> MTN Mi-fi</a></li>
+                      </ul>
+                      <p id="noResultsMessage" class="hidden"><span class="fa-regular fa-face-frown"></span> No courses found</p>
                     <p class="title">Choose a Laptop</p>
                     <p class="sub-title">Choose one of the available laptops that’s also within your range of Income</p>
                 </div>
@@ -116,6 +123,7 @@
     </div>
 
     <script src="js/header.js"></script>
+    <script src="js/search.js"></script>
     <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

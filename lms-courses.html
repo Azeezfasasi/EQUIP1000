@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/lms/lms-dashboard.css">
     <link rel="stylesheet" href="css/lms/header.css">
     <link rel="stylesheet" href="css/lms/lms-courses.css">
+    <link rel="stylesheet" href="css/lms/search.css">
 </head>
 <body>
     <!-- start of the header section -->
@@ -88,8 +89,20 @@
     <div class="main-content">
         <div class="categories-container">
             <div class="search">
-                <input type="search">
+                <input type="search" id="searchInput" placeholder="Search courses...">
                 <i class="fa-solid fa-magnifying-glass"></i>
+                <!-- search items -->
+                <ul id="itemList">
+                  <li class="hidden"><a href="microsoft-office-tools.html"><img src="img/ms office course.png" alt=""> Microsoft Office Suite</a></li>
+                  <li class="hidden"><a href="google-suite-tools.html"><img src="img/G-Suite.png" alt=""> Google Suite</a></li>
+                  <li class="hidden"><a href="canva-for-educators.html"><img src="img/Canva for Educators Image.png" alt=""> Canvas for Educators</a></li>
+                  <li class="hidden"><a href="kahoot-for-educators.html"><img src="img/Kahoot for Educators Image.png" alt=""> Kahoot for Educators</a></li>
+                  <li class="hidden"><a href="microsoft-innovative-programme.html"><img src="img/Microsoft Office Suite Image.png" alt=""> Microsoft Innovative Educators Programme</a></li>
+                  <li class="hidden"><a href="social-media-tools.html"><img src="img/social.png" alt=""> Social Media Tools for Educators</a></li>
+                  <li class="hidden"><a href="ai-tools.html"><img src="img/ai-tools.png" alt=""> AI Tools for Educators</a></li>
+                  <li class="hidden"><a href="virtual-learning-platform.html"><img src="img/virtual-learning.png" alt=""> Virtual Learning Platforms</a></li>
+                </ul>
+                <p id="noResultsMessage" class="hidden"><span class="fa-regular fa-face-frown"></span> No courses found</p>
             </div>
             <div class="categories-header">
                 <p>Welcome to the Courses Section</p>
@@ -154,6 +167,7 @@
     <script src="js/menu-drop-down.js"></script>
     <script src="js/header.js"></script>
     <script src="js/lms-mobile-menu.js"></script>
+    <script src="js/search.js"></script>
     <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
