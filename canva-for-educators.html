@@ -126,18 +126,18 @@
       <a class="course-read-btn" href=""><img src="img/read.png" alt="Translate"> READ SCREEN</a>
       <div class="calendar-widget">
         <div id="month-year"></div>
-        <div id="prev-month">&lt;</div>
-        <div id="next-month">&gt;</div>
+        <div id="prev-month" onclick="changeMonth(-1)">&lt;</div>
+        <div id="next-month" onclick="changeMonth(1)">&gt;</div>
         <table id="calendar">
           <thead>
             <tr>
+              <th style="color: red;">Sun</th>
               <th>Mon</th>
               <th>Tue</th>
               <th>Wed</th>
               <th>Thu</th>
               <th>Fri</th>
               <th>Sat</th>
-              <th style="color: red;">Sun</th>
             </tr>
           </thead>
           <tbody id="calendar-body"></tbody>
