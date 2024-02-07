@@ -1,47 +1,19 @@
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
-  visibility: hidden;
-  z-index: 999; /* Ensure it's below the pop-up */
-  transition: opacity 200ms ease-in-out, visibility 0ms ease-in-out 200ms;
-}
-
-.overlay.active {
-  visibility: visible;
-  transition: opacity 200ms ease-in-out;
-}
-
-/* .center {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .popup {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .center#blur.active{
-    filter:blur(20px);
-    pointer-events:none;
-    user-select:none;
-  }
-  .center button {
-    padding: 25px 35px;
-    font-size: 25px;
-    font-weight: 600;
-    color: #222;
-    background: #f5f5f5;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 10px;
-  } */
-  .popup {
+    /* margin-top: 300px; */
     height: 462px;
     opacity: 0;
     transform: translate(-50%, -50%) scale(1.25);
-    width: 900px;
+    width: 400px;
     padding: 25px 35px;
     visibility:hidden;
     transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms,
@@ -53,7 +25,6 @@
     overflow: hidden;
     backdrop-filter: blur(40px);
     z-index: 1000;
-    background: rgba(39, 92, 111, 0.2);
   }
 
   #popup-login {
@@ -83,8 +54,8 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     color: red;
     font-family: "Roboto-Regular", sans-serif;
     text-align: center;
@@ -112,33 +83,12 @@
 
   .form-element {
     display: block;
-    width: 500px;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
   }
 
   .form-element .email {
-    border-style: dashed;
-    border-color:#000000;
-    border-width: 1px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 56px;
-    color:#ffffff;
-    text-align: left;
-    font-family: "Roboto-Regular", sans-serif;
-    font-size: 23px;
-    line-height: 140%;
-    font-weight: 400;
-    position: relative;
-    padding: 0 0 0 10px;
-    margin-bottom: 20px;
-  }
-
-  .form-element .name {
     border-style: dashed;
     border-color:#000000;
     border-width: 1px;
@@ -180,12 +130,6 @@
     padding: 0 0 0 10px;
   }
 
-  .name i {
-    position: absolute;
-    top: 15px;
-    right: 10px;
-  }
-
   .email i {
     position: absolute;
     top: 15px;
@@ -196,16 +140,6 @@
     position: absolute;
     top: 15px;
     right: 10px;
-  }
-
-  .name input {
-    width: 400px;
-    padding: 16px;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: white;
-    font-size: 23px;
   }
 
   .email input {
@@ -301,7 +235,7 @@
   }
 
   .form-element .submit-container {
-    /* background: #275c6f;
+    background: #275c6f;
     border-radius: 8px;
     padding: 8px 16px 8px 16px;
     display: flex;
@@ -315,29 +249,20 @@
     border: none;
     outline: none;
     margin-top: 40px;
-    margin-left: 0px; */
-    background-color: transparent;
-    border: none;
-    outline: none;
+    margin-left: 0px;
   }
   
   .submit-container .login {
-    background: #275c6f;
-    border-radius: 8px;
-    padding: 8px 16px 8px 16px;
-    width: 350px;
-    height: 48px;
-    display: block;
-    margin: 40px auto 0 auto;
     color: #ffffff;
-    text-align: center;
+    text-align: left;
     font-family: sans-serif;
     font-size: 28px;
     line-height: 140%;
     font-weight: 400;
     position: relative;
-    border: none;
-    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .form-element .bottom-account {
@@ -358,7 +283,7 @@
     margin-left: 100px;
   }
   
-  .bottom-account .sign-up {
+  .bottom-account a {
     display: inline-block;
     text-decoration: none;
     color: #000000;
@@ -376,22 +301,6 @@
       position: absolute;
       top: 170px;
       width: 240px;
-    }
-
-    #popup-login {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 1000;
-    }
-  
-    #popup-signup {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 1000;
     }
 
     .popup.active {
@@ -421,23 +330,6 @@
       text-align: center;
       width: 270px;
       margin-left: -20px;
-    }
-
-    .form-element .name {
-      text-align: center;
-      width: 270px;
-      margin-left: -20px;
-    }
-
-    .name input {
-      width: 400px;
-      padding: 16px;
-      background-color: transparent;
-      border: none;
-      outline: none;
-      margin-left: -10px;
-      color: white;
-      font-size: 20px;
     }
 
     .email input {
@@ -485,38 +377,27 @@
     }
 
     .form-element .submit-container {
-      /* width: 100%;
-      margin-left: 0; */
-      background-color: transparent;
-      border: none;
-      outline: none;
+      width: 100%;
+      margin-left: 0;
     }
 
     .submit-container .login {
       font-size: 23px;
-      display: block;
-      margin: 40px auto 0 auto;
-      width: 200px;
-      height: 30px;
-      text-align: center;
     }
 
     .form-element .bottom-account {
-      /* display: flex;
+      display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-between; */
-      display: block;
-      width: 300px;
+      justify-content: space-between;
     }
 
     .bottom-account p {
       display: block;
-      width: 95%;
-      text-align: center;
+      width: 89%;
+      text-align: left;
       padding: 0;
-      /* margin-left: 110px; */
-      font-size: 14px;
+      margin-left: 90px;
     }
     .bottom-account a {
       width: 27%;
@@ -525,10 +406,100 @@
       color: #000000;
       text-align: left;
       font-family: "Roboto-Regular", sans-serif;
-      font-size: 14px;
+      font-size: 16px;
       line-height: 140%;
       font-weight: 400;
       position: relative;
       padding: 0;
+      /* margin-left: -3px; */
+      text-align: right;
     }
   }
+
+  </style>
+</head>
+<body>
+  <a href="javascript:void(0)" class="sign-up" id="show-signup" onclick="togglePopup('signup')">Sign Up</a>
+  <a href="javascript:void(0)" class="login" id="show-login" onclick="togglePopup('login')">Login</a>
+
+  <!-- START OF POP UP FOR LOGIN SECTION -->
+  <div class="popup" id="popup-login">
+    <div class="close-btn" onclick="togglePopup('login')"><b>X</b></div>
+    <div class="form-element">
+      <h2>Login</h2>
+        <form action="lms-dashboard.html">
+          <div class="email">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" id="l-email" placeholder="Email">
+          </div>
+          <div class="password">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="l-pwd" placeholder="Password">
+          </div>
+          <div class="check-container">
+            <input type="checkbox">
+            <div class="remember-me">Remember me</div>
+          </div>
+          <div class="forget-container">
+            <a class="forgot-password" href="">Forgot Password</a>
+          </div>
+          <button class="submit-container">
+            <p class="login">Login</p>
+          </button>
+          <div class="bottom-account">
+            <p>Don’t have an account yet?</p>
+            <a class="sign-up" href="javascript:void(0)" onclick="togglePopup('signup')"> Sign Up</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- START OF POP UP FOR SIGNUP SECTION -->
+  <div class="popup" id="popup-signup">
+    <div class="close-btn" onclick="togglePopup('signup')"><b>X</b></div>
+    <div class="form-element">
+      <h2>Sign Up</h2>
+        <form action="lms-dashboard.html">
+          <div class="email">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" id="s-email" placeholder="Email">
+          </div>
+          <div class="password">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="s-pwd" placeholder="Password">
+          </div>
+          <div class="check-container">
+            <input type="checkbox">
+            <div class="remember-me">Remember me</div>
+          </div>
+          <div class="forget-container">
+            <a class="forgot-password" href="">Forgot Password</a>
+          </div>
+          <button class="submit-container">
+            <p class="login">Sign Up</p>
+          </button>
+          <div class="bottom-account">
+            <p>Already have an account?</p>
+            <a class="login" href="javascript:void(0)" onclick="togglePopup('login')"> Login</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function togglePopup(type) {
+    var popupLogin = document.getElementById('popup-login');
+    var popupSignup = document.getElementById('popup-signup');
+
+    if (type === 'login') {
+      popupLogin.classList.toggle('active');
+      popupSignup.classList.remove('active');
+    } else if (type === 'signup') {
+      popupSignup.classList.toggle('active');
+      popupLogin.classList.remove('active');
+    }
+  }
+
+    </script>
+</body>
+</html>

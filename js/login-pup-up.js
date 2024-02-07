@@ -1,44 +1,45 @@
-document.querySelector("#show-login").addEventListener("click", function () {
-    document.querySelector(".popup").classList.add("active");
-  });
-  document
-    .querySelector(".popup .close-btn")
-    .addEventListener("click", function () {
-      document.querySelector(".popup").classList.remove("active");
-    });
-  
-  function toggle() {
-    var blur = document.getElementById("blur");
-    blur.classList.toggle("active");
-    var popup = document.getElementById("popup");
-    popup.classList.toggle("active");
+// function togglePopup(type) {
+//   var popupLogin = document.getElementById('popup-login');
+//   var popupSignup = document.getElementById('popup-signup');
+
+//   if (type === 'login') {
+//     popupLogin.classList.toggle('active');
+//     popupSignup.classList.remove('active');
+//   } else if (type === 'signup') {
+//     popupSignup.classList.toggle('active');
+//     popupLogin.classList.remove('active');
+//   }
+// }
+
+function togglePopup(type) {
+  var overlay = document.getElementById('overlay');
+  var popupLogin = document.getElementById('popup-login');
+  var popupSignup = document.getElementById('popup-signup');
+
+  if (type === 'login') {
+    popupLogin.classList.toggle('active');
+    overlay.classList.toggle('active');
+    popupSignup.classList.remove('active');
+  } else if (type === 'signup') {
+    popupSignup.classList.toggle('active');
+    overlay.classList.toggle('active');
+    popupLogin.classList.remove('active');
   }
+}
 
-// var popup = document.getElementById("popup");
-//       var popupTitle = document.getElementById("popup-title");
-//       var loginForm = document.getElementById("login-form");
-//       var signupForm = document.getElementById("signup-form");
+// Code to close pop up
+function closePopupAndOverlay() {
+  var overlay = document.getElementById('overlay');
+  var popups = document.querySelectorAll('.popup.active');
 
-//       document.querySelector("#show-login").addEventListener("click", function () {
-//         popup.classList.add("active");
-//         popupTitle.innerText = "Login";
-//         loginForm.style.display = "block";
-//         signupForm.style.display = "none";
-//       });
+  overlay.classList.remove('active');
 
-//       function togglePopup(formType) {
-//         var blur = document.getElementById("blur");
-//         blur.classList.toggle("active");
+  popups.forEach(function (popup) {
+    popup.classList.remove('active');
+  });
+}
 
-//         if (formType === 'signup') {
-//           popupTitle.innerText = "Sign Up";
-//           loginForm.style.display = "none";
-//           signupForm.style.display = "block";
-//         } else {
-//           popupTitle.innerText = "Login";
-//           loginForm.style.display = "block";
-//           signupForm.style.display = "none";
-//         }
-
-//         popup.classList.toggle("active");
-//       }
+// Call this function when your link is clicked
+document.getElementById('close-popup-link').addEventListener('click', function () {
+  closePopupAndOverlay();
+});

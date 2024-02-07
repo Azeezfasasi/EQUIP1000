@@ -28,6 +28,7 @@
             </ul>
         </div>
       </div>
+      <div class="overlay" id="overlay"></div>
 
     <div class="hero-container">
         <div class="hero">
@@ -36,25 +37,25 @@
                 <p class="unlock-your-potential">Unlock Your Potential</p>
                 <p class="sub-text">This is your gateway to endless knowledge, transformative skills, and personal growth. Explore a world of curated courses, interactive learning experiences, and a supportive community, all conveniently accessible right here on our Learning Management System (LMS).</p>
                   <div class="cta" id="blur">
-                    <a href="javascript:void" class="sign-up" onclick="togglePopup()">Sign Up
-                    </a>
-                    <a href="javascript:void" class="login" id="show-login" onclick="toggle()">Login</a>
+                    <a href="javascript:void(0)" class="sign-up" id="show-signup" onclick="togglePopup('signup')">Sign Up</a>
+                    <a href="javascript:void(0)" class="login" id="show-login" onclick="togglePopup('login')">Login</a>
                   </div>
                 </div>
                 
+                
                 <!-- START OF POP UP FOR LOGIN SECTION -->
-                <div class="popup">
-                  <div class="close-btn" onclick="toggle()"><b>X</b></div>
+                <div class="popup" id="popup-login">
+                  <div class="close-btn" onclick="closePopupAndOverlay()"><b>X</b></div>
                   <div class="form-element">
                     <h2>Login</h2>
                       <form action="lms-dashboard.html">
                         <div class="email">
                           <i class="fa-regular fa-envelope"></i>
-                          <input type="email" id="email" placeholder="Email">
+                          <input type="email" id="l-email" placeholder="Email">
                         </div>
                         <div class="password">
                           <i class="fa-solid fa-lock"></i>
-                          <input type="password" id="pwd" placeholder="Password">
+                          <input type="password" id="l-pwd" placeholder="Password">
                         </div>
                         <div class="check-container">
                           <input type="checkbox">
@@ -67,27 +68,40 @@
                           <p class="login">Login</p>
                         </button>
                         <div class="bottom-account">
-                          <p>Don’t have an account yet?</p>
-                          <a class="sign-up" href=""> Sign Up</a>
-                        </div>
-                      </form>
-
-                      <form id="signup-form" action="lms-dashboard.html" style="display: none;">
-                        <div class="email">
-                          <i class="fa-regular fa-envelope"></i>
-                          <input type="email" id="signup-email" placeholder="Email">
-                        </div>
-                        <div class="password">
-                          <i class="fa-solid fa-lock"></i>
-                          <input type="password" id="signup-pwd" placeholder="Password">
+                          <p>Don’t have an account yet? <a class="sign-up" href="javascript:void(0)" onclick="togglePopup('signup')"> Sign Up</a></p>
                         </div>
                       </form>
                     </div>
-            </div>
+                  </div>    
             <!-- end of login pop up -->
 
-            <!-- START OF POP UP FOR SIGNUP SECTION -->
-            
+            <!-- START OF POP UP FOR LOGIN SECTION -->
+            <div class="popup" id="popup-signup">
+              <div class="close-btn" onclick="closePopupAndOverlay()"><b>X</b></div>
+              <div class="form-element">
+                <h2>Registration</h2>
+                  <form action="lms-dashboard.html">
+                    <div class="name">
+                      <i class="fa-regular fa-user"></i>
+                      <input type="text" id="l-name" placeholder="Name">
+                    </div>
+                    <div class="email">
+                      <i class="fa-regular fa-envelope"></i>
+                      <input type="email" id="l-email" placeholder="Email">
+                    </div>
+                    <div class="password">
+                      <i class="fa-solid fa-lock"></i>
+                      <input type="password" id="l-pwd" placeholder="Password">
+                    </div>
+                    <button class="submit-container">
+                      <p class="login">Sign Up</p>
+                    </button>
+                    <div class="bottom-account">
+                      <p>Don’t have an account yet? <a class="sign-up" href="javascript:void(0)" onclick="togglePopup('login')"> Login</a></p>
+                    </div>
+                  </form>
+                </div>
+              </div>
             <!-- end of sigup pop up -->
         </div>
             <img class="hero-image" src="img/Hero Image.jpg" />
@@ -160,7 +174,7 @@
       <script src="js/header.js"></script>
       <script src="js/read-more.js"></script>
       <script src="js/login-pup-up.js"></script>
-      <script src="js/signup-pop-up.js"></script>
+      <!-- <script src="js/signup-pop-up.js"></script> -->
 
       <!--Start of Tawk.to Script-->
   <script type="text/javascript">
