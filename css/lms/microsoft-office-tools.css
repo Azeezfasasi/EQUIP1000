@@ -46,7 +46,7 @@ body {
 }
 
 .microsoft-office-suite-description .one {
-    color: var(--neutral-300, #495057);
+    color: #495057;
     font-family: "Roboto-Bold", sans-serif;
     font-size: 23px;
     line-height: 140%;

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Word Assessment - EQUIP1000</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/lms/lms-dashboard.css">
+    <link rel="stylesheet" href="../css/lms/header.css">
+    <link rel="stylesheet" href="../css/lms/lms-courses.css">
+    <link rel="stylesheet" href="../css/lms/courses-for-educators.css">
+    <link rel="stylesheet" href="../css/lms/search.css">
+    <link rel="stylesheet" href="../css/lms/assessment.css">
+    <link rel="stylesheet" href="../css/lms/timer.css">
+</head>
+<body>
+    <!-- start of the header section -->
+    <div class="sticky">
+        <div class="header">
+            <a class="logo-link" href="lms.html"><img class="logo" src="../img/logo.png" /></a>
+            <!-- <img class="logo" src="img/logo.png" /> -->
+            <div class="nav-links" id="nav-list">
+              <a href=""><i class="fa-regular fa-bell"></i></a>
+              <div class="line"></div>
+              <div class="top-right">
+                <a href="../lms-dashboard.html"><img class="profile-image" src="../img/Image 2.jpg" /></a>
+                <div class="student-name">
+                  <p class="name">PRINCE AKACHI</p>
+                </div>
+                <div class="student-id">
+                  <p>2023/Q4/7223</p>
+                </div>
+              </div>
+              <div class="dropdown" onclick="toggleDropdown()">
+                <a href="javascript:void"><i class="fa-solid fa-caret-down"></i></a>
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="#"><i class="fa-solid fa-circle-user"></i> Profile</a>
+                  <a href="#"><i class="fa-solid fa-lock"></i> Security</a>
+                  <a href="#"><i class="fa-solid fa-list-check"></i> Preferences</a>
+                  <a href="../lms.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+                </div>
+              </div>              
+            </div>
+          </div>
+    </div>
+    <!-- End of the header section -->
+
+    <!-- Start of the Left side bar -->
+    <!-- Mobile menu toggle button -->
+    <div id="mobile-menu-toggle">&#9776;</div>
+    <div class="sidebar-active">
+        <a class="side-link" href="../lms-dashboard.html">
+            <img src="../img/Dashboard Icon.png" alt="Dashboard Icon">
+            <p>Dashboard</p>
+        </a>
+        <a class="side-link" href="../lms-courses.html">
+          <img src="../img/course icon.png" alt="Couse Icon">
+          <p>Courses</p>
+        </a>
+        <a class="side-link active" href="../assessment/assessment-instructions.html">
+          <img src="../img/Assessment Icon.png" alt="Assessment Icon">
+          <p>Assessment</p>
+        </a>
+        <a class="side-link" href="../certificates/certificates.html">
+          <img src="../img/Certificates Icon.png" alt="Certificate Icon">
+          <p>Certificates</p>
+        </a>
+        <a class="side-link" href="../messaging/mesaging.html">
+          <img src="../img/Messaging Icon.png" alt="Message Icon">
+          <p>Messaging</p>
+        </a>
+        <a class="side-link" href="../instructors/instructors.html">
+          <img src="../img/Instructors Icon.png" alt="Instructors Icon">
+          <p>Instructors</p>
+        </a>
+        <a class="side-link" href="">
+          <img src="../img/community.png" alt="Community Icon">
+          <p>Community</p>
+        </a>
+        <a class="side-link" href="../settings/settings.html">
+          <img src="../img/Settings Icon.png" alt="Settings Icon">
+          <p>Settings</p>
+        </a>
+        <a class="side-link logout" href="lms.html">
+          <img src="../img/Logout Icon.png" alt="Logout Icon">
+          <p>Logout</p>
+        </a>
+    </div>
+    <!-- end of the Left side bar -->
+
+    <!-- Start of main content -->
+    <div class="main-content ms-main-content">
+        <div class="categories-container assessment-container">
+          <div class="assessment-instructions-header">
+            <p class="assessment-title">Microsoft Word Final Assessment</p>
+            <p class="assessment-description"><span class="one">Conquering the Summit:</span><br><span class="two">Your Microsoft Word Final Assessment Awaits</span></p>
+          </div>
+          <div class="assessment-body ms-body">
+            <div class="assessment-timer">
+                <div id="timer">
+                    <i class="fa-regular fa-clock"></i> <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>
+                </div>
+            </div>
+            <div id="quiz-container">
+                <div class="question" id="question1">Question 1: Which feature would you use to efficiently apply a pre-formatted heading style (e.g., Heading 1) to each section title while maintaining consistent formatting throughout the document?</div>
+                <ul class="options">
+                    <li class="option"><input type="radio" name="q1" value="Manually format each section title with desired font, size, and spacing."> Manually format each section title with desired font, size, and spacing.</li>
+                    <li class="option"><input type="radio" name="q1" value="Insert page breaks before each section and apply different formatting."> Insert page breaks before each section and apply different formatting.</li>
+                    <li class="option"><input type="radio" name="q1" value="Create and apply individual styles for each section title."> Create and apply individual styles for each section title.</li>
+                </ul>
+
+                <div class="question" id="question2">Question 2: Which combination of Microsoft Word features would allow you to:
+                    <ul>
+                        <li>Organize the data into a well-formatted table with headers and borders?</li>
+                        <li>Generate a visual representation of the data, such as a bar chart or pie chart, directly within the table?</li>
+                        <li>Easily update the chart whenever you modify the data in the table?</li>
+                    </ul>
+                </div>
+                <ul class="options">
+                    <li class="option"><input type="radio" name="q2" value="Insert a text box and manually format the data as a table."> Insert a text box and manually format the data as a table.</li>
+                    <li class="option"><input type="radio" name="q2" value="Use the chart creation tool independently of the table."> Use the chart creation tool independently of the table.</li>
+                    <li class="option"><input type="radio" name="q2" value="Utilize the Table and Insert Chart features separately."> Utilize the "Table" and "Insert Chart" features separately.</li>
+                    <li class="option"><input type="radio" name="q2" value="Leverage the Quick Analysis tools to automatically create a formatted table and chart from your data."> Leverage the "Quick Analysis" tools to automatically create a formatted table and chart from your data.</li>
+                </ul>
+
+                <div class="question" id="question3">Question 3: You want to insert a table with specific dimensions and cell formatting. What is the most efficient way to achieve this?</div>
+                <ul class="options">
+                    <li class="option"><input type="radio" name="q3" value="Manually draw the table with borders and adjust cell sizes individually."> Manually draw the table with borders and adjust cell sizes individually.</li>
+                    <li class="option"><input type="radio" name="q3" value="Use the Insert Table menu and specify desired number of rows and columns."> Use the "Insert Table" menu and specify desired number of rows and columns.</li>
+                    <li class="option"><input type="radio" name="q3" value="Utilize pre-formatted table styles and customize them later if needed."> Utilize pre-formatted table styles and customize them later if needed.</li>
+                    <li class="option"><input type="radio" name="q3" value="Employ a third-party add-on for creating intricate tables."> Employ a third-party add-on for creating intricate tables.</li>
+                </ul>
+
+                <div class="question" id="question4">Question 4: You want to insert a watermark with your company logo into a document. Where can you find this feature?</div>
+                <ul class="options">
+                    <li class="option"><input type="radio" name="q4" value="In the Insert tab, alongside pictures and charts."> In the "Insert" tab, alongside pictures and charts.</li>
+                    <li class="option"><input type="radio" name="q4" value="In the Page Layout tab, under background and header/footer options."> In the "Page Layout" tab, under background and header/footer options.</li>
+                    <li class="option"><input type="radio" name="q4" value="In the Review tab, where comments and track changes are located."> In the "Review" tab, where comments and track changes are located.</li>
+                    <li class="option"><input type="radio" name="q4" value="In the File menu, under security and printing settings."> In the "File" menu, under security and printing settings.</li>
+                </ul>
+
+                <div class="question" id="question5">Question 5: While editing a document, you accidentally delete a large section of text. What is the quickest way to recover it?</div>
+                <ul class="options">
+                    <li class="option"><input type="radio" name="q5" value="Search for the missing text using the Find function."> Search for the missing text using the "Find" function.</li>
+                    <li class="option"><input type="radio" name="q5" value="Close and reopen the document, hoping for automatic recovery."> Close and reopen the document, hoping for automatic recovery.</li>
+                    <li class="option"><input type="radio" name="q5" value="Utilize the Undo button repeatedly until you reach the desired point."> Utilize the "Undo" button repeatedly until you reach the desired point.</li>
+                    <li class="option"><input type="radio" name="q5" value="Check the recycle bin or previous document versions for backups"> Check the recycle bin or previous document versions for backups</li>
+                </ul>
+
+                <div class="question" id="question6">Question 6:You want to create a professional-looking document with consistent formatting throughout. What feature helps you achieve this?</div>
+                <ul class="options">
+                    <li class="option"><input type="radio" name="q6" value="Manually format each element (headings, paragraphs, lists) individually."> Manually format each element (headings, paragraphs, lists) individually.</li>
+                    <li class="option"><input type="radio" name="q6" value="Apply pre-defined Styles with consistent fonts, spacing, and margins."> Apply pre-defined "Styles" with consistent fonts, spacing, and margins.</li>
+                    <li class="option"><input type="radio" name="q6" value="Import formatting from another document using the Format Painter tool."> Import formatting from another document using the "Format Painter" tool.</li>
+                    <li class="option"><input type="radio" name="q6" value="Rely on the default settings and trust readers to adjust their preferences."> Rely on the default settings and trust readers to adjust their preferences.</li>
+                </ul>
+
+                <div class="question" id="question7">Question 7: How can you effectively collaborate on a Word document while ensuring efficient version control and conflict resolution?</div>
+                <ul class="options">
+                    <li class="option"><input type="radio" name="q7" value="Email the document back and forth, making manual edits each time."> Email the document back and forth, making manual edits each time.</li>
+                    <li class="option"><input type="radio" name="q7" value="Save different versions of the document with distinct filenames."> Save different versions of the document with distinct filenames.</li>
+                    <li class="option"><input type="radio" name="q7" value="Utilize Microsoft Word's Track Changes feature and comment on specific sections for feedback."> Utilize Microsoft Word's "Track Changes" feature and comment on specific sections for feedback.</li>
+                    <li class="option"><input type="radio" name="q7" value="Share the document using cloud storage and collaborative editing tools provided by platforms like OneDrive or Google Drive."> Share the document using cloud storage and collaborative editing tools provided by platforms like OneDrive or Google Drive.</li>
+                </ul>
+
+                <div class="question" id="question8">Question 8: Which strategies can you utilize to effectively troubleshoot and resolve common Microsoft Word problems?</div>
+                <ul class="options">
+                    <li class="option"><input type="radio" name="q8" value="Panic and abandon the document, starting from scratch."> Panic and abandon the document, starting from scratch.</li>
+                    <li class="option"><input type="radio" name="q8" value="Consult online forums and user guides for help."> Consult online forums and user guides for help.</li>
+                    <li class="option"><input type="radio" name="q8" value="Close and reopen the software or restart your computer."> Close and reopen the software or restart your computer.</li>
+                    <li class="option"><input type="radio" name="q8" value="Utilize the built-in Help function and check for software updates."> Utilize the built-in "Help" function and check for software updates.</li>
+                </ul>
+            </div>
+            <div class="quiz-btn-wrapper">
+                <a href="javascript:void(0)">Previous</a>
+                <a id="submit-btn" href="javascript:void(0)" onclick="showScoreModal(); return false;" type="button">Submit</a>
+            </div>
+            <div id="score-modal">
+                <div class="decor">
+                    <div class="modal-title">
+                        <p class="time-completion">00:28:56</p>
+                        <p class="assessment-status">Your quiz has been submitted successfully!</p>
+                    </div>
+                    <p class="course-result-title">Microsoft Word Final Assessment Result</p>
+                    <div class="quiz-result-container">
+                        <p id="modal-score"></p>
+                        <p class="modal-percent"> Your score is <span id="modal-percentage"></span></p>
+                        <p class="congrat">Congratulations!!</p>
+                        <!-- <button onclick="closeScoreModal()">Close</button> -->
+                    </div>
+                    <div class="cert-wrapper">
+                        <a class="cert-link" href="">Apply for Certificate</a>
+                    </div>            
+                </div>                
+            </div>     
+          </div>
+        </div>
+    </div>
+
+
+
+    <script src="../js/menu-drop-down.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/lms-mobile-menu.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/counter.js"></script>
+    <script src="../js/ms-word-assessment.js"></script>
+    <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/65b535410ff6374032c5932c/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+</html>
