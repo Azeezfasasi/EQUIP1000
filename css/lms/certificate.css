@@ -1,0 +1,219 @@
+.cert-container {
+    position: absolute;
+    top: 5px;
+}
+
+.certificates-section-header {
+    padding: 8px 16px 0px 16px;
+    width: 90%;
+    position: relative;
+    display: block;
+}
+
+.certificates-section-header .welcome-text {
+    color: #275c6f;
+    text-align: left;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 48px;
+    line-height: 140%;
+    font-weight: 700;
+    position: relative;
+    margin-top: 0px;
+}
+
+.certificates-section-header .welcome-subtext {
+    padding: 0px 16px 8px 16px;
+    display: block;
+    width: 100%;
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 19px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    margin-left: -15px;
+    margin-top: -50px;
+}
+
+.certificates-section-header .subtext {
+    padding: 0px 16px 8px 16px;
+    display: block;
+    width: 100%;
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    margin-left: -15px;
+    margin-top: -25px;
+}
+
+.cert-container .certificates-container {
+    padding: 8px 16px 8px 16px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    overflow-x: scroll;
+  }
+
+  .certificates-container .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 224px;
+    height: 336px;
+    overflow-x: visible;
+
+  }
+
+  .box img {
+    border-radius: 16px;
+    border-style: solid;
+    border-color: #ffa76d;
+    border-width: 2px;
+    width: 224px;
+    height: 488px;
+    position: relative;
+    object-fit: fill;
+  }
+
+  .box a {
+    background: #275c6f;
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 40px;
+    color: #ffffff;
+    text-align: left;
+    font-family: "Roboto-SemiBold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 5px;
+  }
+
+  .preview-pane {
+    background: #f6fafe;
+    border-radius: 16px;
+    padding: 0px 16px 24px 16px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    
+  }
+
+  .preview-pane .preview-title {
+    color: #cce6ff;
+    text-align: left;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 48px;
+    line-height: 140%;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+  }
+
+  .preview-pane img {
+    background: linear-gradient(to left,rgba(217, 217, 217, 0.4),rgba(217, 217, 217, 0.4));
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #ffa76d;
+    border-width: 2px;
+    flex-shrink: 0;
+    width: 70%;
+    position: relative;
+    object-fit: initial;
+  }
+
+  .preview-pane .cert-download-wrapper {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .preview-pane a {
+    background: #275c6f;
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 48px;
+    color: #ffffff;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 23px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
+    margin-top: 5px;
+  }
+
+  @media (max-width: 768px) {
+    .cert-container {
+      display: block;
+      width: 95%;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 70px;
+    }
+
+    .cert-main {
+      height: fit-content;
+      margin-bottom: 300px;
+    }
+
+    .certificates-section-header .welcome-text {
+      font-size: 28px;
+      margin-top: 10px;
+    }
+
+    .certificates-section-header .welcome-subtext {
+      font-size: 18px;
+      margin-top: -30px;
+    }
+
+    .preview-pane {
+      margin-top: 10px;
+      display: block;
+      width: 95%;
+      margin: 10px auto 0 auto;
+    }
+
+    .box a {
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .preview-pane .preview-title {
+      font-size: 28px;
+    }
+    .preview-pane img {
+      width: 100%;
+    }
+
+    .preview-pane .cert-download-wrapper {
+      width: 100%;
+    }
+  }
