@@ -413,7 +413,7 @@
 
     #score-modal {
         width: 90%;
-        height: 90%;
+        height: fit-content;
     }
 
     .modal-title {
