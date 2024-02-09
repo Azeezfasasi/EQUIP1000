@@ -141,7 +141,6 @@ body {
 
   .dropdown {
     position: relative;
-    /* display: inline-block; */
     z-index: 1000;
     margin-left: 20px;
 
@@ -187,6 +186,7 @@ body {
     border-width: 1px 1px 1px 0px;
     width: 256px;
     height: 928px;
+    /* overflow-y: scroll; */
     position: relative;
     padding-top: 90px;
   }
@@ -210,7 +210,7 @@ body {
     width: 32px;
     height: 32px;
     position: relative;
-    overflow: visible;
+    /* overflow: visible; */
     font-size: 30px;
     color: white;
     margin-right: 5px;
@@ -244,6 +244,10 @@ body {
   position: absolute;
   top: 100px;
   left: 265px;
+  overflow-y: initial;
+  overflow-x: hidden;
+  height: 100%;
+  width: 54%;
 }
 
 .content .dashboard-header {
@@ -516,7 +520,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 182px;
+  width: 155px;
+  height: 200px;
   position: relative;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -956,9 +961,11 @@ font-size: 25px;
   left: -256px;
   z-index: 2;
   height: 750px;
+  /* height: 100%; */
   width: 60%;
   overflow: hidden;
   padding-top: 70px;
+  /* position: ; */
 }
 
 .sidebar-active.active {
@@ -1002,6 +1009,7 @@ font-size: 25px;
   position: absolute;
   top: 90px;
   left: 0;
+  height: fit-content;
 }
 
 .dashboard-header .welcome-text {
@@ -1157,7 +1165,7 @@ font-size: 25px;
   width: 100%;
   height: fit-content;
   position: initial;
-  margin-top: 1820px;
+  margin-top: 1920px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1167,6 +1175,10 @@ font-size: 25px;
   width: 90%;
   margin: 0 auto;
   /* position: initial; */
+}
+
+th, td {
+  padding: 10px;
 }
 
 .right-content .translate-button {

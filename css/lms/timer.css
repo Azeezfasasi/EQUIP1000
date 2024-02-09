@@ -416,6 +416,10 @@
         height: fit-content;
     }
 
+    .decor {
+        padding-bottom: 1 0px;
+    }
+
     .modal-title {
         display: block;
         width: 100%;
