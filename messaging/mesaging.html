@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/lms/lms-courses.css">
     <link rel="stylesheet" href="../css/lms/courses-for-educators.css">
     <link rel="stylesheet" href="../css/lms/search.css">
+    <link rel="stylesheet" href="../css/lms/mesaaging.css">
 </head>
 <body>
     <!-- start of the header section -->
@@ -87,11 +88,68 @@
     <!-- end of the Left side bar -->
 
     <!-- Start of main content -->
-    <div class="main-content">
-        <div class="categories-container">
+    <div class="main-content mobile-message-content">
+        <div class="categories-container message-container">
+            <div class="tabs">
+              <button class="inbox-tablink" onclick="openTab('Inbox')">Inbox</button>
+              <button class="new-message-tablink" onclick="openTab('NewMessage')">New Message</button>
+            </div>
             
+            <!-- Inbox message section -->
+            <div id="Inbox" class="tabcontent">
+              <div class="message-box">
+                <a href="" class="name">
+                  <p>Zainab Usman</p>
+                </a>
+                <a href="" class="message">
+                  <p>How far have you gone with the lectures?</p>
+                  <p class="msg-count">+2</p>
+                </a>
+                <a class="delete" href=""><i class="fa-regular fa-trash-can"></i></a>
+              </div>
+              <div class="message-box">
+                <a href="" class="name">
+                  <p>Uche Clinton</p>
+                </a>
+                <a href="" class="message">
+                  <p>What’s up</p>
+                  <p class="msg-count"></p>
+                </a>
+                <a class="delete" href=""><i class="fa-regular fa-trash-can"></i></a>
+              </div>
+              <div class="message-box">
+                <a href="" class="name">
+                  <p>Idara Ozimandias</p>
+                </a>
+                <a href="" class="message">
+                  <p>How far have you gone with the lectures?</p>
+                  <p class="msg-count">+1</p>
+                </a>
+                <a class="delete" href=""><i class="fa-regular fa-trash-can"></i></a>
+              </div>
+            </div>
+
+            <!-- New message section -->
+            <div id="NewMessage" class="tabcontent">
+              <div class="recipient-wrapper">
+                <p>To:</p>
+                <input type="text">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="subject-wrapper">
+                <p>Subject:</p>
+                <input type="text">
+              </div>
+              <div class="message-wrapper">
+                <p>Message:</p>
+                <textarea id="message" name="message" id="message" cols="30" rows="10"></textarea>
+              </div>
+              <a class="login" href="">Send Message</a>
+              <!-- <button class="login" type="button">Send Message</button> -->
+            </div>
+          </div>    
         </div>
-    </div>
+    <!-- </div> -->
 
 
 
@@ -99,6 +157,7 @@
     <script src="../js/header.js"></script>
     <script src="../js/lms-mobile-menu.js"></script>
     <script src="../js/search.js"></script>
+    <script src="../js/messaging.js"></script>
     <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
