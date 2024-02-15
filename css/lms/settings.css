@@ -1,0 +1,171 @@
+.settings-main-content {
+    height: 800px;
+    width: 1000px;
+    position: absolute;
+    top: 100px;
+    left: 260px;
+    overflow: hidden;
+}
+
+.settings-container {
+    display: flex;
+}
+
+.tabs {
+    background-color: #f2f2f2;
+    padding: 10px;
+    min-width: 150px;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size:19px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+}
+
+.tab:hover {
+    background-color: #ddd;
+}
+
+.content {
+    padding: 10px;
+    flex-grow: 1;
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size:19px;
+    line-height: 140%;
+    font-weight: 400;
+    margin-left: 100px;
+    margin-top: -100px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content p {
+    color: #495057;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size:19px;
+    line-height: 140%;
+    font-weight: 600;
+}
+
+/* style for personal info and preferences */
+form {
+    padding: 10px 0;
+}
+
+form label {
+    display: block;
+    width: 100%;
+    color: #495057;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size:19px;
+    line-height: 140%;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+form input[type=text] {
+    padding: 10px;
+    width: 300px;
+    font-size: 19px;
+}
+
+form input[type=email] {
+    padding: 10px;
+    width: 300px;
+    font-size: 19px;
+}
+
+form input[type=password] {
+    padding: 10px;
+    width: 300px;
+    font-size: 19px;
+}
+
+form select {
+    padding: 10px;
+    width: 300px;
+}
+
+form input[type=file] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+form button {
+    display: block;
+    height: 56px;
+    background-color: #275c6f;
+    color: white;
+    outline: none;
+    border: none;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size:19px;
+    line-height: 140%;
+    font-weight: 500;
+    padding: 8px 20px;
+}
+
+@media (max-width: 768px) {
+    .settings-main-content {
+        display: block;
+        height: 600px;
+        width: 100%;
+        position: initial;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .settings-container {
+        display: block;
+        width: 100%;
+        margin: 0px auto 0 auto;
+        position: absolute;
+        top: 70px; 
+    }
+
+    .content {
+        display: block;
+        width: 100%;
+        margin: auto;
+        position: initial;
+        font-size: 17px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .tab-content p {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    form label {
+        font-size: 16px;
+    }
+
+    form button {
+        font-size: 17px;
+    }
+
+}

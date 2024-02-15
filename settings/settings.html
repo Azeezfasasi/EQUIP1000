@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/lms/lms-courses.css">
     <link rel="stylesheet" href="../css/lms/courses-for-educators.css">
     <link rel="stylesheet" href="../css/lms/search.css">
+    <link rel="stylesheet" href="../css/lms/settings.css">
 </head>
 <body>
     <!-- start of the header section -->
@@ -87,11 +88,74 @@
     <!-- end of the Left side bar -->
 
     <!-- Start of main content -->
-    <div class="main-content">
-        <div class="categories-container">
-            
+    <div class="settings-main-content">
+        <div class="settings-container">
+          <div class="tabs">
+            <div class="tab" onclick="openTab('personal')">Personal Information and Preferences</div>
+            <div class="tab" onclick="openTab('course-management')">Course Management</div>
+            <div class="tab" onclick="openTab('learning-preference')">Learning Preferences</div>
+            <div class="tab" onclick="openTab('comunication')">Communication and Collaboration</div>
+            <div class="tab" onclick="openTab('notification')">Notifications</div>
+            <div class="tab" onclick="openTab('security')">Security and Privacy</div>
+          </div>
+
+          <div class="content">
+            <div id="personal" class="tab-content">
+                <p>Personal Information and Preferences</p>
+                <form id="settingsForm">
+                  <label for="firstName">First Name:</label>
+                  <input type="text" id="firstName" name="firstName">
+                  <br>
+                  <label for="lastName">Last Name:</label>
+                  <input type="text" id="lastName" name="lastName">
+                  <br>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email">
+                  <br>
+                  <label for="password">Current Password:</label>
+                  <input type="password" id="password" name="password">
+                  <br>
+                  <label for="password">New Password:</label>
+                  <input type="password" id="password" name="password">
+                  <br>
+                  <label for="role">Role:</label>
+                  <select id="role" name="role">
+                      <option value="user">User</option>
+                      <option value="admin">Admin</option>
+                  </select>
+                  <br>
+                  <label for="profileImage">Profile Image:</label>
+                  <input type="file" id="profileImage" name="profileImage" accept="image/*">
+                  <br>
+                  <br>
+                  <button type="button" onclick="saveSettings()">Save Settings</button>
+              </form>
+            </div>
+
+            <div id="course-management" class="tab-content">
+                
+                <p>Course management settings content goes here...</p>
+            </div>
+            <div id="learning-preference" class="tab-content">
+                <!-- Notifications settings content goes here -->
+                <p>Learning Preferences settings content goes here...</p>
+            </div>
+            <div id="comunication" class="tab-content">
+              <!-- Notifications settings content goes here -->
+              <p>Communications settings content goes here...</p>
+          </div>
+          <div id="notification" class="tab-content">
+            <!-- Notifications settings content goes here -->
+            <p>Notifications settings content goes here...</p>
         </div>
-    </div>
+        <div id="security" class="tab-content">
+          <!-- Notifications settings content goes here -->
+          <p>Securities settings content goes here...</p>
+      </div>
+           
+        </div>
+        </div>
+      </div>
 
 
 
@@ -99,6 +163,7 @@
     <script src="../js/header.js"></script>
     <script src="../js/lms-mobile-menu.js"></script>
     <script src="../js/search.js"></script>
+    <script src="../js/settings.js"></script>
     <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
