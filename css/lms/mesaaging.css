@@ -1,7 +1,7 @@
 .message-container  {
     position: absolute;
     top: 0;
-    border: 3px solid black;
+    /* border: 3px solid black; */
 }
 .tabs {
     overflow: hidden;
@@ -12,10 +12,6 @@
     align-items: center;
     justify-content: center;
   }
-
-  /* .inbox-tablink.active {
-    background-color: #ffa76d;
-  } */
 
   .new-message-tablink.active {
     background-color: #ffa76d;
