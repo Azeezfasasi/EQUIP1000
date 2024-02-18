@@ -137,6 +137,29 @@
     justify-content: center;
 }
 
+.quiz-btn-wrapper .prev {
+    background: #ced4da;
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 184px;
+    height: 56px;
+    color: #ffffff;
+    text-align: left;
+    font-family:"Roboto-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #score-modal {
     display: none;
     position: fixed;
@@ -406,6 +429,12 @@
         width: 80px;
     }
 
+    .quiz-btn-wrapper .prev {
+        padding: 0px 3px 0px 3px;
+        gap: 2px;
+        width: 80px;
+    }
+
     #submit-btn {
         padding: 0px 3px 0px 3px;
         width: 80px;
@@ -417,7 +446,7 @@
     }
 
     .decor {
-        padding-bottom: 1 0px;
+        padding-bottom: 10px 0px;
     }
 
     .modal-title {
@@ -493,6 +522,7 @@
         font-weight: 500;
         position: relative;
         margin-top: 30px;
+        margin-bottom: 10px;
     }
 
     .modal {

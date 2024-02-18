@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="css/eqip/product-checkout.css">
-    <link rel="stylesheet" href="css/eqip/lms-landing.css">
-    <link rel="stylesheet" href="css/eqip/welcome.css">
-    <link rel="stylesheet" href="css/eqip/checkout-pop-up.css">
+    <link rel="stylesheet" href="../css/eqip/product-checkout.css">
+    <link rel="stylesheet" href="../css/eqip/lms-landing.css">
+    <link rel="stylesheet" href="../css/eqip/welcome.css">
+    <link rel="stylesheet" href="../css/eqip/checkout-pop-up.css">
 </head>
 <body>
     <div class="sticky">
@@ -18,13 +19,13 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            <a class="logo" href="index.html"><img src="img/logo.png" /></a>
+            <a class="logo" href="../index.html"><img src="../img/logo.png" /></a>
             <div class="mobile-profile">
-                <a href="dashboard.html"><img src="img/image-icon.png" alt=""></a>
-            </div>   
+                <a href="dashboard.html"><img src="../img/image-icon.png" alt=""></a>
+            </div>  
             <ul class="nav-list" id="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="lms.html">LMS</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../lms.html">LMS</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact Us</a></li>
                 <li class="mobile-cta" style="display: none;"><a href="register.html">Sign Up</a></li>
@@ -32,31 +33,29 @@
             </ul>
             <div class="top-right">
                 <div class="profile">
-                    <a href="dashboard.html"><img src="img/image-icon.png" alt="profile"></a>
+                    <a href="dashboard.html"><img src="img/image-icon.png" alt=""></a>
                 </div>
                 <div class="name">
                     <a href="dashboard.html"><p style="margin-top: 50px;">PRINCE AKACHI</p></a>
                 </div>       
             </div>
         </div>
-
     </div>
-    
+
     <div class="content">
         <div class="product-left">
             <div class="product-image">
-                <img src="img/dell-xps-13-screen-lid1 1.png" alt="">
+                <img src="../img/mifi 1.png" alt="">
             </div>
-            <p>Dell XPS Laptop</p>
+            <p>Mifi</p>
             <div class="specification">
                 <p class="title">Device Specs</p>
-                <p class="sub-title">Dell XPS 13 laptop is a windows 10 laptop with a 13.30inch display that has a resolution of 3200 by 1800pixels. It is powered by a Corei5 processor and it comes with a 8gb of RAM. The Dell XPS 13 packs 128GB of SSD storage. Graphics are powered by Intel Integrated HD graphics 520.</p>
+                <p class="sub-title">Get access to our Mi-fi for your seamless Internet connection and your continuous professional development</p>
             </div>
             <p class="price-label">Price</p>
-            <p class="price">₦300,000</p>
+            <p class="price">N20000</p>
         </div>
         
-
         <div class="product-details">
             <p class="title">Eligibility confirmation</p>
             <p class="sub-title">We need these details on your financial earnings to see if you are good fit for the laptop</p>
@@ -72,22 +71,23 @@
                                 <option value="more">Above than 100,000</option>
                               </select>
                           </div>
-                    </div>
-                      <!-- <div class="product-options"> -->
-                    <div class="payment">
-                    <p>How do you want to pay?</p>
-                        <div class="selection">
-                            <select name="" id="">
-                                <option value="select">Select</option>
-                                <option value="6-month">6 Month Installments</option>
-                                <option value="1-year">1 Year Installments</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col s12 m4 offset-m4">
+                      <div class="product-options">
+                          <div class="payment">
+                            <p>How do you want to pay?</p>
+                              <div class="selection">
+                                  <select name="" id="">
+                                    <option value="select">Select</option>
+                                    <option value="6-month">6 Month Installments</option>
+                                    <option value="1-year">1 Year Installments</option>
+                                  </select>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col s12 m4 offset-m4">
                         <button id="login" class="product-btn waves-effect waves-light">Apply Now</button>
                     </div>
-                </form>
+                  </div>
+                </form>             
             </div>
         </div>
     </div>
@@ -96,22 +96,21 @@
     <div class="login-popup">
         <!-- start of the form -->
         <form action="">
-            <!-- <i class="fa fa-times-circle close-icon" aria-hidden="true"></i> -->
             <div class="order-confirmation">
                 <div class="cancel-btn"></div>
                 <div class="title">
                 <p class="title-text">Purchase confirmation</p>
                 <div class="divider"></div>
-                <img class="close-icon" src="img/x-mark-transparent-24.png" alt="close">
-                <p class="confirm-text">Your Laptop will be delivered to you</p>
-                <img class="confirm" src="img/payment confirm.png" alt="confirm">
+                <img class="close-icon" src="../img/x-mark-transparent-24.png" alt="close">
+                <p class="confirm-text">Your Mi-fi will be delivered to you</p>
+                <img class="confirm" src="../img/payment confirm.png" alt="confirm">
                 </div>
                 <div class="product-info">
                 <p class="amount-label">Amount paid</p>
-                <p class="amount">NGN 300,000.00</p>
-                <p class="amount-in-word">Three Hundred and Fifteen Thousand Naira Only</p>
+                <p class="amount">NGN 20,000.00</p>
+                <p class="amount-in-word">Twenty Thousand Naira Only</p>
                 <p class="product-paid-for">Product paid for:</p>
-                <p class="laptop">Laptop</p>
+                <p class="laptop">Mi-fi</p>
                 </div>
                 <div class="payment">
                 <div class="payment-due-date">Payment due date:</div>
@@ -123,8 +122,8 @@
     </div>
     <!-- End of Checkout popup -->
 
-   <script src="js/header.js"></script>
-   <script src="js/checkout-pop-up.js"></script>
+   <script src="../js/header.js"></script>
+   <script src="../js/checkout-pop-up.js"></script>
    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js'></script>
 
@@ -160,7 +159,6 @@
     })();
   });
     </script>
-
     <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

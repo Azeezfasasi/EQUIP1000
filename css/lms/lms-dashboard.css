@@ -42,6 +42,7 @@ body {
     height: 24px;
     position: relative;
     overflow: visible;
+    color: black;
   }
 
   .header .line {
@@ -137,6 +138,8 @@ body {
     height: 24px;
     position: relative;
     overflow: visible;
+    color: black;
+    text-decoration: none;
   }
 
   .dropdown {
@@ -144,6 +147,11 @@ body {
     z-index: 1000;
     margin-left: 20px;
 
+  }
+
+  .dropdown a {
+    color: black;
+    text-decoration: none;
   }
 
   .dropdown button {
@@ -171,7 +179,6 @@ body {
     text-decoration: none;
     display: block;
     z-index: 1000;
-
   }
 
   .dropdown-content a:hover {
@@ -234,6 +241,10 @@ body {
     left: 10px;
   }
 
+  .sidebar-active .community p {
+    color: #3d6b7b;
+  }
+
   /* Style for main contents */
   .content,
 .content * {
@@ -246,7 +257,8 @@ body {
   left: 265px;
   overflow-y: initial;
   overflow-x: hidden;
-  height: 100%;
+  /* height: 100%; */
+  height: 900px;
   width: 54%;
 }
 
@@ -904,6 +916,12 @@ font-size: 25px;
     right: 0px;
   }
 
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 60px;
+  }
+
   .header .line {
     display: none;
   }
@@ -960,15 +978,16 @@ font-size: 25px;
 .sidebar-active {
   left: -256px;
   z-index: 2;
-  height: 750px;
-  /* height: 100%; */
+  height: 400px;
   width: 60%;
-  overflow: hidden;
-  padding-top: 70px;
-  /* position: ; */
+  overflow-y: hidden;
+  padding-top: 70px; 
+  transition: left 0.3s ease;
 }
 
 .sidebar-active.active {
+  position: fixed;
+  top: 0;
   left: 0;
 }
 
@@ -984,6 +1003,7 @@ font-size: 25px;
 
 .sidebar-active .side-link {
   margin-left: -10px;
+  height: 44px;
 }
 
 .side-link img {
@@ -999,6 +1019,13 @@ font-size: 25px;
   line-height: 140%;
   font-weight: 500;
   position: relative;
+}
+
+.sidebar-active .logout {
+  /* margin-left: 0px; */
+  bottom: 10px;
+  left: 0;
+  height: 44px;
 }
 
 /* Mobile style for main content */

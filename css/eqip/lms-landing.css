@@ -926,9 +926,7 @@
   .small-screen-navbar {
     background-color: #000000;
     padding: 30px 15px;
-    /* border-bottom: 1px solid rgb(82, 80, 80); */
     box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 0.1);
-    
   }
 
   .small-screen-navbar .logo {
@@ -964,7 +962,6 @@
       font-size: 22px;
       margin: 10px 0 10px 20px;
       z-index: 1;
-
   }
 
   .nav-list a {

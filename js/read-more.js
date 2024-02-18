@@ -1,12 +1,12 @@
 function toggleReadMore() {
-    var moreText = document.getElementById("moreText");
-    var buttonText = document.querySelector("button");
-  
-    if (moreText.style.display === "none" || moreText.style.display === "") {
-      moreText.style.display = "block";
-      buttonText.innerHTML = "Read Less";
-    } else {
-      moreText.style.display = "none";
-      buttonText.innerHTML = "Read More";
-    }
+  var moreText = document.getElementById("moreText");
+  var btnText = document.querySelector(".read-togle");
+
+  if (moreText.classList.contains("hidden")) {
+      moreText.classList.remove("hidden");
+      btnText.style.display = "none";
+  } else {
+      moreText.classList.add("hidden");
   }
+}
+
