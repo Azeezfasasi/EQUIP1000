@@ -978,7 +978,8 @@ font-size: 25px;
 .sidebar-active {
   left: -256px;
   z-index: 2;
-  height: 700px;
+  /* height: 700px; */
+  height: 100%;
   width: 60%;
   overflow-y: hidden;
   padding-top: 70px; 
