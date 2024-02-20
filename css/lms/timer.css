@@ -85,6 +85,10 @@
     cursor: pointer;
 }
 
+#submit-btn:hover {
+    background-color: #3d6b7b;
+}
+
 #score {
     margin-top: 20px;
     font-weight: bold;
@@ -316,6 +320,10 @@
     position: relative;
 }
 
+.cert-link {
+    background-color: #3d6b7b;
+}
+
  /* Style for overlay background */
  .overlay {
     display: none;
@@ -353,6 +361,10 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+}
+
+.close-btn:hover {
+    background-color: #3d6b7b;
 }
 
 .modal .para1 {

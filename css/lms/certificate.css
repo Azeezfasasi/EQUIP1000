@@ -106,6 +106,10 @@
     margin-top: 5px;
   }
 
+  .box a:hover {
+    background-color: #3d6b7b;
+  }
+
   .preview-pane {
     background: #f6fafe;
     border-radius: 16px;
@@ -168,6 +172,10 @@
     position: relative;
     text-decoration: none;
     margin-top: 5px;
+  }
+
+  .preview-pane a:hover {
+    background-color: #3d6b7b;
   }
 
   @media (max-width: 768px) {

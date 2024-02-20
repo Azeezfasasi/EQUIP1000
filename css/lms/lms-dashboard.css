@@ -235,6 +235,11 @@ body {
     position: relative;
   }
 
+  .side-link p:hover {
+    /* font-size: 22px; */
+    font-weight: 800;
+  }
+
   .sidebar-active .logout {
     position: absolute;
     bottom: 10px;
@@ -325,6 +330,10 @@ body {
   overflow: hidden;
 }
 
+.in-progress-classes .progress-box:hover {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
 .progress-box .box {
   padding: 8px 16px 8px 16px;
   display: flex;
@@ -358,9 +367,11 @@ body {
   border-width: 2px;
   padding: 8px 16px 8px 16px;
   position: relative;
-  height: 363px;
-  /* width: 73%; */
-  width: 68%;
+  /* height: 363px; */
+  height: fit-content;
+  width: 100%;
+  /* width: 68%; */
+  margin-top: 20px;
 }
 
 .announcement-section .announcement-header {
@@ -384,9 +395,9 @@ body {
 .announcements-container {
   background: #ffffff;
   border-radius: 16px;
-  border-style: solid;
+  /* border-style: solid;
   border-color: #f6fafe;
-  border-width: 1px;
+  border-width: 1px; */
   padding: 16px 8px 16px 8px;
   display: flex;
   flex-direction: column;
@@ -399,7 +410,7 @@ body {
   position: relative;
   overflow-y: scroll;
   overflow-x: hidden;
-  border: 1px solid black;
+  border: 1px solid #f6fafe;
   /* width: 760px; */
   width: 668px;
   margin-left: -15px;
@@ -407,7 +418,6 @@ body {
 
 .announcements-group {
   flex-shrink: 0;
-  /* width: 731px; */
   width: 100%;
   height: 262px;
   position: initial;
@@ -441,6 +451,11 @@ body {
   padding: 7px;
   position: relative;
   width: 100%;
+  cursor: pointer;
+}
+
+.announcements-group .text:hover {
+  border: 1px solid black;
 }
 
 .announcement-btn-wrapper {
@@ -457,6 +472,11 @@ body {
   height: 42px;
   position: relative;
   margin: 10px 0 0 -10px;
+  cursor: pointer;
+}
+
+.announcement-btn-wrapper:hover {
+  background-color: #3d6b7b;
 }
 
 .announcement-btn-wrapper a {
@@ -535,8 +555,13 @@ body {
   width: 155px;
   height: 200px;
   position: relative;
-  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.1),
+    4px 4px 4px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+}
+
+.completed-courses-container .box:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .box p {
@@ -563,6 +588,11 @@ body {
   width: 190px;
   height: 42px;
   position: relative;
+  cursor: pointer;
+}
+
+.completed-courses .courses-btn-wrapper:hover {
+  background-color: #3d6b7b;
 }
 
 .courses-btn-wrapper a {
@@ -680,6 +710,11 @@ body {
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
+  cursor: pointer;
+}
+
+.notes-group input[type=text]:hover {
+  border: 1px solid black;
 }
 
 input::placeholder {
@@ -704,6 +739,11 @@ input::placeholder {
   width: 190px;
   height: 42px;
   position: relative;
+  cursor: pointer;
+}
+
+.notes-btn-wrapper:hover {
+  background-color: #3d6b7b;
 }
 
 .notes-btn-wrapper a {
@@ -745,6 +785,10 @@ input::placeholder {
   position: sticky;
 }
 
+.right-content .translate-button:hover {
+  background-color: #3d6b7b;
+}
+
 .translate-button a {
   color:#ffffff;
   text-align: left;
@@ -772,7 +816,7 @@ input::placeholder {
 .calendar-widget {
   background-color: #000000;
   color: #ffffff;
-  padding: 30px 0px;
+  padding: 30px 4px;
   border-radius: 16px;
   height: 300px;
   position: relative;
@@ -791,28 +835,25 @@ padding: 30px;
 margin-left: 0px;
 }
 
-th, td {
-padding: 10px;
-text-align: center;
-color: #ffffff;
-text-align: center;
-font-family: "Roboto-Regular", sans-serif;
-font-size: 16px;
-line-height: 140%;
-font-weight: 400;
-width: 100%;
-
+tr td {
+  padding: 10px 5px;
+  text-align: center;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 400;
+  width: 100%;
 }
 
 th {
-color: #ced4da;
-text-align: center;
-font-family: "Roboto-Regular", sans-serif;
-font-size: 13px;
-line-height: 140%;
-font-weight: 400;
-width: 100%;
-
+  padding: 10px;
+  color: #ced4da;
+  text-align: center;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 13px;
+  line-height: 140%;
+  font-weight: 400;
+  width: 100%;
 }
 
 td:hover {
@@ -869,7 +910,7 @@ font-size: 25px;
 
 .previous-month-day, .next-month-day {
       color: #8e8e8e; /* Color for previous and next month's days */
-    }
+}
 
 #mobile-menu-toggle {
   display: none;
@@ -935,9 +976,6 @@ font-size: 25px;
     height: 30px;
     margin-left: 170px;
     margin-top: 20px;
-    /* position: absolute;
-    top: 20px;
-    right: 0; */
   }
 
   .top-right .name {
@@ -1003,7 +1041,6 @@ font-size: 25px;
 
 .sidebar-active .side-link {
   margin-left: -10px;
-  /* height: 44px; */
 }
 
 .side-link img {
@@ -1019,6 +1056,10 @@ font-size: 25px;
   line-height: 140%;
   font-weight: 500;
   position: relative;
+}
+
+.side-link p:hover {
+  font-size: 17px;
 }
 
 .sidebar-active .logout {
@@ -1078,7 +1119,7 @@ font-size: 25px;
 /* Mobile style for Anouncement section */
 .announcement-section {
   display: block;
-  width: 100%;
+  width: 95%;
   margin: auto;
 }
 

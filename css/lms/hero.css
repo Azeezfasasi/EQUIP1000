@@ -113,6 +113,11 @@
     text-decoration: none;
 }
 
+.cta .sign-up:hover {
+    border: 1px solid white;
+    color: black;
+}
+
 .cta .login {
     background: #000000;
     border-radius: 8px;
@@ -133,6 +138,11 @@
     font-weight: 400;
     position: relative;
     text-decoration: none;
+}
+
+.cta .login:hover {
+    background-color: #ffffff;
+    color: black;
 }
 
 .hero-image {
@@ -190,14 +200,10 @@
     }
 
     .hero-writeup-container .cta {
-        /* display: block;
-        width: 90%;
-        position: relative; */
         margin-left: 10px;
     }
 
     .cta .sign-up {
-        /* display: block; */
         margin-bottom: 15px;
         width: 30%;
         height: 25px;
