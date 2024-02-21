@@ -178,6 +178,9 @@ body {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-family: "Roboto-Regular", sans-serif;
+    line-height: 140%;
+    font-weight: 400;
     z-index: 1000;
   }
 
@@ -376,7 +379,7 @@ body {
 
 .announcement-section .announcement-header {
   display: block;
-  margin: 0 0 0 0;
+  margin: 0 0 -20px 0;
   width: 204px;
   height: 65.85px;
   position: relative;

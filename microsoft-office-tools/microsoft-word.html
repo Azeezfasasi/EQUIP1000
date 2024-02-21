@@ -35,7 +35,7 @@
                   <a href="../settings/settings.html"><i class="fa-solid fa-circle-user"></i> Profile</a>
                   <a href="../settings/settings.html"><i class="fa-solid fa-lock"></i> Security</a>
                   <a href="#"><i class="fa-solid fa-list-check"></i> Preferences</a>
-                  <a href="../lms.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+                  <a href="../lms.html" onclick="confirmLogout()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
                 </div>
               </div>              
             </div>
@@ -79,7 +79,7 @@
           <img src="../img/Settings Icon.png" alt="Settings Icon">
           <p>Settings</p>
         </a>
-        <a class="side-link logout" href="lms.html">
+        <a class="side-link logout" href="../lms.html" onclick="confirmLogout()">
           <img src="../img/Logout Icon.png" alt="Logout Icon">
           <p>Logout</p>
         </a>
@@ -147,6 +147,7 @@
     <script src="../js/header.js"></script>
     <script src="../js/lms-mobile-menu.js"></script>
     <script src="../js/calendar-widget.js"></script>
+    <script src="../js/logout.js"></script>
     <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
