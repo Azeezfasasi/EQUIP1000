@@ -113,9 +113,32 @@
             <br><br>
           <a href="">Save Video</a>
         </div>
+        <!-- section for course document slider -->
         <div class="course-document">
-            
+          <div class="slider">
+            <div class="page">
+              <img src="../img/ms-current-page.png" alt="Current page">
+              <div class="page-tracker">
+                <p>1/80</p>
+              </div>
+            </div>
+            <div class="page">
+              <img src="../img/ms-current-page.png" alt="Current page">
+              <div class="page-tracker">
+                <p>2/80</p>
+              </div>
+            </div>
+            <div class="page">
+              <img src="../img/ms-current-page.png" alt="Current page">
+              <div class="page-tracker">
+                <p>3/80</p>
+              </div>
+            </div>
+          </div>
+          <button class="prev-btn" onclick="slidePrevious()"><i class="fa-solid fa-caret-left"></i></button>
+          <button class="next-btn" onclick="slideNext()"><i class="fa-solid fa-caret-right"></i></button>
         </div>
+        <a class="save-pdf" href="">Save PDF</a>
         <a class="quiz-link" href="../assessment/assessment-instructions.html">Take Quiz</a>
         <br>
       </div>
@@ -168,6 +191,7 @@
     <script src="../js/lms-mobile-menu.js"></script>
     <script src="../js/calendar-widget.js"></script>
     <script src="../js/logout.js"></script>
+    <script src="../js/course-slider.js"></script>
     <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

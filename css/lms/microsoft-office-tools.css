@@ -360,6 +360,98 @@ body {
     overflow: hidden;
     margin-top: 30px;
     margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .course-document .page img {
+    position: relative;
+    overflow: hidden;
+    object-fit: contain;
+    width: 100%;
+    height: 170px;
+  }
+
+  .page .page-tracker {
+    background: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-width: 1px;
+    width: 72px;
+    height: 47px;
+    position: relative;
+    overflow: hidden;
+    padding: 0px 16px 10px 16px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .page-tracker p {
+    color: #495057;
+    text-align: center;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 19px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+  }
+
+  .save-pdf {
+    background: #275c6f;
+    border-radius: 8px;
+    padding: 10px 16px 10px 16px;
+    display: block;
+    margin: 0 auto;
+    width: 92%;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 23px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .slider {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .page {
+    width: 100%;
+    box-sizing: border-box;
+    flex: 0 0 100%;
+  }
+
+  .prev-btn {
+    background: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-width: 1px;
+    width: 40px;
+    height: 48px;
+    position: absolute;
+    top: 40%;
+    left: 5px;
+    cursor: pointer;
+  }
+
+  .next-btn {
+    background: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-width: 1px;
+    width: 40px;
+    height: 48px;
+    position: absolute;
+    top: 40%;
+    right: 5px;
+    cursor: pointer;
   }
 
   .quiz-link {
@@ -426,7 +518,6 @@ body {
     margin-left: 70px;
     color: green;
   }
-
 
   @media (max-width: 768px) {
     /* mobile style for middle contents */
@@ -601,11 +692,35 @@ body {
         margin: 30px auto 0 auto;
       }
 
+      .course-document .page img {
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        object-fit: contain;
+        display: block;
+        margin: 20px auto 0 auto;
+        width: 100%;
+      }
+
+      .page .page-tracker {
+        height: 40px;
+        padding: 0px 8px 14px 8px;
+      }
+
+      .page-tracker p {
+        font-size: 17px;
+      }
+
+      .save-pdf {
+        width: 75%;
+      }
+    
+
     /* mobile style for right side contents */
     .right-content {
         display: block;
         width: 90%;
-        margin: 630px auto 20px auto;
+        margin: 680px auto 20px auto;
         position: initial;
     }
     .right-content .calendar-widget {
@@ -623,7 +738,7 @@ body {
     .right-content .course-list {
         display: block;
         width: 90%;
-        margin: 0 auto;
+        margin: 40px auto 0 auto;
         position: initial;
     }
   }
