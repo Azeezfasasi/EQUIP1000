@@ -341,7 +341,8 @@
     .popup {
       position: absolute;
       top: 170px;
-      width: 240px;
+      /* width: 240px; */
+      width: 250px;
     }
 
     #popup-login {
