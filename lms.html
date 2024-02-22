@@ -44,7 +44,7 @@
                 
                 
                 <!-- START OF POP UP FOR LOGIN SECTION -->
-                <div class="popup" id="popup-login">
+                <!-- <div class="popup" id="popup-login">
                   <div class="close-btn" onclick="closePopupAndOverlay()"><b>X</b></div>
                   <div class="form-element">
                     <h2>Login</h2>
@@ -72,11 +72,11 @@
                         </div>
                       </form>
                     </div>
-                  </div>    
+                  </div>     -->
             <!-- end of login pop up -->
 
             <!-- START OF POP UP FOR REGISTRATION SECTION -->
-            <div class="popup" id="popup-signup">
+            <!-- <div class="popup" id="popup-signup">
               <div class="close-btn" onclick="closePopupAndOverlay()"><b>X</b></div>
               <div class="form-element">
                 <h2>Registration</h2>
@@ -101,11 +101,69 @@
                     </div>
                   </form>
                 </div>
-              </div>
+              </div> -->
             <!-- end of sigup pop up -->
         </div>
             <img class="hero-image" src="img/Hero Image.jpg" />
       </div>  
+
+
+      <div class="popup" id="popup-login">
+        <div class="close-btn" onclick="closePopupAndOverlay()"><b>X</b></div>
+        <div class="form-element">
+          <h2>Login</h2>
+            <form action="lms-dashboard.html">
+              <div class="email">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" id="loginEmail" name="loginEmail" placeholder="Email" required>
+              </div>
+              <div class="password">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="loginPassword" name="loginPassword" placeholder="Password" required>
+              </div>
+              <div class="check-container">
+                <input type="checkbox">
+                <div class="remember-me">Remember me</div>
+              </div>
+              <div class="forget-container">
+                <a class="forgot-password" href="">Forgot Password</a>
+              </div>
+              <button class="submit-container" onclick="saveLoginInfo()">
+                <p class="login">Login</p>
+              </button>
+              <div class="bottom-account">
+                <p>Don’t have an account yet? <a class="sign-up" href="javascript:void(0)" onclick="togglePopup('signup')"> Sign Up</a></p>
+              </div>
+            </form>
+          </div>
+        </div> 
+
+      <div class="popup" id="popup-signup">
+        <div class="close-btn" onclick="closePopupAndOverlay()"><b>X</b></div>
+        <div class="form-element">
+          <h2>Registration</h2>
+            <form action="lms-dashboard.html">
+              <div class="name">
+                <i class="fa-regular fa-user"></i>
+                <input type="text" id="regFirstName" name="regFirstName" placeholder="Name" required>
+              </div>
+              <div class="email">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" id="regEmail" name="regEmail" placeholder="Email" required>
+              </div>
+              <div class="password">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="regPassword" name="regPassword" placeholder="Password" required>
+              </div>
+              <button class="submit-container" onclick="validateRegistration()">
+                <p class="login">Sign Up</p>
+              </button>
+              <div class="bottom-account">
+                <p>Don’t have an account yet? <a class="sign-up" href="javascript:void(0)" onclick="togglePopup('login')"> Login</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
         <!-- end of hero section -->
 
     <!-- Start of About Section -->
