@@ -25,16 +25,22 @@
       display: flex;
       margin: 0;
       padding: 0;
+      margin-left: 150px;
   }
   
   .nav-list li {
-      margin-right: 20px;
+      width: 127px;
+    
   }
   
   .nav-list a {
       text-decoration: none;
       color: white;
       font-size: 19px;
+  }
+
+  .nav-list .active {
+    color: #ffa76d;
   }
   
   .menu-toggle {
@@ -234,8 +240,8 @@
   }
 
 .hero-image {
-    width: 67.2%;
-    height: 500px;
+    /* width: 67.2%;
+    height: 500px; */
     position: relative;
     object-fit: cover;
     margin-left: -220px;
@@ -243,8 +249,8 @@
 }
 
 .hero-image img {
-    flex-shrink: 0;
-    width: 600px;
+    /* flex-shrink: 0; */
+    /* width: 600px; */
     height: 500px;
     position: relative;
     object-fit: cover;
@@ -778,6 +784,7 @@
     padding: 20px 0 10px 20px;
     display: flex;
     justify-content: space-between;
+    border-radius: 8px;
   }
 
   .accordion-header .arrow {
