@@ -151,7 +151,9 @@
     justify-content: flex-start;
     flex-shrink: 0;
     position: relative;
-    padding-top: 100px;
+    /* padding-top: 100px; */
+    padding-top: 82px;
+    padding-bottom: 72px;
 }
 
 .hero-container .hero {
@@ -182,7 +184,6 @@
     font-size: 48px;
     line-height: 140%;
     font-weight: 700;
-    margin-bottom: 16px;
   }
 
 .hero-writeup-container span {
@@ -241,8 +242,8 @@
   }
 
 .hero-image {
-    /* width: 67.2%;
-    height: 500px; */
+    /* width: 67.2%; */
+    height: 500px;
     position: relative;
     object-fit: cover;
     margin-left: -220px;
@@ -764,7 +765,7 @@
     border-radius: 8px;
     border-style: solid;
     border-color: #ced4da;
-    border-width: 1px;
+    border-width: px;
     position: relative;
     gap: 16px;
     text-align: left;
@@ -792,6 +793,11 @@
     position: absolute;
     top: 20px;
     right: 30px;
+  }
+
+  .active .arrow {
+    font-family: "Roboto-Regular", sans-serif;
+    transform: rotate(180deg);
   }
   
   .accordion-content {
