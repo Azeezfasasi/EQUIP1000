@@ -320,7 +320,7 @@ body {
     line-height: 24px;
     font-weight: 400;
     position: relative;
-    margin-top: -20px;
+    margin-top: -40px;
 }
 
 .right-side .reg-form-container {
@@ -332,6 +332,7 @@ body {
     justify-content: flex-start;
     position: relative;
     margin-left: 20px;
+    margin-top: 10px;
 }
 
 .reg-form-container form {
@@ -357,6 +358,7 @@ body {
     line-height: 24px;
     font-weight: 500;
     position: relative;
+    margin-bottom: -20px;
 }
 
 .col-1 input[type=text], input[type=email] {
@@ -364,7 +366,7 @@ body {
     border-style: solid;
     border-color: #cfcfcf;
     border-width: 1px;
-    padding: 8px;
+    /* padding: 8px; */
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -374,6 +376,7 @@ body {
     flex-shrink: 0;
     width: 90%;
     height: 48px;
+    font-size: 16px;
     position: relative;
 }
 
@@ -382,14 +385,14 @@ body {
     border-style: solid;
     border-color: #cfcfcf;
     border-width: 1px;
-    padding: 8px;
+    /* padding: 8px; */
     display: flex;
     flex-direction: row;
     gap: 8px;
     align-items: center;
     justify-content: flex-start;
     flex-shrink: 0;
-    width: 226px;
+    width: 90%;
     height: 48px;
     position: relative;
 }
@@ -423,7 +426,7 @@ body {
     border-style: solid;
     border-color: #cfcfcf;
     border-width: 1px;
-    padding: 8px;
+    /* padding: 8px; */
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -441,7 +444,7 @@ body {
     border-style: solid;
     border-color: #cfcfcf;
     border-width: 1px;
-    padding: 8px;
+    /* padding: 8px; */
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -451,6 +454,7 @@ body {
     width: 226px;
     height: 48px;
     position: relative;
+    margin-bottom: 4px;
 }
 
 .col-2 label {
@@ -461,6 +465,7 @@ body {
     line-height: 24px;
     font-weight: 500;
     position: relative;
+    margin-bottom: -20px;
 }
 
 form .next-btn button {
@@ -479,6 +484,9 @@ form .next-btn button {
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 
@@ -499,6 +507,8 @@ form .finish-next-btn button {
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
+    border: none;
+    outline: none;
 }
 
 /* Style for verifying */
@@ -519,6 +529,18 @@ form .verify-top {
     justify-content: flex-start;
     flex-shrink: 0;
     position: relative;
+}
+
+form .password-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.password-container span {
+    position: absolute;
+    top: 15px;
+    right: 20px;
 }
 
 .verify-top .title {
@@ -574,6 +596,8 @@ form .verify-top {
     line-height: 24px;
     font-weight: 500;
     margin-top: 20px;
+    border: none;
+    outline: none;
 }
 
 .confirm-success {
@@ -635,6 +659,8 @@ form .confirm-box {
     line-height: 24px;
     font-weight: 700;
     position: relative;
+    border: none;
+    outline: none;
  }
 
  /* style for small screen devices */

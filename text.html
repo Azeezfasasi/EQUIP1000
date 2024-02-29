@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="reg-form-container">
+        <form action="verify.html">
+            <div class="col-1">
+                <label for="pwd">Password</label>
+                <div class="password-container">
+                    <input type="password" id="pwd" name="c-pwd" placeholder="********" style="width: 85%;" required>
+                    <span class="password-toggle" onclick="togglePasswordVisibility('pwd')">👁️</span>
+                </div>
+    
+                <label for="c-pwd">Confirm Password</label>
+                <div class="password-container">
+                    <input type="password" id="c-pwd" name="c-pwd" placeholder="********" style="width: 85%;" required>
+                    <span class="password-toggle" onclick="togglePasswordVisibility('c-pwd')">👁️</span>
+                </div>
+            </div>
+            <div class="finish-next-btn">
+                <button>Next</button>
+            </div>
+        </form>
+    </div>
+    
+    <script>
+        function togglePasswordVisibility(inputId) {
+            var inputField = document.getElementById(inputId);
+            var icon = document.querySelector(`[onclick="togglePasswordVisibility('${inputId}')"]`);
+    
+            if (inputField.type === "password") {
+                inputField.type = "text";
+                icon.textContent = "👁️";
+            } else {
+                inputField.type = "password";
+                icon.textContent = "👁️";
+            }
+        }
+    </script>
+    
+</body>
+</html>
