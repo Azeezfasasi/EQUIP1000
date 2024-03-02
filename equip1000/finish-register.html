@@ -55,17 +55,18 @@
                 <p class="sub-title">Finish your account setup by setting your password</p>
             </div>
             <div class="reg-form-container">
-                <form action="verify.html">
+                <form onsubmit="return validatePassword()" action="verify.html">
+                    <p id="passwordCheck"></p>
                     <div class="col-1">
                         <label for="pwd">Password</label>
                         <div class="password-container">
                             <input type="password" id="pwd" name="c-pwd" style="width: 100%;" required>
-                            <span onclick="togglePasswordVisibility('pwd')"><i class="fas fa-eye"></i></span>
+                            <span class="password-toggle" onclick="togglePasswordVisibility('pwd')"><i class="fas fa-eye"></i></span>
                         </div>
                         
                         <label for="c-pwd">Confirm Password</label>
                         <div class="password-container">
-                            <input type="password" id="c-pwd" name="c-pwd" placeholder="********" style="width: 100%;" required>
+                            <input type="password" id="c-pwd" name="c-pwd" style="width: 100%;" required>
                             <span class="password-toggle" onclick="togglePasswordVisibility('c-pwd')"><i class="fas fa-eye"></i></span>
                         </div>
                         
@@ -90,6 +91,8 @@
 
 
     <script src="../js/header.js"></script>
+    <script src="../js/passwordvisibility.js"></script>
+    <script src="../js/password-check.js"></script>
     <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -103,33 +106,5 @@
     })();
   </script>
   <!--End of Tawk.to Script-->
-
-  <script>
-    // function togglePasswordVisibility(inputId) {
-    //     var inputField = document.getElementById(inputId);
-    //     var icon = document.querySelector(`[onclick="togglePasswordVisibility('${inputId}')"]`);
-
-    //     if (inputField.type === "password") {
-    //         inputField.type = "text";
-    //         icon.textContent = '<i class="fas fa-eye-slash"></i>';
-    //     } else {
-    //         inputField.type = "password";
-    //         icon.textContent = '<i class="fas fa-eye"></i>';
-    //     }
-    // }
-
-    function togglePasswordVisibility(inputId) {
-        var inputField = document.getElementById(inputId);
-        var icon = document.querySelector(`[onclick="togglePasswordVisibility('${inputId}')"]`);
-
-        if (inputField.type === "password") {
-            inputField.type = "text";
-            icon.innerHTML = '<i class="fas fa-eye-slash"></i>';
-        } else {
-            inputField.type = "password";
-            icon.innerHTML = '<i class="fas fa-eye"></i>';
-        }
-    }
-</script>
 </body>
 </html>

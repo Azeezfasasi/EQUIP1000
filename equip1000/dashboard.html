@@ -36,7 +36,16 @@
                 </div>
                 <div class="name">
                     <a href="dashboard.html"><p>PRINCE AKACHI</p></a>
-                </div>       
+                </div>
+                <div class="dropdown" onclick="toggleDropdown()">
+                    <a href="javascript:void(0)"><i class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-content" id="myDropdown">
+                      <a href="#"><i class="fa-solid fa-circle-user"></i> Profile</a>
+                      <a href="#"><i class="fa-solid fa-lock"></i> Security</a>
+                      <a href="#"><i class="fa-solid fa-list-check"></i> Preferences</a>
+                      <a href="../index.html" onclick="confirmLogout()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+                    </div>
+                </div>            
             </div>
         </div>
     </div>
@@ -59,7 +68,7 @@
         <!-- Right side -->
         <div class="dash-right-side">
             <div class="dashborad-title">
-                <a class="title-text" href="welcome.html">Purchase a Device <i class="fa-solid fa-arrow-right purchase"></i></a>
+                <a class="title-text" href="welcome.html">Purchase a Device &#x2B62;</a>
             </div>
             <div class="dashboard-info">
                 <div class="dashboard-products">
@@ -70,6 +79,13 @@
                             <div class="item-description">
                                 <p class="model">Dell XPS Laptop</p>
                                 <p class="amount">N300,000</p>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <img src="../img/hp-pavilion-laptop.png" alt="">
+                            <div class="item-description">
+                                <p class="model">HP Pavilion Laptop</p>
+                                <p class="amount">N500,000</p>
                             </div>
                         </div>
                         <div class="items">
@@ -106,7 +122,7 @@
                             <div class="accordion-header dash-header" onclick="toggleAccordion(this)">
                                 <div class="green-color-box"></div>
                                 <p>Dell XPS Laptop</p>
-                                <span class="arrow">&#9654;</span>
+                                <span class="arrow"><i class="fa fa-chevron-down"></i></span>
                             </div>
                             <div class="accordion-content dash-content">
                                 <div class="payment-content">
@@ -131,7 +147,7 @@
                             <div class="accordion-header dash-header" onclick="toggleAccordion(this)">
                                 <div class="green-color-box"></div>
                                 <p>MTN Mi-Fi</p>
-                                <span class="arrow">&#9654;</span>
+                                <span class="arrow"><i class="fa fa-chevron-down"></i></span>
                             </div>
                             <div class="accordion-content dash-content">
                                 <div class="payment-content">
@@ -156,7 +172,7 @@
                             <div class="accordion-header dash-header" onclick="toggleAccordion(this)">
                                 <div class="orange-color-box"></div>
                                 <p>Dell XPS Laptop</p>
-                                <span class="arrow">&#9654;</span>
+                                <span class="arrow"><i class="fa fa-chevron-down"></i></span>
                             </div>
                             <div class="accordion-content dash-content">
                                 <div class="payment-content">
@@ -197,6 +213,7 @@
 
     <script src="../js/header.js"></script>
     <script src="../js/accordion.js"></script>
+    <script src="../js/menu-drop-down.js"></script>
     <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

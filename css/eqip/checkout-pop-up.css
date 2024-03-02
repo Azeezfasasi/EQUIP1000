@@ -39,16 +39,6 @@
     text-align: center;
   }
 
-  /* .order-confirmation .close {
-    border-radius: 4px;
-    flex-shrink: 0;
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  } */
-
   .order-confirmation .confirm-text {
     display: block;
     margin: 30px auto 0 auto;
@@ -99,7 +89,7 @@
     line-height: 36px;
     font-weight: 600;
     position: relative;
-    margin-top: -20px;
+    margin-top: -30px;
   }
 
   .product-info .amount-in-word {
@@ -119,7 +109,7 @@
     line-height: 16px;
     font-weight: 500;
     position: relative;
-    margin-top: -20px;
+    margin-top: -40px;
   }
 
   .product-info .product-paid-for {
@@ -152,7 +142,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     position: relative;
-    margin-top: 0px;
+    margin-top: -30px;
     margin-left: 30px;
   }
 

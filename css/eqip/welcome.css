@@ -2,7 +2,7 @@
     margin-bottom: 80px;
 }
 
-.small-screen-navbar .profile {
+/* .small-screen-navbar .profile {
     position: relative;
 }
 
@@ -10,10 +10,8 @@
     width: 30px;
     height: 30px;
     position: absolute;
-    /* top: 2px; */
     right: 120px;
-    /* margin-top: 0px; */
-}
+} */
 
 .welcome-container .top {
     display: flex;
@@ -404,12 +402,12 @@
     align-items: flex-start;
     justify-content: flex-start;
     flex-shrink: 0;
-    /* width: 752px; */
     width: 670px;
     position: relative;
     /* overflow-x: auto; */
     margin-top: -25px;
     margin-bottom: 25px;
+    overflow-x: scroll;
 
 }
 

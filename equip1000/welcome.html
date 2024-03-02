@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/eqip/register.css">
     <link rel="stylesheet" href="../css/eqip/welcome.css">
     <link rel="stylesheet" href="../css/eqip/lms-landing.css">
@@ -35,7 +36,16 @@
                 </div>
                 <div class="name">
                     <a href="dashboard.html"><p>PRINCE AKACHI</p></a>
-                </div>       
+                </div> 
+                <div class="dropdown" onclick="toggleDropdown()">
+                    <a href="javascript:void"><i class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-content" id="myDropdown">
+                      <a href="#"><i class="fa-solid fa-circle-user"></i> Profile</a>
+                      <a href="#"><i class="fa-solid fa-lock"></i> Security</a>
+                      <a href="#"><i class="fa-solid fa-list-check"></i> Preferences</a>
+                      <a href="../index.html" onclick="confirmLogout()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+                    </div>
+                  </div>         
             </div>
         </div>
     </div>
@@ -92,6 +102,7 @@
     </div>
 
     <script src="../js/header.js"></script>
+    <script src="../js/menu-drop-down.js"></script>
     <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
