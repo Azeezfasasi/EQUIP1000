@@ -122,7 +122,6 @@ body {
     position: relative;
     overflow: hidden;
     margin: 140px 0 0 30px;
-    /* box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4); */
     text-align: center;
 }
 
@@ -134,7 +133,6 @@ body {
     position: relative;
     overflow: hidden;
     margin: 120px 0 0 30px;
-    /* box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4); */
     text-align: center;
 }
 
@@ -162,7 +160,6 @@ body {
     line-height: 36px;
     font-weight: 700;
     position: relative;
-    /* margin: 12px 0 0 -8px; */
     display: block;
     margin: 10px auto 0 auto;
 }
@@ -175,7 +172,6 @@ body {
     line-height: 36px;
     font-weight: 700;
     position: relative;
-    /* margin: 12px 0 0 -8px; */
     display: block;
     margin: 10px auto 0 auto;
 }
@@ -214,7 +210,6 @@ body {
     border-radius: 8px;
     padding: 12px;
     width: 132px;
-    /* height: 48px; */
     color: #ffffff;
     text-align: center;
     font-family: "Roboto-Bold", sans-serif;
@@ -224,7 +219,6 @@ body {
     position: relative;
     text-decoration: none;
     margin: 40px auto 0 auto;
-    /* box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4); */
 }
 
 .left-side .refer-btn {
@@ -233,7 +227,6 @@ body {
     border-radius: 8px;
     padding: 12px;
     width: 132px;
-    /* height: 48px; */
     color: #ffffff;
     text-align: center;
     font-family: "Roboto-Bold", sans-serif;
@@ -243,7 +236,6 @@ body {
     position: relative;
     text-decoration: none;
     margin: 40px auto 0 auto;
-    /* box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4); */
 }
 
 .register-container .right-side {
@@ -257,37 +249,7 @@ body {
     position: absolute;
     top: 0;
     right: 0px;
-    /* padding-bottom: 100px; */
 }
-
-/* .register-container .right-side .login {
-    background: #275c6f;
-    border-radius: 8px;
-    padding: 8px;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    width: 111px;
-    height: 48px;
-    position: absolute;
-    top: 20px;
-    right: 50px;
-    z-index: 1;
-    box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4);
-} */
-
-/* .right-side .login a {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Roboto-Bold", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 700;
-    position: relative;
-    text-decoration: none;
-} */
 
 .right-side .form-title {
     padding: 0px 16px 0px 16px;
@@ -366,7 +328,6 @@ body {
     border-style: solid;
     border-color: #cfcfcf;
     border-width: 1px;
-    /* padding: 8px; */
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -379,6 +340,7 @@ body {
     font-size: 16px;
     position: relative;
 }
+
 
 .col-1 select {
     border-radius: 8px;
@@ -689,7 +651,6 @@ form .confirm-box {
         display: block;
         width: 100%;
         margin: 0 auto 0 auto;
-        /* box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4); */
     }
     .register-container .left-side {
         display: none;
@@ -820,6 +781,19 @@ form .confirm-box {
         margin-top: 50px;
     }
 
+    .col-1 input[type=text], input[type=email] {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .col-1 label {
+        margin-bottom: 0px;
+    }
+
+    .col-2 label {
+        margin-bottom: 0px;
+    }
+
     .register-container .right-finish {
         margin-top: 0px;
     }
@@ -904,7 +878,7 @@ form .confirm-box {
     form .next-btn {
         display: block;
         position: inherit;
-        margin-top: 90px;
+        margin-top: 0px;
     }
 
     form .finish-next-btn button {
