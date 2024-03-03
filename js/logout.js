@@ -8,7 +8,7 @@ function confirmLogout() {
         alert("Logout successful!");
         
         // Redirect to the index page
-        window.location.href = "index.html"; // Replace "index.html" with your actual index page
+        window.location.href = "../index.html"; // Replace "index.html" with your actual index page
 
     } else {
         // If the user clicked Cancel, do nothing or handle accordingly

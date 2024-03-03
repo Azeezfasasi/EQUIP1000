@@ -138,7 +138,6 @@
     display: block;
     margin-left: 30px;
     width: 100%;
-    vertical-align: top;
     margin-top: 80px;
 }
 
@@ -268,7 +267,7 @@
 .product-options .income {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0px;
     align-items: flex-start;
     justify-content: flex-start;
     flex-shrink: 0;
@@ -283,6 +282,7 @@
     line-height: 22px;
     font-weight: bold;
     position: relative;
+    margin-bottom: 5px;
 }
 
 .product-details .selection {
@@ -308,21 +308,24 @@
     font-weight: 400;
     padding: 15px;
     width: 400px;
+    height: 48px;
     margin: -20px 0 0 -10px;
-    border: 1px solid black;
-
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
 }
 
+.selection option {
+    font-size: 20px;
+}
 .product-options {
     margin-left: -20px;
 }
 
 .product-options .payment {
     display: block;
-    gap: 8px;
+    gap: 0px;
     position: relative;
-    /* margin-left: -15px; */
-    margin-top: -20px;
+    margin-top: -30px;
 }
 
 .product-details button {
@@ -339,6 +342,7 @@
     text-decoration: none;
     margin-top: 0px;
     border: none;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
