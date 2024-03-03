@@ -138,13 +138,15 @@
     display: block;
     margin-left: 30px;
     width: 100%;
+    vertical-align: top;
+    margin-top: 80px;
 }
 
 .content .product-image {
     background: #000000;
     border-radius: 8px;
-    width: 492px;
-    /* width: 592px; */
+    /* width: 492px; */
+    width: 500px;
     height: 392px;
     position: relative;
     overflow: hidden;
@@ -154,7 +156,6 @@
 
 .product-image img {
     width: 592px;
-    /* width: ; */
     height: 416px;
     position: absolute;
     left: 0px;
@@ -228,11 +229,9 @@
     display: block;
     padding: 8px 16px 8px 16px;
     width: 572px;
-    /* position: relative; */
     position: absolute;
     top: 105px;
-    /* right: 50px; */
-    right: 0px;
+    right: 80px;
 }
 
 .product-details .title {
