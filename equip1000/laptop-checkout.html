@@ -19,10 +19,7 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            <a class="logo" href="../index.html"><img src="../img/logo.png" /></a>
-                <div class="mobile-profile">
-                    <a href="dashboard.html"><img src="../img/image-icon.png" alt="profile"></a>
-                </div>                  
+            <a class="logo" href="../index.html"><img src="../img/logo.png" /></a>                 
             <ul class="nav-list" id="nav-list">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../lms.html">LMS</a></li>
@@ -41,6 +38,7 @@
                 <div class="dropdown" onclick="toggleDropdown()">
                     <a href="javascript:void(0)"><i class="fa-solid fa-caret-down"></i></a>
                     <div class="dropdown-content" id="myDropdown">
+                      <a href="dashboard.html"><i class="fa-solid fa-gauge"></i> Dashboard</a>
                       <a href="settings.html"><i class="fa-solid fa-circle-user"></i> Profile</a>
                       <a href="settings.html"><i class="fa-solid fa-lock"></i> Security</a>
                       <a href="settings.html"><i class="fa-solid fa-list-check"></i> Preferences</a>
@@ -80,22 +78,20 @@
                                 <option value="more">Above than 100,000</option>
                               </select>
                           </div>
-                      <div class="product-options">
-                          <div class="payment">
-                            <p>How do you want to pay?</p>
-                              <div class="selection">
-                                  <select name="paymentOption" id="paymentOption" required>
-                                    <option value="select">Select</option>
-                                    <option value="6-month">6 Month Installments</option>
-                                    <option value="1-year">1 Year Installments</option>
-                                  </select>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col s12 m4 offset-m4">
+                    </div>
+                    <div class="payment">
+                      <p>How do you want to pay?</p>
+                        <div class="selection">
+                            <select name="paymentOption" id="paymentOption" required>
+                              <option value="select">Select</option>
+                              <option value="6-month">6 Month Installments</option>
+                              <option value="1-year">1 Year Installments</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col s12 m4 offset-m4">
                         <button id="login" class="product-btn waves-effect waves-light">Apply Now</button>
                     </div>
-                  </div>
                 </form>             
             </div>
         </div>

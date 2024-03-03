@@ -41,7 +41,6 @@
     flex-shrink: 0;
     width: 180px;
     height: 64px;
-    position: static;
     position: absolute;
     right: 20px;
     top: 16px;
@@ -104,7 +103,8 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    right: -50px;
+    top: 50px;
+    right: -20px;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -354,7 +354,36 @@
         margin-left: -40px;
     }
 
+    /* .small-screen-navbar .top-right {
+        display: none;
+    } */
+
     .small-screen-navbar .top-right {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+    }
+
+    .top-right .profile img {
+        position: absolute;
+        top: 5px;
+        right: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: -10px;
+    }
+
+    .dropdown {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+    }
+
+    .dropdown-content {
+        top: 35px;
+    }
+
+    .top-right .name {
         display: none;
     }
 
@@ -371,13 +400,16 @@
         position: relative;
     }
 
+    .product-left p {
+        margin-left: -20px;
+    }
+
     .content .product-image {
         display: block;
         width: 80%;
         margin: 51px 0 0 -10px;
         height: fit-content;
         position: relative;
-        /* margin-top: 51px; */
         text-align: center;
     }
 
@@ -393,7 +425,14 @@
     .product-left .specification {
         display: block;
         width: 100%;
-        /* padding: 8px 16px 8px 16px; */
+    }
+
+    .specification .title {
+        display: block;
+        width: 100%;
+        position: relative;
+        text-align: justify;
+        margin-left: -35px;
     }
 
     .specification .sub-title {
@@ -402,6 +441,7 @@
         word-wrap: break-word;
         position: relative;
         text-align: justify;
+        margin-left: -35px;
     }
 
     .product-left .price-label {
@@ -421,16 +461,26 @@
         padding: 5px;
     }
 
+    .product-details .title {
+        margin-left: -4px;
+    }
+
     .product-details p {
         display: block;
         width: 100%;
+        margin-left: 0;
     }
 
     .product-details .product-options {
-        display: block;
-        width: 100%;
-        margin: 0 auto;
-        margin-left: -16px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .product-details form {
+        margin-top: -20px;
     }
 
     .product-details .selection {
@@ -439,30 +489,35 @@
         margin: 0 auto;
     }
 
-    .product-options .payment {
+    .product-options .income {
         display: block;
         width: 100%;
         margin: 30px auto 0 auto;
     }
 
+    .product-options .payment {
+        display: block;
+        width: 100%;
+        margin: 15px auto 0 auto;
+    }
+
     .income .selection select {
         display: block;
         border: 1px solid grey;
-        /* position: initial; */
+        position: initial;
         width: 250px;
-        margin-left: -20px;
         margin-top: -20px;
-        padding: 10px;
+        padding: 10px 0;
     }
 
     .payment p {
         margin-top: -30px;
-        margin-left: -10px;
         font-weight: bold;
     }
 
     .income p {
-        margin-left: -10px;
+        margin-left: 0px;
+        margin-bottom: 20px;
     }
 
     .payment select {
@@ -471,12 +526,10 @@
         position: initial;
         width: 250px;
         padding: 10px 0;
-        margin-left: -20px;
-        margin-top: -15px;
+        margin-top: -20px;
     }
 
     .product-details button {
-        margin-top: 10px;
-        margin-left: -10px;
+        margin-top: -20px;
     }
 }
