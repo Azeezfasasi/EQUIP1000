@@ -147,11 +147,9 @@
 
 .hero-image {
     flex-shrink: 0;
-    width: 410px;
-    /* height: 520px; */
+    width: 480px;
     height: 620px;
     position: relative;
-    object-fit: cover;
     position: absolute;
     top: 80px;
     right: 0;
