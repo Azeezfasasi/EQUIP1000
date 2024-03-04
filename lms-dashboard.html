@@ -32,7 +32,7 @@
                   <a href="settings/settings.html"><i class="fa-solid fa-circle-user"></i> Profile</a>
                   <a href="settings/settings.html"><i class="fa-solid fa-lock"></i> Security</a>
                   <a href="#"><i class="fa-solid fa-list-check"></i> Preferences</a>
-                  <a href="lms.html" onclick="confirmLogout()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+                  <a href="#" onclick="confirmLogout()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
                 </div>
               </div>              
             </div>
@@ -68,7 +68,7 @@
           <img src="img/Instructors Icon.png" alt="Instructors Icon">
           <p>Instructors</p>
         </a>
-        <a class="side-link community" href="">
+        <a class="side-link community" href="" style="pointer-events: none;">
           <img src="img/Community Icon.png" alt="Community Icon">
           <p>Community</p>
         </a>
@@ -76,7 +76,7 @@
           <img src="img/Settings Icon.png" alt="Settings Icon">
           <p>Settings</p>
         </a>
-        <a class="side-link logout" href="lms.html" onclick="confirmLogout()">
+        <a class="side-link logout" href="#" onclick="confirmLogout()">
           <img src="img/Logout Icon.png" alt="Logout Icon">
           <p>Logout</p>
         </a>
@@ -91,28 +91,28 @@
       </div>
       <div class="in-progress-classes">
         <div class="progress-box">
-          <div class="box">
+          <a href="courses/microsoft-office-tools.html" class="box">
             <p>Microsoft Suite</p>
             <img src="img/ms suite img.png" alt="ms suite">
-          </div>
+          </a>
         </div>
         <div class="progress-box">
-          <div class="box">
+          <a href="courses/google-suite-tools.html" class="box">
             <p>Google Suite</p>
             <img src="img/Google Suite img.png" alt="G suite">
-          </div>
+          </a>
         </div>
         <div class="progress-box">
-          <div class="box">
+          <a href="courses/canva-for-educators.html" class="box">
             <p>Canva for Educators</p>
             <img src="img/canva img.png" alt="Canva">
-          </div>
+          </a>
         </div>
         <div class="progress-box">
-          <div class="box">
+          <a href="courses/kahoot-for-educators.html" class="box">
             <p>Kahoot for Educators</p>
             <img src="img/Kahoot img.png" alt="ms suite">
-          </div>
+          </a>
         </div>
       </div>
 
@@ -153,30 +153,30 @@
           <p>Completed Courses</p>
         </div>
         <div class="completed-courses-container">
-          <div class="box">
+          <a href="courses/microsoft-innovative-programme.html" class="box">
             <p>Microsoft Innovative Prog...</p>
             <div class="stats">
               <img src="img/full stats.png" alt="100%">
             </div>
-          </div>
-          <div class="box">
+          </a>
+          <a href="courses/social-media-tools.html" class="box">
             <p>Social Media Tools...</p>
             <div class="stats">
               <img src="img/full stats.png" alt="100%">
             </div>
-          </div>
-          <div class="box">
+          </a>
+          <a href="courses/ai-tools.html" class="box">
             <p>AI Tools for Educators</p>
             <div class="stats">
               <img src="img/full stats.png" alt="100%">
             </div>
-          </div>
-          <div class="box">
+          </a>
+          <a href="courses/virtual-learning-platform.html" class="box">
             <p>Virtual Learning tools...</p>
             <div class="stats">
               <img src="img/full stats.png" alt="100%">
             </div>
-          </div>
+          </a>
         </div>
         <div class="courses-btn-wrapper">
           <a href="">View more</a>
@@ -203,7 +203,7 @@
     <!-- End of the middle contetnts -->
 
     <!-- Start of the right content -->
-    <div class="right-content">
+    <div class="right-content r-content">
       <div class="translate-button">
         <a href=""><img src="img/g_translate.png" alt="Translate"> TRANSLATE PAGE</a>
       </div>
@@ -244,7 +244,7 @@
         alert("Logout successful!");
         
         // Redirect to the index page
-        window.location.href = "index.html"; // Replace "index.html" with your actual index page
+        window.location.href = "lms.html"; // Replace "index.html" with your actual index page
 
     } else {
         // If the user clicked Cancel, do nothing or handle accordingly

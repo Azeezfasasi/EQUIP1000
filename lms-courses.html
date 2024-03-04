@@ -34,7 +34,7 @@
                   <a href="settings/settings.html"><i class="fa-solid fa-circle-user"></i> Profile</a>
                   <a href="settings/settings.html"><i class="fa-solid fa-lock"></i> Security</a>
                   <a href="#"><i class="fa-solid fa-list-check"></i> Preferences</a>
-                  <a href="lms.html" onclick="confirmLogout()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+                  <a href="#" onclick="confirmLogout()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
                 </div>
               </div>              
             </div>
@@ -70,7 +70,7 @@
           <img src="img/Instructors Icon.png" alt="Instructors Icon">
           <p>Instructors</p>
         </a>
-        <a class="side-link community" href="">
+        <a class="side-link community" href="" style="pointer-events: none;">
           <img src="img/Community Icon.png" alt="Community Icon">
           <p>Community</p>
         </a>
@@ -78,7 +78,7 @@
           <img src="img/Settings Icon.png" alt="Settings Icon">
           <p>Settings</p>
         </a>
-        <a class="side-link logout" href="lms.html" onclick="confirmLogout()">
+        <a class="side-link logout" href="#" onclick="confirmLogout()">
           <img src="img/Logout Icon.png" alt="Logout Icon">
           <p>Logout</p>
         </a>
@@ -113,13 +113,13 @@
             <div class="categories-sub-text">
                 <p>Browse through our extensive catalog, teeming with courses spanning across various domains and access your gateway to a universe of knowledge and skill development!</p>
               </div>
-            <div class="courses-for-educators-container">
+            <a href="" class="courses-for-educators-container" style="text-decoration: none;">
                 <p class="category-title">Courses for Educators</p>
                 <p class="course-desc">Inspire, engage, and empower your students with our comprehensive library of professional development courses for educators. <br />Browse our curated selection of courses designed to equip you with the latest teaching strategies evidence-based practices, and essential skills to thrive in the classroom.
                 <br />
                 <br />
                 Take a quick look at some of our courses.</p>
-            </div>
+            </a>
             <div class="available-courses">
                 <div class="course-box">
                   <a href="courses-for-educators.html"><img src="img/Microsoft Office Suite Image.png" alt=""></a>
@@ -180,7 +180,7 @@
         alert("Logout successful!");
         
         // Redirect to the index page
-        window.location.href = "index.html"; // Replace "index.html" with your actual index page
+        window.location.href = "lms.html"; // Replace "index.html" with your actual index page
 
     } else {
         // If the user clicked Cancel, do nothing or handle accordingly
