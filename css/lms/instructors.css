@@ -4,7 +4,15 @@
     overflow-x: hidden;
     overflow-y: scroll;
     height: 850px;
+    width: 1085px;
+    scrollbar-width: none;
+    overflow: -moz-scrollbar-none;
 }
+
+.instructors-main::-webkit-scrollbar {
+    display: none;
+}
+
 .staff-header {
     padding: 8px 16px 8px 16px;
     display: block;

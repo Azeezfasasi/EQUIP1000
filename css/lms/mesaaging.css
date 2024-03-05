@@ -1,12 +1,18 @@
 .main-message-content {
   background: #ffffff;
   height: 900px;
-  width: 1000px;
+  width: 1085px;
   overflow-x: hidden;
   overflow-y: initial;
   position: absolute;
   top: 100px;
   left: 260px;
+  scrollbar-width: none;
+  overflow: -moz-scrollbar-none;
+}
+
+.main-message-content::-webkit-scrollbar {
+  display: none;
 }
 
 .message-container  {
