@@ -267,8 +267,7 @@ body {
   overflow-y: initial;
   overflow-x: hidden;
   height: 900px;
-  /* width: 57%; */
-  width: 80%;
+  max-width: 80%;
   scrollbar-width: none;
   overflow: -moz-scrollbars-none; /* For older versions of Firefox */
 }
@@ -332,8 +331,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  /* width: 155px; */
   width: 172px;
+  max-width: 172px;
   max-height: 190px;
   position: relative;
   box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.1),
@@ -1266,19 +1265,26 @@ th, td {
 .right-content {
   display: none;
 }
-
-/* .right-content .translate-button {
-  width: 70%;
-  margin: 0 auto 10px auto;
-  text-align: center;
 }
 
-.translate-button a {
-  text-align: center;
+@media screen and (min-width: 600px) {
+  .in-progress-classes .progress-box {
+    width: 150px;
+    max-width: 172px;
+  }
 }
 
-#month-year {
-  font-size: 20px;
-} */
+@media screen and (min-width: 768px) {
+  .in-progress-classes .progress-box {
+    width: 152px;
+    max-width: 172px;
+  }
+}
 
+/* Specific styles for larger screens */
+@media screen and (min-width: 1024px) {
+  .in-progress-classes .progress-box {
+    width: 172px;
+    max-width: 172px;
+  }
 }
