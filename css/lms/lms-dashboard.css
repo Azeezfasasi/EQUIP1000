@@ -416,7 +416,7 @@ body {
   flex-shrink: 0;
   height: 224px;
   position: relative;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
   border: 1px solid #f6fafe;
   /* width: 668px; */

@@ -121,7 +121,7 @@
         <div class="announcement-header">
           <p>Announcements</p>
         </div>
-        <div class="announcements-container">
+        <div class="announcements-container" id="announcementsContainer">
           <div class="announcements-group">
             <p class="label">Important!!</p>
             <div class="text">
@@ -142,7 +142,7 @@
           </div>
         </div>
         <div class="announcement-btn-wrapper">
-          <a href="">Expand to fill screen</a>
+          <a href="javascript:void(0)" onclick="expandToFillScreen()">Expand to fill screen</a>
         </div> 
       </div>
       <!-- End of announcement section -->
@@ -189,14 +189,14 @@
         <div class="notes-header">
           <p>Notes</p>
         </div>
-        <div class="notes-container">
+        <div class="notes-container" id="notesContainer">
           <div class="notes-group">
             <div class="label">Add your Title here</div>
             <input type="text" placeholder="Add your notes here">
           </div>
         </div>
         <div class="notes-btn-wrapper">
-          <a>Expand to fill screen</a>
+          <a href="javascript:void(0)" onclick="expandNoteToFillScreen()">Expand to fill screen</a>
         </div>
       </div>
 
@@ -260,6 +260,7 @@
     <script src="js/menu-drop-down.js"></script>
     <script src="js/header.js"></script>
     <script src="js/lms-mobile-menu.js"></script>
+    <script src="js/expand-to-fill.js"></script>
     <!-- Script for logout -->
     <script>
       function confirmLogout() {
