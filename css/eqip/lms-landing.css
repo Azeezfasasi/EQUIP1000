@@ -37,6 +37,11 @@
       text-decoration: none;
       color: white;
       font-size: 19px;
+      /* padding: 8px 16px; */
+  }
+
+  .nav-list a:hover {
+    color: #ffa76d;
   }
 
   .nav-list .active {

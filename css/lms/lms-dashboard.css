@@ -44,6 +44,7 @@ body {
     position: relative;
     overflow: visible;
     color: black;
+    margin-top: 15px;
   }
 
   .header .line {
@@ -89,7 +90,7 @@ body {
     height: 38px;
     position: absolute;
     left: 7px;
-    top: 10px;
+    top: 0px;
   }
 
   .top-right .name {
@@ -147,7 +148,6 @@ body {
     position: relative;
     z-index: 1000;
     margin-left: 20px;
-
   }
 
   .dropdown a {
