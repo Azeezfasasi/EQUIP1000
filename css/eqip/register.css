@@ -22,6 +22,7 @@ body {
     overflow: hidden;
     text-align: center;
     padding-bottom: 100px;
+    padding-bottom: 250px;
 }
 
 .register-container .r-left-side {
@@ -46,8 +47,10 @@ body {
     font-size: 42px;
     line-height: 52px;
     font-weight: 700;
-    width: 448px;
-    margin: 190px 0 0 20px;
+    display: block;
+    /* width: 448px; */
+    width: 80%;
+    margin: 190px auto 0 auto;
     color: white;
 }
 
@@ -57,8 +60,10 @@ body {
     font-size: 42px;
     line-height: 52px;
     font-weight: 700;
-    width: 448px;
-    margin: 60px 0 0 40px;
+    display: block;
+    /* width: 448px; */
+    width: 80%;
+    margin: 60px auto 0 auto;
     color: white;
 }
 
@@ -121,7 +126,9 @@ body {
     height: 281px;
     position: relative;
     overflow: hidden;
-    margin: 140px 0 0 30px;
+    display: block;
+    margin: 140px auto 0 auto;
+    /* margin: 140px 0 0 30px; */
     text-align: center;
 }
 
@@ -132,7 +139,9 @@ body {
     height: 281px;
     position: relative;
     overflow: hidden;
-    margin: 120px 0 0 30px;
+    display: block;
+    /* margin: 120px 0 0 30px; */
+    margin: 120px auto 0 auto;
     text-align: center;
 }
 
@@ -339,15 +348,15 @@ body {
     height: 48px;
     font-size: 16px;
     position: relative;
+    padding: 0 10px;
 }
-
 
 .col-1 select {
     border-radius: 8px;
     border-style: solid;
     border-color: #cfcfcf;
     border-width: 1px;
-    /* padding: 8px; */
+    padding: 0 10px;
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -388,7 +397,7 @@ body {
     border-style: solid;
     border-color: #cfcfcf;
     border-width: 1px;
-    /* padding: 8px; */
+    padding: 0 10px;
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -406,7 +415,7 @@ body {
     border-style: solid;
     border-color: #cfcfcf;
     border-width: 1px;
-    /* padding: 8px; */
+    padding: 0 10px;
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -453,7 +462,7 @@ form .next-btn button {
 
 
 /* Style for finishing registration */
-form .finish-next-btn button {
+form .previous-btn button {
     background: #275c6f;
     color: #ffffff;
     border-radius: 8px;
@@ -474,8 +483,57 @@ form .finish-next-btn button {
     cursor: pointer;
 }
 
+form .previous-btn a {
+    background: #275c6f;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 12px 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 135px;
+    /* height: 48px; */
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+form .finish-next-btn button {
+    background: #275c6f;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 135px;
+    height: 48px;
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
 .password-toggle {
     cursor: pointer;
+    margin-right: 30px;
 }
 
 #passwordCheck {
@@ -563,7 +621,7 @@ form .password-container {
     color: #ffffff;
     border-radius: 8px;
     padding: 8px;
-    width: 97%;
+    width: 87%;
     height: 48px;
     text-align: center;
     font-family: "Roboto-Medium", sans-serif;
@@ -631,9 +689,9 @@ form .confirm-box {
     height: 48px;
     text-align: center;
     font-family: "Roboto-Bold", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 700;
+    font-size: 19px;
+    line-height: 140%;
+    font-weight: 400;
     position: relative;
     border: none;
     outline: none;
@@ -813,7 +871,7 @@ form .confirm-box {
     .right-side .reg-form-container {
         display: block;
         width: 85%;
-        margin: -40px auto 10px auto;
+        margin: -40px auto 60px auto;
         height: 53%;
         border-radius: 12px;
         text-align: center;
@@ -881,10 +939,26 @@ form .confirm-box {
         margin-top: 0px;
     }
 
+    form .previous-btn a {
+        display: inline-block;
+        position: absolute;
+        bottom: -30px;
+        left: 0px;
+        width: 100px;
+        text-align: center;
+    }
+
     form .finish-next-btn button {
-        display: block;
-        position: relative;
-        margin-top: 30px;
+        display: inline-block;
+        position: absolute;
+        bottom: -30px;
+        right: 0px;
+        width: 100px;
+    }
+
+    .password-toggle {
+        cursor: pointer;
+        margin-right: 5px;
     }
 
     /* style for verifying email */
@@ -926,6 +1000,10 @@ form .confirm-box {
         line-height: 24px;
         font-weight: 700;
         color: #275c6f;
+    }
+
+    .confirm-btn button {
+        width: 100%;
     }
 
     /* syle for confirmation */
