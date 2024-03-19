@@ -64,29 +64,47 @@
         </div>
         
         <div class="product-details">
-            <p class="title">Checkout</p>
-            <p class="sub-title">This is a summary of your purchase expenses. Please select a payment method to proceed.</p>
-            <div class="price-summary">
-                <p class="title">Price Summary</p>
-                <div class="summary-items">
-                    <div class="row">
-                        <p class="row-item">Item</p>
-                        <p class="row-price">N 300,000</p>
+            <p class="title">Bank Card</p>
+            <p class="sub-title">Please select pickup method</p>
+            <div class="top-card-details">
+                <div class="logo">
+                    <img src="../img/svg/card-web-logo.svg" alt="">
+                </div>
+                <div class="top-right-details">
+                    <p class="amount">N 305,000</p>
+                    <p class="email">nebeolisachiedozie@gmail.com</p>
+                </div>
+            </div>
+            <div class="bank-card-box">
+                <div class="card-info">
+                    <p>Please enter your card details</p>
+                </div>
+                <div class="bank-card-details">
+                    <div class="card">
+                        <div class="card-number">
+                            <p>CARD NUMBER</p>
+                        </div>
+                        <div class="row">
+                            <img src="../img/svg/card.svg" alt="">
+                            <input type="text">
+                            <img src="../img/svg/lock.svg" alt="">
+                        </div>
                     </div>
-                    <div class="row">
-                        <p class="row-item">Discount</p>
-                        <p class="row-price">N 0</p>
-                    </div>
-                    <div class="row">
-                        <p class="row-item">Service charge</p>
-                        <p class="row-price">N 0</p>
-                    </div>
-                    <div class="summary-line"></div>
-                    <div class="row">
-                        <p class="row-item">Total amount payable</p>
-                        <p class="row-price summary-total-price">N 300,000</p>
+                <div class="line"></div>
+                    <div class="card">
+                        <div class="card-number">
+                            <p>VALID TILL</p>
+                        </div>
+                        <div class="row">
+                            <img src="../img/svg/card.svg" alt="">
+                            <input id="validMonth" type="text" placeholder="MM/YY">
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="remember">
+                <input type="radio">
+                <p>Remember this card</p>
             </div>
             <div class="choose-payment-method">
                 <div class="component">
@@ -97,11 +115,47 @@
                     </select>
                 </div>
             </div>
-            <a href="cash-on-delivery.html" class="confirm-btn">
-                <p class="confirm-order">CONFIRM ORDER</p>
+
+            <div class="agreement">
+                <input type="radio" required>
+                <p>I agree to the <span><a href=""> terms and conditions</a></span></p>
+            </div>
+            
+            <a href="" id="login" class="confirm-btn">
+                <p class="confirm-order">PAY N305,000</p>
             </a>
         </div>
     </div>
+
+    <!-- Start of the checkout pop up -->
+    <div class="login-popup">
+        <!-- start of the form -->
+        <form action="">
+            <div class="order-confirmation">
+                <div class="cancel-btn"></div>
+                <div class="title">
+                <p class="title-text">Purchase confirmation</p>
+                <div class="divider"></div>
+                <img class="close-icon" src="../img/x-mark-transparent-24.png" alt="close">
+                <p class="confirm-text">Your Mi-fi will be delivered to you</p>
+                <img class="confirm" src="../img/payment confirm.png" alt="confirm">
+                </div>
+                <div class="product-info">
+                <p class="amount-label">Amount paid</p>
+                <p class="amount">NGN 20,000.00</p>
+                <p class="amount-in-word">Twenty Thousand Naira Only</p>
+                <p class="product-paid-for">Product paid for:</p>
+                <p class="laptop">Mi-fi</p>
+                </div>
+                <div class="payment">
+                <div class="payment-due-date">Payment due date:</div>
+                <div class="payment-date">22nd Dec, 2024</div>
+                </div>
+                <a class="go-to-dashboard" href="dashboard.html">Go to Dashboard</a>
+            </div>
+        </form>
+    </div>
+    <!-- End of Checkout popup -->
        
 
     <script src="../js/header.js"></script>

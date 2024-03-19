@@ -64,44 +64,67 @@
         </div>
         
         <div class="product-details">
-            <p class="title">Checkout</p>
-            <p class="sub-title">This is a summary of your purchase expenses. Please select a payment method to proceed.</p>
-            <div class="price-summary">
-                <p class="title">Price Summary</p>
-                <div class="summary-items">
-                    <div class="row">
-                        <p class="row-item">Item</p>
-                        <p class="row-price">N 300,000</p>
+            <p class="title">Eligibility confirmation</p>
+            <p class="sub-title">We need these details on your financial earnings to see if you are good fit for the laptop</p>
+
+            <div class="product-options">
+                <form action="laptop-checkout.html">
+                    <div class="income">
+                        <p>Monthly Income</p>
+                          <div class="selection">
+                              <select name="monthlyIncome" id="monthlyIncome" required>
+                                <option value="select">Select</option>
+                                <option value="less">Below than 100,000</option>
+                                <option value="more">Above than 100,000</option>
+                              </select>
+                          </div>
                     </div>
-                    <div class="row">
-                        <p class="row-item">Discount</p>
-                        <p class="row-price">N 0</p>
+                    <div class="payment">
+                      <p>How do you want to pay?</p>
+                        <div class="selection">
+                            <select name="paymentOption" id="paymentOption" required>
+                              <option value="select">Select</option>
+                              <option value="6-month">6 Month Installments</option>
+                              <option value="1-year">1 Year Installments</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="row">
-                        <p class="row-item">Service charge</p>
-                        <p class="row-price">N 0</p>
+                    <div class="col s12 m4 offset-m4">
+                        <button id="" class="product-btn waves-effect waves-light">Apply Now</button>
                     </div>
-                    <div class="summary-line"></div>
-                    <div class="row">
-                        <p class="row-item">Total amount payable</p>
-                        <p class="row-price summary-total-price">N 300,000</p>
-                    </div>
-                </div>
+                </form>             
             </div>
-            <div class="choose-payment-method">
-                <div class="component">
-                    <select name="" id="">
-                        <option value="Choose-payment-method">Choose payment method</option>
-                        <option value="cash-payment">Cash payment on delivery</option>
-                        <option value="digital-payment">Digital payment</option>
-                    </select>
-                </div>
-            </div>
-            <a href="cash-on-delivery.html" class="confirm-btn">
-                <p class="confirm-order">CONFIRM ORDER</p>
-            </a>
         </div>
     </div>
+
+    <!-- Start of the checkout pop up -->
+    <div class="login-popup">
+        <form action="">
+            <div onclick="showConfirmation()" class="order-confirmation">
+                <div class="cancel-btn"></div>
+                <div class="title">
+                <p class="title-text">Purchase confirmation</p>
+                <div class="divider"></div>
+                <img class="close-icon" src="../img/x-mark-transparent-24.png" alt="close">
+                <p class="confirm-text">Your Laptop will be delivered to you</p>
+                <img class="confirm" src="../img/payment confirm.png" alt="confirm">
+                </div>
+                <div class="product-info">
+                    <p class="amount-label">Amount paid</p>
+                    <p class="amount">NGN 300,000.00</p>
+                    <p class="amount-in-word">Three Hundred and Fifteen Thousand Naira Only</p>
+                    <p class="product-paid-for">Product paid for:</p>
+                    <p class="laptop">Laptop</p>
+                </div>
+                <div class="payment">
+                    <div class="payment-due-date">Payment due date:</div>
+                    <div class="payment-date">22nd Dec, 2024</div>
+                </div>
+                <a class="go-to-dashboard" href="dashboard.html">Go to Dashboard</a>
+            </div>
+        </form>
+    </div>
+    <!-- End of Checkout popup -->
        
 
     <script src="../js/header.js"></script>
