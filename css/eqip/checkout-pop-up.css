@@ -11,6 +11,19 @@
     padding: 20px 0 0;
   }
 
+  .card-login-popup {
+    display: none;
+    background: rgba(33, 33, 33, 0.5);
+    position: fixed;
+    z-index: 99999;
+    right: 0;
+    left: 0;
+    top: 80px;
+    bottom: 0;
+    /* height: 79px; */
+    padding: 20px 0 0;
+  }
+
   .login-popup .close-icon {
     width: 30px;
     height: 30px;
@@ -44,6 +57,22 @@
     border-width: 1px;
     width: 576px;
     height: 568px;
+    padding-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .card-confirmation {
+    background: #ffffff;
+    border-radius: 24px;
+    border-style: solid;
+    border-color: #c4c4c4;
+    border-width: 1px;
+    width: 576px;
+    height: 400px;
     padding-bottom: 20px;
     position: relative;
     overflow: hidden;
@@ -232,9 +261,26 @@
       padding: 50px 0 0;
     }
 
+    .card-login-popup {
+      display: none;
+      background: rgba(33, 33, 33, 0.5);
+      position: fixed;
+      z-index: 99999;
+      left: 0;
+      top: 76px;
+      min-height: 400px;
+      padding: 50px 0 0;
+    }
+
     .order-confirmation {
       width: 95%;
       height: 568px;
+    }
+
+    .card-confirmation {
+      width: 95%;
+      height: 450px;
+      margin-top: -40px;
     }
 
     .order-confirmation .title-text {

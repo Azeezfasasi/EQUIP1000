@@ -6,7 +6,8 @@ body {
 .main-content {
   background: #ffffff;
   height: 900px;
-  width: 1085px;
+  /* width: 1085px; */
+  width: 100%;
   overflow-x: hidden;
   overflow-y: initial;
   position: absolute;
@@ -20,6 +21,10 @@ body {
   display: none;
 }
 
+.course-container-margin {
+  left: 256px;
+}
+
 .categories-container {
     padding: 0px 0px 24px 0px;
     display: flex;
@@ -28,22 +33,14 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     position: absolute;
-    right: 1.47%;
-    left: 0%;
-    width: 98.53%;
+    /* right: 1.47%; */
+    left: 0px;
+    width: 100%;
     top: 282px;
   }
 
-  .courses-for-educators-container {
-    border-width: 3px;
-    border-style: solid;
-    border-image: linear-gradient(
-      180deg,
-      rgba(39, 92, 111, 0.2) 0%,
-      rgba(0, 0, 0, 0) 100%
-    );
-    border-image-slice: 1;
-    display: flex;
+  .categories-container .courses-for-educators-container {
+    /* display: flex;
     flex-direction: column;
     gap: 4px;
     align-items: flex-start;
@@ -51,37 +48,65 @@ body {
     align-self: stretch;
     flex-shrink: 0;
     height: 418px;
+    width: 100%;
     position: relative;
     margin-top: -10px;
+    border-style: solid;
+    border-color: var(--primary-blue-400, #b4d6f8);
+    border-width: 1px; */
+
+    border-style: solid;
+    border-color: var(--primary-blue-400, #b4d6f8);
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    height: 338px;
   }
 
   .categories-container .search {
     position: relative;
     display: block;
-    margin-top: -260px;
-    margin-left: 120px;
+    width: 100%;
+    margin: -260px auto 0 auto;
   }
 
   .categories-container input[type=search] {
     border-radius: 16px;
+    border-style: solid;
+    border-color:#b4d6f8;
+    border-width: 1px;
     padding: 8px 16px 8px 16px;
     display: block;
     height: 48px;
-    width: 800px;
+    width: 97%;
     margin: 0 auto;
     position: relative;
     overflow: visible;
     outline: none;
-    border: 1px solid;
-    
   }
 
-  .search i {
+  #searchInput::placeholder {
+    color:#ced4da;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+  }
+
+  .search img {
     display: block;
     position: absolute;
     top: 12px;
     right: 30px;
-    font-size: 22px;
+    /* font-size: 22px; */
   }
 
   .categories-container .categories-header {
@@ -103,7 +128,7 @@ body {
     font-weight: 700;
     position: relative;
     flex: 1;
-    margin-top: 0px;
+    margin-top: -20px;
   }
 
   .categories-container .categories-description {
@@ -163,7 +188,7 @@ body {
     margin-left: 10px;
   }
 
-  .category-title .course-desc {
+  .courses-for-educators-container .course-desc {
     color: #495057;
     text-align: left;
     font-family: "Roboto-Regular", sans-serif;
@@ -172,20 +197,9 @@ body {
     font-weight: 400;
     position: relative;
     flex: 1;
-  }
-
-  .courses-for-educators-container .course-desc {
+    width: 99%;
     margin-left: 10px;
     margin-top: -30px;
-    width: 75%;
-    color: #495057;
-    text-align: left;
-    font-family: "Roboto-Regular", sans-serif;
-    font-size: 19px;
-    line-height: 140%;
-    font-weight: 400;
-    position: relative;
-    flex: 1;
   }
 
   .categories-container .available-courses {
@@ -199,7 +213,7 @@ body {
     flex-shrink: 0;
     height: 209px;
     position: relative;
-    margin-top: 50px;
+    margin-top: -70px;
   }
 
   .available-courses .course-box {
@@ -215,7 +229,8 @@ body {
     width: 372px;
     height: 193px;
     display: block;
-    margin-top: -250px;
+    /* margin-top: -250px; */
+    margin-top: -150px;
     margin-left: -5px;
   }
 
@@ -234,8 +249,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 90%;
-    height: 24px;
+    width: 100%;
     /* border-radius: 0 0 16px 16px; */
   }
 
@@ -255,17 +269,7 @@ body {
   }
 
   .tech-courses-container {
-    background: linear-gradient(
-      180deg,
-      rgba(215, 215, 215, 1) 0%,
-      rgba(215, 215, 215, 0) 100%);
-    border-width: 3px;
-    border-style: solid;
-    border-image: linear-gradient(
-      180deg,
-      rgba(39, 92, 111, 0.2) 0%,
-      rgba(0, 0, 0, 0) 100%);
-    border-image-slice: 1;
+      background: #f5f5f5;
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -275,7 +279,12 @@ body {
     flex-shrink: 0;
     height: 400px;
     position: relative;
-    margin-top: -270px;
+    /* margin-top: -270px; */
+    margin-top: 10px;
+    border-style: solid;
+    border-color: var(--primary-blue-400, #b4d6f8);
+    border-width: 1px;
+    padding-bottom: 50px
   }
 
   .social {
@@ -312,6 +321,7 @@ body {
     height: 57.26px;
     position: relative;
   }
+
   .tech-courses {
     color:#495057;
     text-align: left;
@@ -361,7 +371,7 @@ body {
   }
 
   @media (max-width: 768px) {
-    .main-content {
+    .content {
       display: block;
       width: 100%;
       margin: 0 0 0 0;
@@ -372,7 +382,7 @@ body {
 
     .categories-container {
       display: block;
-      width: 87%;
+      width: 100%;
       margin: 80px auto 0 auto;
       padding: 0;
       /* overflow: hidden; */
@@ -387,6 +397,17 @@ body {
     .categories-container input[type=search] {
       width: 100%;
       height: 40px;
+    }
+
+    #searchInput::placeholder {
+      font-size: 14px;
+    }
+
+    .search img {
+      position: absolute;
+      top: 8px;
+      right: 15px;
+      font-size: 22px;
     }
 
     .categories-container .categories-header {
@@ -440,8 +461,10 @@ body {
 
     .categories-container .available-courses {
       flex-direction: column;
-      margin-top: -60px;
+      margin-top: -180px;
+      margin-bottom: 180px;
       height: 100%;
+      
     }
 
     .available-courses .course-box {
@@ -452,7 +475,7 @@ body {
     }
 
     .course-box .box-title {
-      width: 88%;
+      width: 100%;
     }
 
     .box-title a  {
@@ -460,11 +483,11 @@ body {
       text-decoration: none;
     }
 
-    .tech-courses-container {
+    .available-courses .tech-courses-container {
       display: block;
       width: 95%;
       height: 200px;
-      margin: 10px auto;
+      margin: 15px auto 0 auto;
       position: initial;
     }
 

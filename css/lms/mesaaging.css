@@ -345,7 +345,7 @@
     }
     .message-container  {
         display: block;
-        width: 95%;
+        width: 100%;
         height: fit-content;
         margin-bottom: 0;
         overflow: hidden;

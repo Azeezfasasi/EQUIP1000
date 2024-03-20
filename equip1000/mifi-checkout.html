@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laptop Checkout</title>
+    <title>Mi-fi Checkout</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/eqip/register.css">
     <link rel="stylesheet" href="../css/eqip/welcome.css">
@@ -19,7 +19,7 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            <a class="logo" href="../index.html"><img src="../img/logo/Equip1000 logo.svg" /></a>                 
+            <a class="logo" href="../index.html"><img src="../img/logo/Equip1000 logo.svg" /></a>                
             <ul class="nav-list" id="nav-list">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../lms.html">LMS</a></li>
@@ -52,49 +52,40 @@
     <div class="content">
         <div class="product-left">
             <div class="product-image">
-                <img src="../img/dell-xps-13-screen-lid1 1.png" alt="">
+                <img src="../img/mifi 1.png" alt="">
             </div>
-            <p>Dell XPS Laptop </p>
+            <p>Mifi</p>
             <div class="specification">
                 <p class="title">Device Specs</p>
-                <p class="sub-title">Dell XPS 13 laptop is a windows 10 laptop with a 13.30inch display that has a resolution of 3200 by 1800pixels. It is powered by a Corei5 processor and it comes with a 8gb of RAM. The Dell XPS 13 packs 128GB of SSD storage. Graphics are powered by Intel Integrated HD graphics 520.</p>
+                <p class="sub-title">Get access to our Mi-fi for your seamless Internet connection and your continuous professional development</p>
             </div>
             <p class="price-label">Price</p>
-            <p class="price">₦300,000</p>
+            <p class="price">N20000</p>
         </div>
         
         <div class="product-details">
-            <p class="title">Cash payment on Delivery</p>
-            <p class="sub-title">Please select pickup method</p>
-            <div class="location-details">
-                <img src="../img/svg/map-icon.svg" alt="">
-                <input type="text" id="location" placeholder="Please enter your location here or use the map selector">
-                <img class="map-pop-up" id="login" src="../img/svg/pin_drop.svg" alt="">
-            </div>
-            <div class="delivery-details">
-                <div class="top-details">
-                    <img src="../img/svg/delivery-bus.svg" alt="">
-                    <p>Door delivery</p>
-                </div>
-                <div class="middle-details">
-                    <p class="delivery-fee-title">Delivery fee</p>
-                    <p class="delivery-amount">N 5,000</p>
-                </div>
-                <div class="bottom-details">
-                    <p>Ready for delivery between 05 of march and 12 of march when you order in the next 24 hours</p>
-                </div>
-            </div>
-            <div class="delivery-details">
-                <div class="top-details">
-                    <img src="../img/svg/pick-up.svg" alt="">
-                    <p>Pickup Station</p>
-                </div>
-                <div class="middle-details">
-                    <p class="delivery-fee-title">Pickup fee</p>
-                    <p class="delivery-amount">N 2,000</p>
-                </div>
-                <div class="bottom-details">
-                    <p>Arriving for pickup between 05 of match and 10 of march when you order in the next 24 hours.</p>
+            <p class="title">Checkout</p>
+            <p class="sub-title">This is a summary of your purchase expenses. Please select a payment method to proceed.</p>
+            <div class="price-summary">
+                <p class="title">Price Summary</p>
+                <div class="summary-items">
+                    <div class="row">
+                        <p class="row-item">Item</p>
+                        <p class="row-price">N 20,000</p>
+                    </div>
+                    <div class="row">
+                        <p class="row-item">Discount</p>
+                        <p class="row-price">N 0</p>
+                    </div>
+                    <div class="row">
+                        <p class="row-item">Service charge</p>
+                        <p class="row-price">N 0</p>
+                    </div>
+                    <div class="summary-line"></div>
+                    <div class="row">
+                        <p class="row-item">Total amount payable</p>
+                        <p class="row-price summary-total-price">N 20,000</p>
+                    </div>
                 </div>
             </div>
             <div class="choose-payment-method">
@@ -106,8 +97,7 @@
                     </select>
                 </div>
             </div>
-            
-            <a href="card-details.html" class="confirm-btn">
+            <a href="cash-on-delivery.html" class="confirm-btn">
                 <p class="confirm-order">CONFIRM ORDER</p>
             </a>
         </div>
@@ -115,12 +105,29 @@
 
     <!-- Start of the checkout pop up -->
     <div class="login-popup">
+        <!-- start of the form -->
         <form action="">
-            <div onclick="showConfirmation()" class="order-confirmation" style="width: 100%;">
-                <!-- <div class="cancel-btn"></div> -->
-                <!-- <img class="map" src="../img/svg/Basemap image.svg" alt=""> -->
-                <div id="map"></div>
-                <img class="cancel-btn" src="../img/svg/Ex.svg" alt="">
+            <div class="order-confirmation">
+                <div class="cancel-btn"></div>
+                <div class="title">
+                <p class="title-text">Purchase confirmation</p>
+                <div class="divider"></div>
+                <img class="close-icon" src="../img/x-mark-transparent-24.png" alt="close">
+                <p class="confirm-text">Your Mi-fi will be delivered to you</p>
+                <img class="confirm" src="../img/payment confirm.png" alt="confirm">
+                </div>
+                <div class="product-info">
+                <p class="amount-label">Amount paid</p>
+                <p class="amount">NGN 20,000.00</p>
+                <p class="amount-in-word">Twenty Thousand Naira Only</p>
+                <p class="product-paid-for">Product paid for:</p>
+                <p class="laptop">Mi-fi</p>
+                </div>
+                <div class="payment">
+                <div class="payment-due-date">Payment due date:</div>
+                <div class="payment-date">22nd Dec, 2024</div>
+                </div>
+                <a class="go-to-dashboard" href="dashboard.html">Go to Dashboard</a>
             </div>
         </form>
     </div>
@@ -128,6 +135,7 @@
        
 
     <script src="../js/header.js"></script>
+    <script src="../js/accordion.js"></script>
     <script src="../js/menu-drop-down.js"></script>
     <script src="../js/checkout-pop-up.js"></script>
     <script src="../js/logout.js"></script>
@@ -165,6 +173,8 @@
     })();
   });
     </script>
+
+    
     <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -179,28 +189,5 @@
   </script>
   <!--End of Tawk.to Script-->
 
-  <script>
-    function initMap() {
-        // Coordinates of the location you want to display
-        var myLatLng = {lat: 40.7128, lng: -74.0060};
-
-        // Create a map object and specify the DOM element for display
-        var map = new google.maps.Map(document.getElementById('map'), {
-            center: myLatLng,
-            zoom: 12 // Adjust the zoom level as needed
-        });
-
-        // Create a marker and set its position
-        var marker = new google.maps.Marker({
-            map: map,
-            position: myLatLng,
-            title: 'Lagos Nigeria' // Title that appears when you hover over the marker
-        });
-    }
-</script>
-<!-- Load the Google Maps JavaScript API -->
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgYc6tDV-sI4hCBc1WBlOqi9G1HGkMSiA&callback=initMap">
-</script>
 </body>
 </html>

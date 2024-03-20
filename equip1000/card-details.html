@@ -64,78 +64,84 @@
         </div>
         
         <div class="product-details">
-            <p class="title">Bank Card</p>
-            <p class="sub-title">Please select pickup method</p>
-            <div class="top-card-details">
-                <div class="logo">
-                    <img src="../img/svg/card-web-logo.svg" alt="">
-                </div>
-                <div class="top-right-details">
-                    <p class="amount">N 305,000</p>
-                    <p class="email">nebeolisachiedozie@gmail.com</p>
-                </div>
-            </div>
-            <div class="bank-card-box">
-                <div class="card-info">
-                    <p>Please enter your card details</p>
-                </div>
-                <div class="bank-card-details">
-                    <div class="card">
-                        <div class="card-number">
-                            <p>CARD NUMBER</p>
-                        </div>
-                        <div class="row">
-                            <img src="../img/svg/card.svg" alt="">
-                            <input type="text">
-                            <img src="../img/svg/lock.svg" alt="">
-                        </div>
+            <form action="">
+                <p class="title">Bank Card</p>
+                <p class="sub-title">Please select pickup method</p>
+                <div class="top-card-details">
+                    <div class="logo">
+                        <img src="../img/svg/card-web-logo.svg" alt="">
                     </div>
-                <div class="line"></div>
-                    <div class="card">
-                        <div class="card-number">
-                            <p>VALID TILL</p>
-                        </div>
-                        <div class="row">
-                            <img src="../img/svg/card.svg" alt="">
-                            <input id="validMonth" type="text" placeholder="MM/YY">
-                        </div>
+                    <div class="top-right-details">
+                        <p class="amount">N 305,000</p>
+                        <p class="email">nebeolisachiedozie@gmail.com</p>
                     </div>
                 </div>
-            </div>
-            <div class="remember">
-                <input type="radio">
-                <p>Remember this card</p>
-            </div>
-            <div class="choose-payment-method">
-                <div class="component">
-                    <select name="" id="">
-                        <option value="Choose-payment-method">Choose payment method</option>
-                        <option value="cash-payment">Cash payment on delivery</option>
-                        <option value="digital-payment">Digital payment</option>
-                    </select>
+                <div class="bank-card-box">
+                    <div class="card-info">
+                        <p>Please enter your card details</p>
+                    </div>
+                    <div class="bank-card-details">
+                        <div class="card">
+                            <div class="card-number">
+                                <p>CARD NUMBER</p>
+                            </div>
+                            <div class="row">
+                                <img src="../img/svg/card.svg" alt="">
+                                <input type="text" required>
+                                <img src="../img/svg/lock.svg" alt="">
+                            </div>
+                        </div>
+                    <div class="line"></div>
+                        <div class="card">
+                            <div class="card-number">
+                                <p>VALID TILL</p>
+                            </div>
+                            <div class="row">
+                                <img src="../img/svg/card.svg" alt="">
+                                <input id="validMonth" type="text" placeholder="MM/YY" required>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div class="remember">
+                    <input type="radio">
+                    <p>Remember this card</p>
+                </div>
+                <div class="choose-payment-method">
+                    <div class="component">
+                        <select name="" id="">
+                            <option value="Choose-payment-method">Choose payment method</option>
+                            <option value="cash-payment">Cash payment on delivery</option>
+                            <option value="digital-payment">Digital payment</option>
+                        </select>
+                    </div>
+                </div>
 
-            <div class="agreement">
-                <input type="radio" required>
-                <p>I agree to the <span><a href=""> terms and conditions</a></span></p>
-            </div>
-            
-            <a href="" id="login" class="confirm-btn">
-                <p class="confirm-order">PAY N305,000</p>
-            </a>
+                <div class="agreement">
+                    <input type="radio" required>
+                    <p>I agree to the <span><a href=""> terms and conditions</a></span></p>
+                </div>
+                
+                <button id="login" class="confirm-btn">PAY N305,000</button>
+            </form>
         </div>
     </div>
 
     <!-- Start of the checkout pop up -->
     <div class="login-popup card-login-popup">
         <form action="">
-            <div onclick="showConfirmation()" class="order-confirmation">
+            <div onclick="showConfirmation()" class="order-confirmation card-confirmation">
                 <div class="title">
                 <p class="title-text">Transaction in progress</p>
                 <div class="divider" style="width: 100%;"></div>
                 <p class="confirm-text">This will only take a few seconds...</p>
                 <img class="confirm" src="../img/Equip 1000 Spinner.png">
+                </div>
+                <div class="escrow-system-security">
+                    <div class="lock">
+                        <img src="../img/svg/Security-lock.svg" alt="">
+                    </div>
+                    <p>Secured with our escrow system</p>
                 </div>
             </div>
         </form>

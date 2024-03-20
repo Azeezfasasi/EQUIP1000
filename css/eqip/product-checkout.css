@@ -801,13 +801,13 @@
     padding-left: 10px;
 }
 
-.product-details .remember {
+form .remember {
     padding: 8px 16px 8px 16px;
     display: flex;
     flex-direction: row;
     gap: 4px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
     margin-left: 0;
 }
@@ -831,13 +831,13 @@
     justify-content: flex-start;
 }
 
-.product-details .agreement {
+form .agreement {
     padding: 8px 16px 8px 16px;
     display: flex;
     flex-direction: row;
     gap: 8px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
     margin-top: 25px;
 }
@@ -850,7 +850,7 @@
 
 .agreement p {
     color: #000000;
-    text-align: right;
+    text-align: left;
     font-family: "Roboto-Regular", sans-serif;
     font-size: 11px;
     line-height: 140%;
@@ -864,11 +864,52 @@
 }
 
 .order-confirmation .confirm {
-    width: 200px; 
-    height: 200px;
+    width: 150px; 
+    height: 150px;
     margin-top: 20px;
     animation: rotateImage 2s linear infinite;
 }
+
+.escrow-system-security {
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .escrow-system-security .lock {
+    flex-shrink: 0;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .lock img {
+    width: 66.67%;
+    height: 87.5%;
+    position: absolute;
+    right: 16.67%;
+    left: 16.67%;
+    bottom: 8.33%;
+    top: 4.17%;
+    overflow: visible;
+  }
+
+  .escrow-system-security p {
+    color: #20a612;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 11px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+  }
 
 @keyframes rotateImage {
     from {
@@ -1211,6 +1252,56 @@
         line-height: 140%;
         font-weight: 400;
         position: relative;
+    }
+
+    .content .product-details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        margin-top: 110px;
+        position: relative;
+    }
+
+    .product-details form .title {
+        margin-top: -50px;
+    }
+
+    .top-card-details {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .top-card-details .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        width: 55px;
+        height: 55px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .top-card-details .top-right-details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        align-self: stretch;
+        flex-shrink: 0;
+        position: relative;
+    }
+
+    .top-card-details .amount {
+        display: block;
+        align-items: center;
+        justify-content: flex-end;
     }
     
 }

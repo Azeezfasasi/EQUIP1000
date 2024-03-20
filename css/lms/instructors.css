@@ -16,6 +16,7 @@
 .staff-header {
     padding: 8px 16px 8px 16px;
     display: block;
+    margin-top: 20px;
 }
 
 .staff-header .title {
@@ -39,6 +40,7 @@
     font-weight: 400;
     position: relative;
     margin-top: -20px;
+    width: 90%;
 }
 
 .mentors-container {
@@ -53,7 +55,8 @@
     align-items: flex-start;
     justify-content: flex-start;
     position: relative;
-    margin-top: 30px;
+    margin-top: 10px;
+    width: 92%;
 }
 
 .mentors-container .mentors-head {
@@ -79,7 +82,8 @@
     flex-shrink: 0;
     position: relative;
     overflow-x: scroll;
-    width: 950px;
+    overflow-y: hidden;
+    width: 85%;
     margin-bottom: 20px;
 }
 
@@ -107,7 +111,7 @@
     align-items: center;
     justify-content: center;
     /* width: 232px; */
-    width: 93%;
+    width: 100%;
     height: 40px;
     position: relative;
 }
@@ -151,7 +155,7 @@
     background: #275c6f;
     border-radius: 8px;
     padding: 8px 16px 8px 16px;
-    width: 87%;
+    width: 100%;
     height: 56px;
     position: relative;
     color: #ffffff;
@@ -166,16 +170,19 @@
 
 @media (max-width: 768px) {
     .instructors-main {
+        width: 100%;
         overflow-x: visible;
         overflow-y: visible;
     }
 
     .staff-header .title {
         font-size: 20px;
+        width: 100%;
     }
 
     .staff-header .sub-title  {
         font-size: 16px;
+        width: 100%;
     }
 
     .mentors-container {
@@ -203,11 +210,24 @@
         font-size: 15px;
     }
 
+    .staff img {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+    }
+
     .staff .staff-contact {
         padding: 2px 10px 2px 10px;
         font-size: 15px;
         font-weight: 600;
-        width: 91%;
+        width: 100%;
+    }
+
+    .mentors-body .staff {
+        display: block;
+        width: 100%;
+        /* height: 459px; */
+        position: relative;
     }
 
     

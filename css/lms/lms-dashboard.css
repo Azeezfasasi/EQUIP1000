@@ -19,12 +19,20 @@ body {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
+/* .logo {
     flex-shrink: 0;
     width: 127px;
     height: 48px;
     position: relative;
     object-fit: cover;
+  } */
+
+  .header .logo {
+    display: flex;
+    flex-direction: row;
+    width: 70px;
+    height: 50px;
+    margin-left: 30px;
   }
 
   .header .nav-links {
@@ -240,7 +248,6 @@ body {
   }
 
   .side-link p:hover {
-    /* font-size: 22px; */
     font-weight: 800;
   }
 
@@ -267,13 +274,18 @@ body {
   overflow-y: initial;
   overflow-x: hidden;
   height: 900px;
-  max-width: 80%;
+  /* max-width: 80%; */
+  width: 79%;
   scrollbar-width: none;
   overflow: -moz-scrollbars-none; /* For older versions of Firefox */
 }
 
 .content::-webkit-scrollbar {
   display: none;
+}
+
+.content .main-screen {
+  width: 67%;
 }
 
 .content .dashboard-header {
@@ -318,7 +330,15 @@ body {
   justify-content: flex-start;
   height: 208px;
   position: relative;
-  width: 68%;
+  width: 100%;
+  overflow-x:  scroll;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  overflow: -moz-scrollbars-none; /* For older versions of Firefox */
+}
+
+.content .in-progress-classes::-webkit-scrollbar {
+  display: none;
 }
 
 .in-progress-classes .progress-box {
@@ -331,13 +351,12 @@ body {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 172px;
-  max-width: 172px;
-  max-height: 190px;
+  width: 23%;
+  height: 190px;
   position: relative;
   box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.1),
     4px 4px 4px 0px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .in-progress-classes .progress-box:hover {
@@ -352,7 +371,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 121px;
+  /* width: 171px; */
+  width: 100%;
   position: relative;
   text-decoration: none;
 }
@@ -406,7 +426,10 @@ body {
 .announcements-container {
   background: #ffffff;
   border-radius: 16px;
-  padding: 16px 8px 16px 8px;
+  border-style: solid;
+  border-color: #f6fafe;
+  border-width: 1px;
+  padding: 0px 8px 16px 8px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -419,8 +442,7 @@ body {
   overflow-y: hidden;
   overflow-x: hidden;
   border: 1px solid #f6fafe;
-  /* width: 668px; */
-  width: 750px;
+  width: 100%;
   margin-left: -15px;
 }
 
@@ -510,8 +532,9 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
-  width: 760px;
-  margin-top: 30px;
+  /* width: 760px; */
+  -webkit-text-stroke-width: 100%;
+  margin-top: 0px;
 }
 
 .completed-courses .completed-courses-header {
@@ -548,6 +571,9 @@ body {
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .completed-courses-container .box {
@@ -560,8 +586,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 155px;
-  width: 172px;
+  width: 23%;
   height: 200px;
   position: relative;
   box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.1),
@@ -632,8 +657,15 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
-  width: 760px;
+  /* width: 760px; */
+  width: 100%;
   overflow-y: scroll;
+  scrollbar-width: none;
+  overflow: -moz-scrollbars-none; /* For older versions of Firefox */
+}
+
+.notes-section::-webkit-scrollbar {
+  display: none;
 }
 
 .notes-section .notes-header {
@@ -1267,7 +1299,7 @@ th, td {
 }
 }
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
   .in-progress-classes .progress-box {
     width: 150px;
     max-width: 172px;
@@ -1282,9 +1314,9 @@ th, td {
 }
 
 /* Specific styles for larger screens */
-@media screen and (min-width: 1024px) {
+/*@media screen and (min-width: 1024px) {
   .in-progress-classes .progress-box {
     width: 172px;
     max-width: 172px;
   }
-}
+} */

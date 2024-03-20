@@ -1,5 +1,6 @@
 .ms-body {
     margin-bottom: 80px;
+    width: 100%;
 }
 
 #timer {
@@ -27,7 +28,7 @@
 .assessment-timer {
     display: block;
     position: relative;
-    margin-left: 700px;
+    margin-left: 750px;
     margin-top: 10px;
 }
 
@@ -41,7 +42,7 @@
     margin-top: 20px;
     border-radius: 10px;
     padding: 20px;
-    width: 95%;
+    width: 100%;
     height: 600px;
     background-color: #fff;
     border: 1px solid black;
@@ -403,6 +404,7 @@
 @media (max-width: 768px) {
     .ms-body {
         margin-bottom: 80px;
+        width: 100%;
     }
 
     .ms-main-content {

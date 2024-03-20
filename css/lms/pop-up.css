@@ -72,7 +72,7 @@
   }
 
   .form-element h2 {
-    color: #ffffff;
+    color: #ffa76d;
     text-align: center;
     font-family: "Roboto-Regular", sans-serif;
     font-size: 28px;
@@ -158,19 +158,19 @@
     padding: 0 0 0 10px;
   }
 
-  .name i {
+  .name img {
     position: absolute;
     top: 15px;
     right: 10px;
   }
 
-  .email i {
+  .email img {
     position: absolute;
     top: 15px;
     right: 10px;
   }
 
-  .password i {
+  .password img {
     position: absolute;
     top: 15px;
     right: 10px;
@@ -383,11 +383,11 @@
     }
 
     .popup .close-btn {
-      width: 20px;
-      height: 20px;
-      top: 10px;
-      right: 10px;
-      font-size: 25px;
+      border-radius: 8px 0px 8px 0px;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      overflow: hidden;
     }
 
     .form-element h2 {

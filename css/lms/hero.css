@@ -18,8 +18,7 @@
 
 .hero-container .hero {
     flex-shrink: 0;
-    /* width: 896px; */
-    width: 96%;
+    width: 60%;
     height: 520px;
     position: relative;
     overflow: hidden;
@@ -37,7 +36,6 @@
     top: 60px;
     left: 60px;
     bottom: 72px;
-    width: 60%;
   }
 
   .hero-container .hero-writeup-container h1 {

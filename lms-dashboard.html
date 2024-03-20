@@ -45,39 +45,39 @@
     <div id="mobile-menu-toggle">&#9776;</div>
     <div class="sidebar-active" id="sidebar-active">
         <a class="side-link active" href="lms-dashboard.html">
-            <img src="img/Dashboard Icon.png" alt="Dashboard Icon">
+            <img src="img/svg/Dashboard Icon.svg" alt="Dashboard Icon">
             <p>Dashboard</p>
         </a>
         <a class="side-link" href="lms-courses.html">
-          <img src="img/course icon.png" alt="Couse Icon">
+          <img src="img/svg/Courses Icon.svg" alt="Couse Icon">
           <p>Courses</p>
         </a>
         <a class="side-link" href="assessment/assessment-instructions.html">
-          <img src="img/Assessment Icon.png" alt="Assessment Icon">
+          <img src="img/svg/Assessment Icon.svg" alt="Assessment Icon">
           <p>Assessment</p>
         </a>
         <a class="side-link" href="certificates/certificates.html">
-          <img src="img/Certificates Icon.png" alt="Certificate Icon">
+          <img src="img/svg/certificate.svg" alt="Certificate Icon">
           <p>Certificates</p>
         </a>
         <a class="side-link" href="messaging/mesaging.html">
-          <img src="img/Messaging Icon.png" alt="Message Icon">
+          <img src="img/svg/Messaging Icon.svg" alt="Message Icon">
           <p>Messaging</p>
         </a>
         <a class="side-link" href="instructors/instructors.html">
-          <img src="img/Instructors Icon.png" alt="Instructors Icon">
+          <img src="img/svg/Instructors Icon.svg" alt="Instructors Icon">
           <p>Instructors</p>
         </a>
         <a class="side-link community" href="" style="pointer-events: none;">
-          <img src="img/Community Icon.png" alt="Community Icon">
+          <img src="img/svg/community-icon.svg" alt="Community Icon">
           <p>Community</p>
         </a>
         <a class="side-link" href="settings/settings.html">
-          <img src="img/Settings Icon.png" alt="Settings Icon">
+          <img src="img/svg/Settings Icon.svg" alt="Settings Icon">
           <p>Settings</p>
         </a>
         <a class="side-link logout" href="#" onclick="confirmLogout()">
-          <img src="img/Logout Icon.png" alt="Logout Icon">
+          <img src="img/svg/Logout Icon.svg" alt="Logout Icon">
           <p>Logout</p>
         </a>
     </div>
@@ -85,120 +85,122 @@
 
     <!-- Start of Right Side Content -->
     <div class="content">
-      <div class="dashboard-header">
-        <p class="welcome-text">Welcome, <span id="firstName"></span>Prince!</p>
-        <p class="welcome-sub-text"> It is time to continue learning. Take a step closer to Mastery!</p>
-      </div>
-      <div class="in-progress-classes">
-        <div class="progress-box">
-          <a href="courses/microsoft-office-tools.html" class="box">
-            <p>Microsoft Suite</p>
-            <img src="img/ms suite img.png" alt="ms suite">
-          </a>
+      <div class="main-screen">
+        <div class="dashboard-header">
+          <p class="welcome-text">Welcome, <span id="firstName"></span>Prince!</p>
+          <p class="welcome-sub-text"> It is time to continue learning. Take a step closer to Mastery!</p>
         </div>
-        <div class="progress-box">
-          <a href="courses/google-suite-tools.html" class="box">
-            <p>Google Suite</p>
-            <img src="img/Google Suite img.png" alt="G suite">
-          </a>
+        <div class="in-progress-classes">
+          <div class="progress-box">
+            <a href="courses/microsoft-office-tools.html" class="box">
+              <p>Microsoft Suite</p>
+              <img src="img/ms suite img.png" alt="ms suite">
+            </a>
+          </div>
+          <div class="progress-box">
+            <a href="courses/google-suite-tools.html" class="box">
+              <p>Google Suite</p>
+              <img src="img/Google Suite img.png" alt="G suite">
+            </a>
+          </div>
+          <div class="progress-box">
+            <a href="courses/canva-for-educators.html" class="box">
+              <p>Canva for Educators</p>
+              <img src="img/canva img.png" alt="Canva">
+            </a>
+          </div>
+          <div class="progress-box">
+            <a href="courses/kahoot-for-educators.html" class="box">
+              <p>Kahoot for Educators</p>
+              <img src="img/Kahoot img.png" alt="ms suite">
+            </a>
+          </div>
         </div>
-        <div class="progress-box">
-          <a href="courses/canva-for-educators.html" class="box">
-            <p>Canva for Educators</p>
-            <img src="img/canva img.png" alt="Canva">
-          </a>
-        </div>
-        <div class="progress-box">
-          <a href="courses/kahoot-for-educators.html" class="box">
-            <p>Kahoot for Educators</p>
-            <img src="img/Kahoot img.png" alt="ms suite">
-          </a>
-        </div>
-      </div>
 
-      <!-- Announcement Section -->
-      <div class="announcement-section">
-        <div class="announcement-header">
-          <p>Announcements</p>
+        <!-- Announcement Section -->
+        <div class="announcement-section">
+          <div class="announcement-header">
+            <p>Announcements</p>
+          </div>
+          <div class="announcements-container" id="announcementsContainer">
+            <div class="announcements-group">
+              <p class="label">Important!!</p>
+              <div class="text">
+                <li>Your registration expires in 3 weeks, do well to complete your courses and claim your certificate.</li>
+              </div>
+            </div>
+            <div class="announcements-group">
+              <p style="color: #20a612;" class="label">Notice</p>
+              <div class="text">
+                <li>You are 40 minutes away from your first certification. Keep going!</li>
+              </div>
+            </div>
+            <div class="announcements-group">
+              <p style="color: #e6900f;" class="label">Notice</p>
+              <div class="text">
+                <li>Don't miss our mandatory Orientation Program taking place on [Date] at [Time] in [Location]. This program will provide you with an overview of any subject of your choice.</li>
+              </div>
+            </div>
+          </div>
+          <div class="announcement-btn-wrapper">
+            <a href="javascript:void(0)" onclick="expandToFillScreen()">Expand to fill screen</a>
+          </div> 
         </div>
-        <div class="announcements-container" id="announcementsContainer">
-          <div class="announcements-group">
-            <p class="label">Important!!</p>
-            <div class="text">
-              <li>Your registration expires in 3 weeks, do well to complete your courses and claim your certificate.</li>
-            </div>
-          </div>
-          <div class="announcements-group">
-            <p style="color: #20a612;" class="label">Notice</p>
-            <div class="text">
-              <li>You are 40 minutes away from your first certification. Keep going!</li>
-            </div>
-          </div>
-          <div class="announcements-group">
-            <p style="color: #e6900f;" class="label">Notice</p>
-            <div class="text">
-              <li>Don't miss our mandatory Orientation Program taking place on [Date] at [Time] in [Location]. This program will provide you with an overview of any subject of your choice.</li>
-            </div>
-          </div>
-        </div>
-        <div class="announcement-btn-wrapper">
-          <a href="javascript:void(0)" onclick="expandToFillScreen()">Expand to fill screen</a>
-        </div> 
-      </div>
-      <!-- End of announcement section -->
+        <!-- End of announcement section -->
 
-      <!-- Start of completed courses -->
-      <div class="completed-courses">
-        <div class="completed-courses-header">
-          <p>Completed Courses</p>
-        </div>
-        <div class="completed-courses-container">
-          <a href="courses/microsoft-innovative-programme.html" class="box">
-            <p>Microsoft Innovative Prog...</p>
-            <div class="stats">
-              <img src="img/full stats.png" alt="100%">
-            </div>
-          </a>
-          <a href="courses/social-media-tools.html" class="box">
-            <p>Social Media Tools...</p>
-            <div class="stats">
-              <img src="img/full stats.png" alt="100%">
-            </div>
-          </a>
-          <a href="courses/ai-tools.html" class="box">
-            <p>AI Tools for Educators</p>
-            <div class="stats">
-              <img src="img/full stats.png" alt="100%">
-            </div>
-          </a>
-          <a href="courses/virtual-learning-platform.html" class="box">
-            <p>Virtual Learning tools...</p>
-            <div class="stats">
-              <img src="img/full stats.png" alt="100%">
-            </div>
-          </a>
-        </div>
-        <div class="courses-btn-wrapper">
-          <a href="">View more</a>
-        </div>
-      </div>
-      <!-- End of completed courses section -->
-
-      <!-- Start of the note section -->
-      <div class="notes-section">
-        <div class="notes-header">
-          <p>Notes</p>
-        </div>
-        <div class="notes-container" id="notesContainer">
-          <div class="notes-group">
-            <div class="label">Add your Title here</div>
-            <input type="text" placeholder="Add your notes here">
+        <!-- Start of completed courses -->
+        <div class="completed-courses">
+          <div class="completed-courses-header">
+            <p>Completed Courses</p>
+          </div>
+          <div class="completed-courses-container">
+            <a href="courses/microsoft-innovative-programme.html" class="box">
+              <p>Microsoft Innovative Prog...</p>
+              <div class="stats">
+                <img src="img/full stats.png" alt="100%">
+              </div>
+            </a>
+            <a href="courses/social-media-tools.html" class="box">
+              <p>Social Media Tools...</p>
+              <div class="stats">
+                <img src="img/full stats.png" alt="100%">
+              </div>
+            </a>
+            <a href="courses/ai-tools.html" class="box">
+              <p>AI Tools for Educators</p>
+              <div class="stats">
+                <img src="img/full stats.png" alt="100%">
+              </div>
+            </a>
+            <a href="courses/virtual-learning-platform.html" class="box">
+              <p>Virtual Learning tools...</p>
+              <div class="stats">
+                <img src="img/full stats.png" alt="100%">
+              </div>
+            </a>
+          </div>
+          <div class="courses-btn-wrapper">
+            <a href="">View more</a>
           </div>
         </div>
-        <div class="notes-btn-wrapper">
-          <a href="javascript:void(0)" onclick="expandNoteToFillScreen()">Expand to fill screen</a>
+        <!-- End of completed courses section -->
+
+        <!-- Start of the note section -->
+        <div class="notes-section">
+          <div class="notes-header">
+            <p>Notes</p>
+          </div>
+          <div class="notes-container" id="notesContainer">
+            <div class="notes-group">
+              <div class="label">Add your Title here</div>
+              <input type="text" placeholder="Add your notes here">
+            </div>
+          </div>
+          <div class="notes-btn-wrapper">
+            <a href="javascript:void(0)" onclick="expandNoteToFillScreen()">Expand to fill screen</a>
+          </div>
         </div>
-      </div>
+    </div>
 
       <!-- Start of the right content -->
     <div class="right-content r-content">
