@@ -99,7 +99,7 @@
             </div>
             <div class="choose-payment-method">
                 <div class="component">
-                    <select name="" id="">
+                    <select name="" id="" required>
                         <option value="Choose-payment-method">Choose payment method</option>
                         <option value="cash-payment">Cash payment on delivery</option>
                         <option value="digital-payment">Digital payment</option>
@@ -114,15 +114,15 @@
     </div>
 
     <!-- Start of the checkout pop up -->
-    <div class="login-popup">
-        <form action="">
-            <div onclick="showConfirmation()" class="order-confirmation" style="width: 100%;">
+    <div class="login-popup" style="background-color: transparent;">
+        <!-- <form action=""> -->
+            <div onclick="showConfirmation()" class="order-confirmation" style="width: 100%; margin-top: -10px; border-radius: 0;">
                 <!-- <div class="cancel-btn"></div> -->
-                <!-- <img class="map" src="../img/svg/Basemap image.svg" alt=""> -->
+                <img class="map" src="../img/svg/Basemap image.svg" alt="">
                 <div id="map"></div>
-                <img class="cancel-btn" src="../img/svg/Ex.svg" alt="">
+                <img id="" class="cancel-btn close-icon" style="border: none; position: absolute;top: 0; right: 0;" src="../img/svg/Ex.svg" alt="">
             </div>
-        </form>
+        <!-- </form> -->
     </div>
     <!-- End of Checkout popup -->
        
@@ -179,25 +179,6 @@
   </script>
   <!--End of Tawk.to Script-->
 
-  <script>
-    function initMap() {
-        // Coordinates of the location you want to display
-        var myLatLng = {lat: 40.7128, lng: -74.0060};
-
-        // Create a map object and specify the DOM element for display
-        var map = new google.maps.Map(document.getElementById('map'), {
-            center: myLatLng,
-            zoom: 12 // Adjust the zoom level as needed
-        });
-
-        // Create a marker and set its position
-        var marker = new google.maps.Marker({
-            map: map,
-            position: myLatLng,
-            title: 'Lagos Nigeria' // Title that appears when you hover over the marker
-        });
-    }
-</script>
 <!-- Load the Google Maps JavaScript API -->
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgYc6tDV-sI4hCBc1WBlOqi9G1HGkMSiA&callback=initMap">

@@ -604,6 +604,7 @@
 .order-confirmation .map {
     width: 105.31%;
     height: 138.11%;
+    /* height: 98%; */
     position: absolute;
     right: -2.66%;
     left: -2.66%;

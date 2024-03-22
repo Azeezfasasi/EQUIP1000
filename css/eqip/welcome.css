@@ -187,6 +187,10 @@
     margin-top: 80px;
 }
 
+.right-side .choose-container {
+    width: 99%;
+}
+
 .choose-container .top {
     border-radius: 8px;
     border-style: solid;
@@ -289,7 +293,7 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
-    width: 90%;
+    width: 95%;
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 20px;
@@ -318,7 +322,7 @@
     width: 268px;
     height: 155px;
     position: absolute;
-    left: 20px;
+    left: 50px;
     top: 5px;
     object-fit: cover;
 }

@@ -5,9 +5,10 @@
     z-index: 99999;
     right: 0;
     left: 0;
-    top: 0;
+    top: 80px;
     bottom: 0;
-    min-height: 700px;
+    /* min-height: 700px; */
+    height: 700px;
     padding: 20px 0 0;
   }
 
@@ -56,13 +57,14 @@
     border-color: #c4c4c4;
     border-width: 1px;
     width: 576px;
-    height: 568px;
+    /* height: 568px; */
+    height: 400px;
     padding-bottom: 20px;
     position: relative;
     overflow: hidden;
     text-align: center;
     display: block;
-    margin: 0 auto;
+    margin: -10px auto 0 auto;
   }
 
   .card-confirmation {
@@ -94,12 +96,13 @@
 
   .title .divider {
     display: block;
-    margin: 0 auto;
+    margin: -10px auto 0 auto;
     border-style: solid;
     border-color: #b5b5b5;
     border-width: 1px 0 0 0;
     flex-shrink: 0;
-    width: 438px;
+    /* width: 438px; */
+    width: 100%;
     height: 0px;
     position: relative;
     text-align: center;
@@ -107,7 +110,7 @@
 
   .order-confirmation .confirm-text {
     display: block;
-    margin: 30px auto 0 auto;
+    margin: 10px auto 0 auto;
     color: #5d5d5d;
     text-align: center;
     font-family: "Roboto-Regular", sans-serif;
@@ -117,8 +120,11 @@
     position: relative;
     width: 438px;
     text-align: center;
-    /* margin-top: 0px; */
   }
+
+  /* .confirm-icon {
+
+  } */
 
   .order-confirmation .product-info {
     padding: 8px 16px 8px 16px;
@@ -256,7 +262,7 @@
       position: fixed;
       z-index: 99999;
       left: 0;
-      top: 0;
+      top: 35px;
       min-height: 800px;
       padding: 50px 0 0;
     }
