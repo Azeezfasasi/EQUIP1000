@@ -282,7 +282,8 @@
 .choose-container .laptop {
     background: #000000;
     border-radius: 8px;
-    width: 368px;
+    /* width: 368px; */
+    width: 50%;
     height: 325px;
     position: relative;
     overflow: hidden;
@@ -298,6 +299,8 @@
     justify-content: flex-start;
     margin-bottom: 20px;
     margin-left: 20px;
+    border: 1px solid black;
+
 }
 
 .laptop .cta {
@@ -448,7 +451,8 @@
     align-items: flex-start;
     justify-content: flex-start;
     flex-shrink: 0;
-    width: 670px;
+    /* width: 670px; */
+    width: 95%;
     position: relative;
     /* overflow-x: auto; */
     margin-top: -25px;
@@ -617,24 +621,28 @@
     align-items: flex-start;
     justify-content: flex-start;
     flex-shrink: 0;
-    width: 700px;
+    /* width: 700px; */
+    width: 100%;
     position: relative;
     overflow: hidden;
     height: 290px;
     overflow-y: scroll;
     padding-top: 40px;
+    border: 1px solid black;
+
 }
 
 .dash-breakdown .breakdown-box {
-    padding: 8px 16px 8px 16px;
+    padding: 8px 16px 8px 0px;
     display: flex;
     flex-direction: row;
     gap: 8px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-shrink: 0;
     position: relative;
     margin-top: -50px;
+    text-align: left;
 }
 
 .dash-breakdown .green-color-box {
