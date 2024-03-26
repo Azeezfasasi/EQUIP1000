@@ -520,7 +520,7 @@ form .finish-next-btn button {
     height: 48px;
     position: absolute;
     bottom: 0px;
-    right: 20px;
+    right: 90px;
     font-family: "Roboto-Bold", sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -562,11 +562,26 @@ form .finish-next-btn button {
 /* Style for verifying */
 .right-side .verify-container {
     padding: 0px 16px 0px 16px;
-    display: block;
-    width: 752px;
-    height: 423px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 623px;
     position: relative;
-    margin-top: 100px;
+    margin-top: 30px;
+}
+
+.verify-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.verify-container form {
+    width: 100%;
 }
 
 form .verify-top {
@@ -577,6 +592,7 @@ form .verify-top {
     justify-content: flex-start;
     flex-shrink: 0;
     position: relative;
+    margin-bottom: 96px;
 }
 
 form .password-container {
@@ -593,12 +609,13 @@ form .password-container {
 
 .verify-top .title {
     color: #000000;
-    text-align: left;
+    text-align: center;
     font-family: "Roboto-Medium", sans-serif;
     font-size: 42px;
     line-height: 72px;
     font-weight: bold;
     position: relative;
+    width: 100%;
 }
 
 .verify-top .sub-title {
@@ -716,15 +733,86 @@ form .confirm-box {
  /* style for small screen devices */
 @media (max-width: 768px) {
     .register-container {
-        display: block;
-        width: 100%;
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 98%;
         position: inherit;
     }  
     .reg-form-container {
-        display: block;
-        width: 100%;
-        margin: 0 auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
+
+    .reg-form-container form {
+        width: 310px;
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: -25px;
+        margin-top: -55px;
+    }
+
+    .right-side .form-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 80%;
+        margin-top: 30px;
+        margin-left: 15px;
+        padding-left: 0;
+    }
+
+    .form-title .title {
+        color: #000000;
+        text-align: left;
+        font-family: "Roboto-Bold", sans-serif;
+        font-size: 20px;
+        line-height: 120%;
+        font-weight: 700;
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    .form-title .sub-title {
+        color: #495057;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 13px;
+        line-height: 120%;
+        font-weight: 400;
+        position: relative;
+        align-self: stretch;
+    }
+
+    form .next-btn button {
+        background: #275c6f;
+        color: #ffffff;
+        border-radius: 8px;
+        padding: 8px;
+        align-items: center;
+        justify-content: center;
+        width: 135px;
+        height: 48px;
+        position: absolute;
+        bottom: 0px;
+        left: 20px;
+        font-family: "Roboto-Bold", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
     .register-container .left-side {
         display: none;
     }
@@ -734,10 +822,9 @@ form .confirm-box {
     }
 
     .mobile-side {
-        display: block;
+        display: none;
         width: 100%;
         background: #275c6f;
-        width: 100%;
         height: 53%;
         margin: 0px auto 0 auto;
         text-align: center;
@@ -770,12 +857,10 @@ form .confirm-box {
         margin: 0 auto 20px auto;
         background: rgba(255, 255, 255, 0.2);
         border-radius: 8px;
-        /* width: 448px; */
         height: 281px;
         position: relative;
         overflow: hidden;
         margin: 30px auto 0 auto;
-        /* box-shadow: 0 4px 8px 0 rgb(0,0,0,0.4); */
         text-align: center;
     }
 
@@ -820,7 +905,6 @@ form .confirm-box {
         border-radius: 8px;
         padding: 12px;
         width: 132px;
-        /* height: 48px; */
         color: #ffffff;
         text-align: center;
         font-family: "Roboto-Bold", sans-serif;
@@ -839,7 +923,6 @@ form .confirm-box {
     }
 
     .left-side .refer-btn {
-        /* margin-top: 20px; */
         position: inherit;
     }
 
@@ -854,11 +937,6 @@ form .confirm-box {
         margin-top: 50px;
     }
 
-    .col-1 input[type=text], input[type=email] {
-        width: 100%;
-        border-radius: 8px;
-    }
-
     .col-1 label {
         margin-bottom: 0px;
     }
@@ -868,7 +946,43 @@ form .confirm-box {
     }
 
     .register-container .right-finish {
-        margin-top: 0px;
+        margin-top: 50px;
+        /* width: 100%; */
+        /* width: 330px; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 90%;
+    }
+
+    .finish-container form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0;
+        /* width: 100%; */
+        margin-left: -15px;
+    }
+
+    form .f-col-1 {
+        width: 100%;
+    }
+
+    .f-col-1 label {
+        margin-left: -10px;
+    }
+
+    form .password-container {
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+
+    .password-container input {
+        margin-left: -10px;
+
     }
 
     .register-container .verify-mobile {
@@ -883,6 +997,10 @@ form .confirm-box {
         margin-top: 0px;
     }
 
+    /* .form-title .sub-title {
+        margin-left: -10px;
+    } */
+
     .right-side .reg-form-container {
         display: block;
         width: 85%;
@@ -894,8 +1012,25 @@ form .confirm-box {
     }
 
     .verify-top .title {
-        font-size: 22px;
-        margin-top: 80px;
+        font-size: 18px;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .verify-top .sub-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        color: #495057;
+        /* text-align: left; */
+        font-family: "Roboto-Medium", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        position: relative;
+        margin-top: -40px;
+
     }
 
     .reg-form-container form {
@@ -959,7 +1094,7 @@ form .confirm-box {
         position: absolute;
         bottom: -30px;
         left: 0px;
-        width: 100px;
+        width: 40%;
         text-align: center;
     }
 
@@ -968,7 +1103,7 @@ form .confirm-box {
         position: absolute;
         bottom: -30px;
         right: 0px;
-        width: 100px;
+        width: 45%;
     }
 
     .password-toggle {
@@ -979,9 +1114,9 @@ form .confirm-box {
     /* style for verifying email */
     .right-side .verify-container {
         display: block;
-        width: 90%;
+        width: 100%;
         /* height: 100%; */
-        margin: -40px auto 20px auto;
+        margin: -40px auto 20px -10px;
         text-align: center;
         padding-top: 70px;
         position: relative;
@@ -999,6 +1134,8 @@ form .confirm-box {
         width: 100%;
         justify-content: center;
         align-items: center;
+        margin-top: -100px;
+        margin-bottom: 50px;
     }
 
     .code input[type=text] {
@@ -1006,6 +1143,8 @@ form .confirm-box {
         font-size: 28px;
         height: 0px;
         padding: 35px 0;
+        width: 62px;
+        height: 0px;
     }
 
     .confirm-success {
@@ -1027,14 +1166,50 @@ form .confirm-box {
     }
 
     .confirm-container .confirm-box {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         width: 90%;
-        margin: 80px auto 50px auto;
-        position: inherit;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .confirm-box img {
-        margin-bottom: 30px;
+    .confirm-box .confirm-mobile-icon {
+        width: 93.33px;
+        height: 93.33px;
+        position: relative;
+        /* margin-top: 100px; */
+    }
+
+    .confirm-box p {
+        color:#495057;
+        text-align: center;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 18px;
+        line-height: 120%;
+        font-weight: 400;
+        position: relative;
+    }
+
+    .confirm-box button {
+        background: #275c6f;
+        border-radius: 8px;
+        padding: 8px 16px 8px 16px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        height: 48px;
+        position: relative;
+        color: #ffffff;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 23px;
+        line-height: 120%;
+        font-weight: 400;
     }
 
     #passwordCheck {

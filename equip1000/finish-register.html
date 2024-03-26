@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/eqip/register.css">
     <link rel="stylesheet" href="../css/eqip/lms-landing.css">
+    <link rel="stylesheet" href="../css/eqip/mobile-bottom-nav.css">
 </head>
 <body>
     <div class="sticky">
@@ -54,10 +55,10 @@
                 <p class="title">Register</p>
                 <p class="sub-title">Finish your account setup by setting your password</p>
             </div>
-            <div class="reg-form-container finish-container">
+            <div class="reg-form-container finish-container" style="width: 100%;">
                 <form onsubmit="return validatePassword()" action="verify.html" style="width: 100%;">
                     <p id="passwordCheck"></p>
-                    <div class="col-1">
+                    <div class="col-1 f-col-1" style="width: 87%;">
                         <label for="pwd">Password</label>
                         <div class="password-container">
                             <input type="password" id="pwd" name="c-pwd" style="width: 100%;" placeholder="Enter password" required>
@@ -91,6 +92,27 @@
             </div>
         </div>
     </div>
+
+    <!-- Section for the mobile bottom nav -->
+   <div class="mobile-bottom-nav-bar">
+    <a href="register.html" class="bar-box">
+      <img src="../img/svg/arrow_back.svg" alt="">
+      <div class="nav-text">Back</div>
+    </a>
+    <a href="verify.html" class="bar-box">
+      <img src="../img/svg/arrow_forward.svg" alt="">
+      <div class="nav-text">Next</div>
+    </a>
+    <a href="" class="bar-box">
+      <img src="../img/svg/speaker_phone-mobile.svg" alt="">
+      <div class="nav-text">Read</div>
+    </a>
+    <a href="" class="bar-box">
+      <img src="../img/svg/g_translate-mobile.svg" alt="">
+      <div class="nav-text">Translate</div>
+    </a>
+   </div>
+
 
 
     <script src="../js/header.js"></script>

@@ -299,7 +299,6 @@
     justify-content: flex-start;
     margin-bottom: 20px;
     margin-left: 20px;
-    border: 1px solid black;
 
 }
 
@@ -404,6 +403,7 @@
     text-decoration: none;
     margin-top: 60px;
     margin-left: 25px;
+    cursor: pointer;
 }
 
 .dashboard-info {
@@ -939,7 +939,7 @@
 
     .dash-mobile-side {
         position: initial;
-        display: block;
+        display: none;
     }
 
     .settings-mobile-side {
@@ -966,16 +966,51 @@
         position: initial;
     }
 
-    .dashborad-title {
-        display: block;
-        width: 95%;
+    .dashboard-mobile-top-section {
+        padding: 8px 16px 8px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    }
+
+    .dashboard-mobile-top-section .title {
+        color: #275c6f;
         text-align: left;
+        font-family: "Roboto-Bold", sans-serif;
+        font-size: 20px;
+        line-height: 120%;
+        font-weight: 700;
+        position: relative;
+        align-self: stretch;    }
+
+    .dashboard-mobile-top-section .sub-title {
+        color: #495057;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 13px;
+        line-height: 120%;
+        font-weight: 400;
+        position: relative;
+        align-self: stretch;
+    }
+
+    .dashborad-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
         padding: 0;
-        padding: 40px 0 0 0;
     }
 
     .dashborad-title .title-text {
-        font-size: 26px;
+        font-size: 22px;
+        margin-top: 0px;
+        margin-left: 15px;
     }
 
     .dashboard-info {
@@ -987,6 +1022,9 @@
 
     .dashboard-products .title {
         font-size: 20px;
+        margin-left: -7px;
+        margin-top: 0px;
+        font-size: 18px;
     }
 
     .dashboard-products .purchased-products {
@@ -1040,7 +1078,7 @@
 
     .dashboard-info .dash-breakdown {
         display: block;
-        width: 95%;
+        width: 100%;
         margin: 0 auto;
         position: initial;
         overflow: visible;
@@ -1052,11 +1090,15 @@
         font-size: 20px;
         position: absolute;
         top: 2px;
-        left: 40px;
+        left: 60px;
     }
 
     .dash-header {
-        margin-left: -30px;    
+        margin-left: -10px;    
+    }
+
+    .dash-header i {
+        margin-left: -40px;
     }
 
     .payment-content .row {
@@ -1069,6 +1111,10 @@
 
 @media (min-width: 679px) {
     .small-screen-navbar .mobile-profile {
+        display: none;
+    }
+
+    .dashboard-mobile-top-section {
         display: none;
     }
 }
