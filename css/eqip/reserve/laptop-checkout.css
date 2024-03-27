@@ -1,364 +1,3 @@
-.header,
-.header * {
-  box-sizing: border-box;
-}
-
-.header {
-    background: #ffffff;
-    padding: 16px 80px 16px 80px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    position: sticky;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-  }
-
-  .header img {
-    flex-shrink: 0;
-    width: 127px;
-    height: 48px;
-    position: relative;
-    object-fit: cover;
-  }
-
-  .header .top-right {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    align-items: center;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    position: relative;
-  }
-
-.top-right .profile {
-    flex-shrink: 0;
-    width: 180px;
-    height: 64px;
-    position: absolute;
-    right: 20px;
-    top: 16px;
-}
-
-.top-right .profile img {
-    border-radius: 100px;
-    width: 54px;
-    height: 54px;
-    overflow: hidden;
-    object-fit: cover;
-    text-decoration: none;
-}
-
-.top-right .name {
-    padding: 8px;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    width: 116px;
-    height: 38px;
-    position: absolute;
-    right: 20px;
-    top: 16px;
-}
-
-.top-right .name a  {
-    color: black;
-    text-align: left;
-    font-family: "Roboto-Bold", sans-serif;
-    font-size: 13px;
-    line-height: 140%;
-    font-weight: 400;
-    position: relative;
-    text-decoration: none;
-}
-
-.dropdown {
-    position: relative;
-    z-index: 1000;
-    margin-left: 20px;
-  }
-
-  .dropdown a {
-    color: black;
-    text-decoration: none;
-  }
-
-  .dropdown button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 50px;
-    right: -20px;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1000;
-  }
-
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-family: "Roboto-Regular", sans-serif;
-    line-height: 140%;
-    font-weight: 400;
-    z-index: 1000;
-  }
-
-  .dropdown-content a:hover {
-    background-color: #f1f1f1;
-  }
-
-  /* Style for main content */
-.content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    align-self: center;
-    flex-direction: row;
-    padding: 0 20px 0 40px;
-    width: 100%;
-    max-width: 1200px;
-    position: relative;
-}
-
-.content .product-left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-left: 30px;
-    margin-top: 30px;
-    position: relative;
-    width: 50%;
-    max-width: 60%;
-}
-
-.content .product-image {
-    background: #000000;
-    border-radius: 8px;
-    width: 500px;
-    height: 392px;
-    position: relative;
-    overflow: hidden;
-    padding: 40px;
-    margin-top: 115px;
-}
-
-.product-image img {
-    width: 592px;
-    height: 416px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    object-fit: cover;
-}
-
-.product-left p {
-    color: #000000;
-    text-align: left;
-    font-family: "Roboto-Medium", sans-serif;
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 500;
-    padding: 8px 16px 8px 16px;
-} 
-
-.product-left .specification {
-    display: block;
-    width: 43%;
-    padding: 8px 16px 8px 16px;
-}
-
-.specification .title {
-    color: #495057;
-    text-align: left;
-    font-family: "Roboto-Medium", sans-serif;
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 500;
-    position: relative;
-    margin-left: -15px;
-    margin-top: -20px;
-}
-
-.specification .sub-title {
-    color: #495057;
-    text-align: left;
-    font-family: "Roboto-Regular", sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-    position: relative;
-    width: 592px;
-    margin-left: -15px;
-    margin-top: -20px;
-}
-
-.product-left .price-label {
-    color: #495057;
-    text-align: left;
-    font-family: "Roboto-Medium", sans-serif;
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 500;
-    position: relative;
-    margin-top: -20px;
-}
-
-.product-left .price {
-    color: #ffa76d;
-  text-align: left;
-  font-family: "Roboto-Bold",sans-serif;
-  font-size: 16px;
-  line-height: 140%;
-  font-weight: 700;
-  margin-top: -20px;
-}
-
-.content .product-details {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    /* padding: 8px 16px 8px 16px; */
-    width: 50%;
-    max-width: 55%;
-    margin-top: 110px;
-    margin-left: 30px;
-    position: relative;
-
-}
-
-.product-details .title {
-    color: #000000;
-    text-align: left;
-    font-family: "Roboto-Medium", sans-serif;
-    font-size: 32px;
-    line-height: 48px;
-    font-weight: 500;
-    position: relative;
-}
-
-.product-details .sub-title {
-    /* display: block; */
-    color: #495057;
-    text-align: left;
-    font-family: "Roboto-Regular", sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-    margin-top: -20px;
-}
-
-.product-details .product-options {
-    padding: 8px 16px 8px 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: relative;
-}
-
-.product-options .income {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    position: relative;
-}
-
-.income p {
-    color: #000000;
-    text-align: left;
-    font-family: "Roboto-Medium", sans-serif;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: bold;
-    position: relative;
-    margin-bottom: 5px;
-}
-
-.product-details .selection {
-    padding: 8px;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    width: 338px;
-    height: 48px;
-    position: relative;
-}
-
-.selection select {
-    display: block;
-    color: #495057;
-    text-align: left;
-    font-family: "Roboto-Regular", sans-serif;
-    font-size: 12px;
-    line-height: 24px;
-    font-weight: 400;
-    padding: 15px;
-    width: 400px;
-    height: 48px;
-    margin: -20px 0 0 -10px;
-    border: 1px solid #cfcfcf;
-    border-radius: 8px;
-}
-
-.selection option {
-    font-size: 20px;
-}
-.product-options {
-    margin-left: -20px;
-}
-
-.product-options .payment {
-    display: block;
-    gap: 0px;
-    position: relative;
-    margin-top: -30px;
-}
-
-.product-details button {
-    background: #275c6f;
-    border-radius: 8px;
-    padding: 12px;
-    width: 126px;
-    color: #ffffff;
-    text-align: center;
-    font-family: "Roboto-Medium", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-    text-decoration: none;
-    margin-top: 0px;
-    border: none;
-    cursor: pointer;
-}
-
 /* Style for order checkout */
 .product-details .price-summary {
     background: #f6fafe;
@@ -835,15 +474,22 @@ form .remember {
     justify-content: flex-start;
 }
 
+.card-box-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 95%;
+}
+
 form .agreement {
     padding: 8px 16px 8px 16px;
     display: flex;
     flex-direction: row;
     gap: 8px;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     position: relative;
-    margin-top: 25px;
+    margin-top: 0px;
 }
 
 .agreement input[type=radio] {
@@ -924,247 +570,31 @@ form .agreement {
     }
   }
 
-@media (max-width: 768px) {
-    .header {
-        justify-content: space-between;
-    }
-    .header img  {
-        width: 90%;
-        margin-left: -20px;
-    }
-
-    .small-screen-navbar .top-right {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-    }
-
-    .top-right .profile {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    .top-right .profile img {
-        position: absolute;
-        top: 20px;
-        left: 40px;
-        border-radius: 100px;
-        flex-shrink: 0;
-        width: 24px;
-        height: 24px;
-        position: relative;
-        overflow: hidden;
-        object-fit: cover;
-    }
-
-    .dropdown {
-        position: absolute;
-        top: 30px;
-        right: 5px;
-    }
-
-    .dropdown-content {
-        top: 35px;
-    }
-
-    .top-right .name {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    .top-right .name a {
-        color: #ffffff;
-        text-align: left;
-        font-family: "Roboto-Regular", sans-serif;
-        font-size: 12px;
-        line-height: 120%;
-        font-weight: 400;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-     .content {
-        display: block;
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 50px;
-    }
-
-    .choose-lap-content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-    }
-
-    .content .product-left {
-        /* display: block;
-        width: 90%;
-        margin: 0 auto;
-        position: initial; */
-        
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        border: 1px solid black;
-
-
-    }
-
-    .product-left p {
-        margin-left: -20px;
-    }
-
-    .content .product-image {
-        display: block;
-        width: 80%;
-        margin: 51px 0 0 -10px;
-        height: fit-content;
-        position: relative;
-        text-align: center;
-    }
-
-    .product-image img {
-        display: block;
-        width: 350px;
-        /* width: 100%; */
-        height: 200px;
-        margin-left: -70px;
-        position: relative;
-    }
-
-    .product-left .specification {
-        display: block;
-        width: 100%;
-    }
-
-    .specification .title {
-        display: block;
-        width: 100%;
-        position: relative;
-        text-align: justify;
-        margin-left: -35px;
-    }
-
-    .specification .sub-title {
-        display: block;
-        width: 100%;
-        word-wrap: break-word;
-        position: relative;
-        text-align: justify;
-        margin-left: -35px;
-    }
-
-    .product-left .price-label {
-        font-weight: bold;
-        font-size: 24px;
-    }
-
-    .product-left .price {
-        font-size: 26px;
-    }
-
+@media only screen and (max-width: 767px) {
     .content .product-details {
-        display: block;
-        width: 90%;
-        margin: -40px auto 0 auto;
-        position: initial;
-        padding: 5px;
-    }
-
-    .product-details .title {
-        margin-left: -4px;
-    }
-
-    .product-details p {
-        display: block;
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .product-details .product-options {
+        padding: 8px 0px 8px 15px;
         display: flex;
         flex-direction: column;
+        gap: 4px;
         align-items: flex-start;
         justify-content: center;
-        gap: 8px;
-    }
-
-    .product-details form {
-        margin-top: -20px;
-    }
-
-    .product-details .selection {
-        display: block;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .product-options .income {
-        display: block;
-        width: 100%;
-        margin: 30px auto 0 auto;
-    }
-
-    .product-options .payment {
-        display: block;
-        width: 100%;
-        margin: 15px auto 0 auto;
-    }
-
-    .income .selection select {
-        display: block;
-        border: 1px solid grey;
-        position: initial;
-        width: 250px;
-        margin-top: -20px;
-        padding: 10px 0;
-    }
-
-    .payment p {
+        flex-shrink: 0;
+        position: relative;
         margin-top: -30px;
-        font-weight: bold;
+        margin-left: auto;
+        margin-right: auto;
+        width: 97%;
     }
 
-    .income p {
-        margin-left: 0px;
-        margin-bottom: 20px;
-    }
-
-    .payment select {
-        display: block;
-        border: 1px solid grey;
-        position: initial;
-        width: 250px;
-        padding: 10px 0;
-        margin-top: -20px;
-    }
-
-    .product-details button {
-        margin-top: -20px;
-    }
-
-        /* Style for order checkout */
     .product-details .price-summary {
         background: #f6fafe;
         padding: 16px;
         display: flex;
-        width: 90%;
+        width: 85%;
         flex-direction: column;
         gap: 16px;
         align-items: flex-start;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .price-summary .title {
@@ -1186,6 +616,7 @@ form .agreement {
         align-self: stretch;
         flex-shrink: 0;
         position: relative;
+        margin-top: -40px;
     }
 
     .summary-items .row {
@@ -1246,7 +677,7 @@ form .agreement {
         align-items: flex-start;
         justify-content: flex-start;
         height: 46px;
-        width: 100%;
+        width: 93%;
         position: relative;
         overflow: hidden;
         margin: 30px 0 0 0;
@@ -1256,6 +687,7 @@ form .agreement {
         background: #fff5cc;
         position: relative;
         width: 100%;
+        border-radius: 8px;
     }
     
     .component select {
@@ -1276,44 +708,73 @@ form .agreement {
     }
     
     .product-details .confirm-btn {
-        background: #275c6f;
+        background: transparent;
         border-radius: 8px;
         display: flex;
         flex-direction: row;
         gap: 8px;
         align-items: center;
         justify-content: center;
-        width: 70%;
+        width: 95%;
         position: relative;
         text-decoration: none;
         margin-top: 40px;
         margin-left: 0px;
+        border-style: solid;
+        border-color: #275c6f;
+        border-width: 1px;
+
     }
     
     .confirm-btn .confirm-order {
-        color:#ffffff;
-        text-align: center;
-        font-family: "Roboto-Regular", sans-serif;
+        color: #275c6f;
+        font-family: "Roboto-Bold",sans-serif;
         font-size: 16px;
-        line-height: 140%;
-        font-weight: 400;
+        line-height: 24px;
+        font-weight: 600;
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .content .product-details {
+    .product-details .location-details {
+        border-radius: 8px;
+        border-style: solid;
+        border-color: #ced4da;
+        border-width: 1px;
+        padding: 16px 8px 16px 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        width: 90%;
+    }
+
+    #location::placeholder {
+        font-size: 13px;
+    }
+
+    .product-details .delivery-details {
+        background: #f6fafe;
+        padding: 8px 16px 8px 16px;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        width: 100%;
-        margin-top: 110px;
+        gap: 8px;
+        align-items: center;
+        justify-content: flex-start;
         position: relative;
+        width: 85%;
+        margin-top: 20px;
+        margin-left: 0;
     }
 
-    .product-details form .title {
-        margin-top: -50px;
+    .delivery-details .middle-details {
+        margin-top: -25px;
     }
 
+    /* Mobile Style for Card details */
     .top-card-details {
         display: flex;
         flex-direction: row;
@@ -1323,15 +784,15 @@ form .agreement {
     }
 
     .top-card-details .logo {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: #275c6f;
+        border-width: 1px;
         flex-shrink: 0;
-        width: 55px;
+        width: 60.08px;
         height: 55px;
         position: relative;
-        overflow: hidden;
+        object-fit: cover;
     }
 
     .top-card-details .top-right-details {
@@ -1349,5 +810,42 @@ form .agreement {
         align-items: center;
         justify-content: flex-end;
     }
+
+    .card-box-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .card-confirm-btn {
+        background: transparent;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        position: relative;
+        text-decoration: none;
+        margin-top: 40px;
+        margin-left: 0px;
+        border-style: solid;
+        border-color: #275c6f;
+        border-width: 1px;
+
+    }
     
+    .confirm-btn .confirm-order {
+        color: #275c6f;
+        font-family: "Roboto-Bold",sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

@@ -1,0 +1,117 @@
+/* syle for confirmation */
+form .confirm-box {
+    padding: 0px 16px 0px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    /* width: 752px; */
+    width: 90%;
+    position: relative;
+    margin-top: 170px;
+    margin-left: 20px;
+
+ }
+
+ .confirm-box img {
+    flex-shrink: 0;
+    width: 258px;
+    height: 258px;
+    position: relative;
+    overflow: visible;
+ }
+
+ .confirm-box p {
+    color: #495057;
+    text-align: center;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 13px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+    margin-top: -10px;
+ }
+
+ .confirm-box button {
+    display: block;
+    background: #275c6f;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 8px;
+    width: 97%;
+    height: 48px;
+    text-align: center;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 19px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+ }
+
+ @media only screen and (max-width: 767px) {
+    .confirm-container {
+        margin-bottom: 100px;
+    }
+
+    .confirm-container .confirm-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .confirm-box .confirm-laptop {
+        display: none;
+    }
+
+    .confirm-box .confirm-mobile-icon {
+        width: 93.33px;
+        height: 93.33px;
+        position: relative;
+        /* margin-top: 100px; */
+    }
+
+    .confirm-box p {
+        color:#495057;
+        text-align: center;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 18px;
+        line-height: 120%;
+        font-weight: 400;
+        position: relative;
+    }
+
+    .confirm-box button {
+        background: #275c6f;
+        border-radius: 8px;
+        padding: 8px 16px 8px 16px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        height: 48px;
+        position: relative;
+        color: #ffffff;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 23px;
+        line-height: 120%;
+        font-weight: 400;
+    }
+ }
+
+ @media only screen and (min-width: 769px) {
+    .confirm-box .confirm-mobile-icon {
+        display: none;
+     }
+}

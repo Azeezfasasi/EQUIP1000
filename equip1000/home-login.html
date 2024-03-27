@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../css/eqip/register.css">
     <link rel="stylesheet" href="../css/eqip/lms-landing.css">
+    <link rel="stylesheet" href="../css/eqip/reserve/home-login.css">
+    <link rel="stylesheet" href="../css/eqip/mobile-bottom-nav.css">
 </head>
 <body>
     <div class="sticky">
@@ -52,8 +53,8 @@
                 <p class="sub-title">Log in to your account using your email and password</p>
             </div>
             <div class="reg-form-container">
-                <form action="dashboard.html">
-                    <div class="col-1">
+                <form style="width: 100%;" action="dashboard.html">
+                    <div class="col-1" style="width: 95%;">
                         <label for="uname">Username</label>
                         <input type="email" id="uname" name="uname" placeholder="Email or User ID" style="width: 100%;" required>
                         
@@ -72,6 +73,27 @@
               
         </div>
     </div>
+
+    <!-- Section for the mobile bottom nav -->
+   <div class="mobile-bottom-nav-bar">
+    <a href="#" class="bar-box">
+      <img src="../img/svg/arrow_back.svg" alt="">
+      <div class="nav-text">Back</div>
+    </a>
+    <a href="" class="bar-box">
+      <img src="../img/svg/arrow_forward.svg" alt="">
+      <div class="nav-text">Next</div>
+    </a>
+    <a href="" class="bar-box">
+      <img src="../img/svg/speaker_phone-mobile.svg" alt="">
+      <div class="nav-text">Read</div>
+    </a>
+    <a href="" class="bar-box">
+      <img src="../img/svg/g_translate-mobile.svg" alt="">
+      <div class="nav-text">Translate</div>
+    </a>
+   </div>
+
 
     <script src="../js/header.js"></script>
     <script src="../js/passwordvisibility.js"></script>

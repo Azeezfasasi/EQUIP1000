@@ -1,0 +1,209 @@
+/* Style for finishing registration */
+form .previous-btn button {
+    background: #275c6f;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 135px;
+    height: 48px;
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+form .previous-btn a {
+    background: #275c6f;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 12px 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 135px;
+    /* height: 48px; */
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+form .finish-next-btn button {
+    background: #275c6f;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 135px;
+    height: 48px;
+    position: absolute;
+    bottom: 0px;
+    right: 90px;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.password-toggle {
+    cursor: pointer;
+    margin-right: 30px;
+    position: absolute;
+    top: 15px;
+    right: 00px;
+}
+
+#passwordCheck {
+    color: red;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.finish-container form .col-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    width: 95%;
+}
+
+.finish-container form {
+    width: 95%;
+}
+
+.col-2 input[type=text], input[type=email], input[type=password] {
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #cfcfcf;
+    border-width: 1px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    width: 90%;
+    height: 48px;
+    position: relative;
+}
+
+.password-container {
+    width: 100%;
+    position: relative;
+}
+
+.password-container label {
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: -20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .register-container .right-finish {
+        margin-top: 50px;
+        /* width: 100%; */
+        /* width: 330px; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 90%;
+        margin-bottom: 100px;
+    }
+
+    /* .finish-container {
+        border: 1px solid black;
+        width: 50%;
+    } */
+
+    .finish-container form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        /* margin: 0; */
+        width: 100%;
+        margin-left: -15px;
+        height: 280px;
+    }
+
+    form .f-col-1 {
+        width: 100%;
+    }
+
+    .f-col-1 label {
+        margin-left: -5px;
+    }
+
+    form .password-container {
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+
+    .password-container input {
+        margin-left: -5px;
+
+    }
+
+    .finish-container .previous-btn a  {
+        /* display: inline-block; */
+        position: absolute;
+        bottom: 40px;
+        left: 15px;
+        width: 40%;
+        text-align: center;
+    }
+
+    form .finish-next-btn button {
+        display: inline-block;
+        position: absolute;
+        bottom: 40px;
+        right: 0px;
+        width: 45%;
+    }
+
+    #passwordCheck {
+        color: red;
+        font-family: "Roboto-Bold", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        text-align: center;
+    }
+}
