@@ -489,22 +489,25 @@
 
     .product-details .button-container {
         margin-top: -20px;
-        background: var(--primary-blue-100, #275c6f);
+        /* background: var(--primary-blue-100, #275c6f); */
         border-radius: 8px;
-        padding: 8px 16px 8px 16px;
         display: flex;
         flex-direction: row;
         gap: 8px;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         align-self: stretch;
         flex-shrink: 0;
-        height: 42px;
-        width: 90%;
+        width: 97%;
         position: relative;
+        border: 1px solid black;
     }
 
     .button-container button {
+        background: var(--primary-blue-100, #275c6f);
+        border-radius: 8px;
+        /* padding: 8px 16px 8px 16px; */
+        width: 100%;
         outline: none;
         border: none;
         color: #ffffff;
@@ -518,5 +521,7 @@
         align-items: center;
         justify-content: center;
         padding: 8px 16px 8px 16px;
+        height: 42px;
+
     }
 }

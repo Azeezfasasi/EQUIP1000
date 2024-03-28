@@ -1,4 +1,9 @@
 /* Style for order checkout */
+body {
+    margin: 0;
+    font-family: "Roboto-Bold",sans-serif;
+}
+
 .product-details .price-summary {
     background: #f6fafe;
     padding: 16px;
