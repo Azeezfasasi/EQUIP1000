@@ -150,17 +150,52 @@
               <p>Communications settings content goes here...</p>
           </div>
           <div id="notification" class="tab-content">
-            <!-- Notifications settings content goes here -->
-            <p>Notifications settings content goes here...</p>
-        </div>
+            <!-- Notification Settings -->
+            <p>Notification Preferences</p>
+            <div class="option">
+              <!-- <h2>Notification Preferences</h2> -->
+              <form id="notificationSettingsForm">
+                <div class="" style="display: flex; flex-direction: row; width: 50%; align-items: center;">
+                  <label for="emailNotifications">Receive Email Notifications:</label>
+                  <input type="checkbox" id="emailNotifications" name="emailNotifications">
+                </div>
+                <div class="" style="display: flex; flex-direction: row; width: 50%; align-items: center;">
+                  <label for="smsNotifications">Receive SMS Notifications:</label>
+                  <input type="checkbox" id="smsNotifications" name="smsNotifications">
+                </div>
+                  <button type="submit">Save Preferences</button>
+              </form>
+            </div>
+          </div>
         <div id="security" class="tab-content">
           <!-- Notifications settings content goes here -->
           <p>Securities settings content goes here...</p>
+          <!-- Security Settings -->
+          <div class="option">
+            <h2>Security</h2>
+            <form id="securitySettingsForm">
+                <label for="twoFactorAuth">Two-Factor Authentication:</label>
+                <input type="checkbox" id="twoFactorAuth" name="twoFactorAuth">
+                <button type="submit">Save Settings</button>
+            </form>
+          </div>
+          <!-- Privacy Settings -->
+          <div class="option">
+              <h2>Privacy</h2>
+              <form id="privacySettingsForm">
+                  <label for="profileVisibility">Profile Visibility:</label>
+                  <select id="profileVisibility" name="profileVisibility">
+                      <option value="public">Public</option>
+                      <option value="private">Private</option>
+                      <!-- Add more visibility options as needed -->
+                  </select>
+                  <button type="submit">Save Settings</button>
+              </form>
+          </div>
+        </div>  
       </div>
-           
-        </div>
-        </div>
-      </div>
+    </div>
+  </div>
 
     <!-- Section for the mobile bottom nav -->
    <div class="mobile-bottom-nav-bar">
