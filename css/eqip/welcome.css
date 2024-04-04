@@ -628,7 +628,7 @@
     height: 290px;
     overflow-y: scroll;
     padding-top: 40px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
 
@@ -643,6 +643,8 @@
     position: relative;
     margin-top: -50px;
     text-align: left;
+    /* border: 1px solid black;
+    margin-left: 30px; */
 }
 
 .dash-breakdown .green-color-box {
@@ -741,8 +743,94 @@
     position: relative;
 }
 
+/* Style for Frequently Asked Questions */
+.faq-questions {
+    display: block;
+    width: 90%;
+    margin: 0 auto 200px auto;
+    text-align: center;
+  }
+  
+  .faq-questions .title {
+    color: #000000;
+    text-align: center;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 48px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+  }
+  
+  .accordion {
+    display: block;
+    margin: 0 auto;
+    width: 797px;
+    height: 156px;
+  }
+  
+  .accordion-item {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    background: #f6fafe;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #ced4da;
+    border-width: px;
+    position: relative;
+    gap: 16px;
+    text-align: left;
+  }
+  
+  .accordion-header {
+    background-color: #f6fafe;
+    padding: 10px;
+    cursor: pointer;
+    height: 36px;
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 19px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    padding: 20px 0 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+  }
+  
+  .accordion-header .arrow {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+  
+  .active .arrow {
+    font-family: "Roboto-Regular", sans-serif;
+    transform: rotate(180deg);
+  }
+  
+  .accordion-content {
+    display: none;
+    padding: 10px;
+    color: #495057;
+    text-align: left;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 13px;
+    line-height: 140%;
+    font-weight: 400;
+    position: relative;
+    width: 756px;
+    padding-left: 20px;
+  }
+  
+  .accordion-item.active .accordion-content {
+    display: block;
+  }
+  
 
-@media (max-width: 768px) {
+
+  @media only screen and (max-width: 767px) {
     .small-screen-navbar .mobile-profile {
         position: relative;
     }
@@ -1112,6 +1200,458 @@
         width: 270px;
         margin-left: -70px;
     }
+
+    /* Mobile Style for Frequently Asked Questions */
+.faq-questions {
+    height: 400px;
+  }
+  .faq-questions .title {
+    font-size: 32px;
+  }
+  
+  .accordion {
+    width: 95%;
+  }
+  
+  .accordion-header {
+    font-size: 18px;
+    width: 85%;
+    padding: 20px 0 10px 20px;
+  }
+  
+  .header-pad {
+    padding-bottom: 30px;
+  }
+  
+  .accordion-header .arrow {
+    top: 20px;
+    right: 0px;
+  }
+  
+  .accordion-content {
+    width: fit-content;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .small-screen-navbar .mobile-profile {
+        position: relative;
+    }
+
+    .mobile-profile img {
+        position: absolute;
+        top: 0px;
+        right: 30px;
+        width: 35px;
+        height: 35px;
+        margin-top: -15px;
+    }
+
+    .welcome-container {
+        display: block;
+        width: 95%;
+        height: fit-content;
+        margin: 0 auto 90px auto;
+        position: relative;
+    }
+
+    .welcome-container .top {
+        display: block;
+        width: 90%;
+        height: fit-content;
+        margin: 0 auto;
+        margin-bottom: -20px;
+    }
+
+    .top .first {
+        display: block;
+        width: 100%;
+    }
+
+    .top .second {
+        display: block;
+        width: 100%;
+    }
+
+    .welcome-container .product-container {
+        display: block;
+        height: 400px;
+        margin-bottom: -100px;
+    }
+
+    .product-container h3 {
+        font-weight: 600;
+    }
+
+    .product-container p {
+        font-size: 17px;
+    }
+
+    .product-container .apply-btn {
+        margin-top: 20px;
+    }
+
+    /* style for choosing laptops */
+    .choose-laptop-container {
+        display: block;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .choose-laptop-container .left-side {
+        display: none;
+    }
+
+    .mobile-side {
+        background-image: url(../../img/laptop-side-view-img.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: top center;
+        background-origin: padding-box;
+        object-fit: contain;
+        padding-bottom: 170px;
+    }
+
+    .mobile-side p {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+
+    .choose-container .top {
+        display: block;
+        width: 90%;
+        height: fit-content;
+        margin: 10px auto 0 auto;
+        position: relative;
+        padding: 10px;
+    }
+
+    .choose-container .back-to-mifi {
+        top: 15px;
+        right: -10px;
+    }
+
+    .back-to-mifi .underline {
+        border-style: solid;
+        border-color: #275c6f;
+        border-width: 1px 0 0 0;
+        width: 65px;
+        height: 0px;
+        display: block;
+        margin: -5px auto 0 auto;
+    }
+
+    .back-to-mifi a {
+        font-size: 9px;
+        text-decoration: none;
+    }
+
+    .choose-laptop-container .right-side {
+        display: block;
+        width: 95%;
+        height: fit-content;
+        border-radius: 12px;
+        margin: -20px auto 0 auto;
+        text-align: center;
+        padding-top: 20px;
+        position: inherit;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .right-side .choose-container {
+        display: block;
+        width: 95%;
+        margin: 30px auto 70px 0;
+        border-radius: 12px;
+        text-align: center;
+        position: relative;
+
+    }
+
+    .choose-container .top {
+        width: 90%;
+    }
+
+    .choose-container .bottom .title {
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .choose-container .bottom .sub-title {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .top .search input {
+        display: block;
+        width: 60%;
+        text-align: left;
+        padding: 5px 0;
+        margin: 7px 0 7px 6px;
+    }
+
+    .choose-container .bottom {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .bottom .title {
+        font-weight: 500;
+    }
+
+    .bottom .sub-title {
+        font-size: 16px;
+    }
+
+    .choose-container .laptop-product {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .choose-container .laptop {
+        display: block;
+        width: 100%;
+        margin: 20px auto 30px auto;
+    }
+
+    /* Style for the dashboard page */
+    .register-container .left-side {
+        display: none;
+    }
+
+    .settings-right-side {
+        background: #ffffff;
+        display: block;
+        width: 60%;
+        height: fit-content;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        position: initial;
+    }
+
+    .dash-mobile-side {
+        position: initial;
+        display: none;
+    }
+
+    .settings-mobile-side {
+        position: initial;
+        display: none;
+    }
+
+    .dash-mobile-side .sub-text {
+        font-size: 26px;
+    }
+
+    .register-container .dash-left-side {
+        padding-top: 270px;
+    }
+
+    .dash-left-side .sub-text {
+        font-size: 33px;
+    }
+
+    .dash-right-side {
+        display: block;
+        width: 95%;
+        margin: 100px auto 0 auto;
+        position: initial;
+    }
+
+    .dashboard-mobile-top-section {
+        padding: 8px 16px 8px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    }
+
+    .dashboard-mobile-top-section .title {
+        color: #275c6f;
+        text-align: left;
+        font-family: "Roboto-Bold", sans-serif;
+        font-size: 20px;
+        line-height: 120%;
+        font-weight: 700;
+        position: relative;
+        align-self: stretch;    }
+
+    .dashboard-mobile-top-section .sub-title {
+        color: #495057;
+        text-align: left;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 13px;
+        line-height: 120%;
+        font-weight: 400;
+        position: relative;
+        align-self: stretch;
+    }
+
+    .dashborad-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 0;
+    }
+
+    .dashborad-title .title-text {
+        font-size: 22px;
+        margin-top: 0px;
+        margin-left: 15px;
+    }
+
+    .dashboard-info {
+        display: block;
+        width: 95%;
+        height: fit-content;
+        margin: -20px auto 0 auto;
+    }
+
+    .dashboard-products .title {
+        font-size: 20px;
+        margin-left: -7px;
+        margin-top: 0px;
+        font-size: 18px;
+    }
+
+    .dashboard-products .purchased-products {
+        width: 90%;
+        margin: -20px auto 0 auto;
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    .purchased-products .items {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .items .item-description {
+        background: #f5f5f5;
+        padding: 8px 16px 8px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+        justify-content: center;
+        /* width: 368px; */
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        left: 0px;
+        bottom: 15px;
+        /* border: 1px solid black; */
+    }
+
+    .items img {
+        width: 100%;
+    }
+
+    .item-description .model {
+        font-size: 18px;
+    }
+
+    .dashboard-info .payment-container {
+        display: block;
+        width: 90%;
+    }
+
+    .payment-container .payment-box {
+        /* flex-direction: column; */
+        display: block;
+        text-align: left;
+        position: initial;
+    }
+
+    .payment-container .payment-status {
+        display: block;
+        width: 90%;
+        position: initial;
+    }
+
+    .code-box {
+        display: block;
+        position: initial;
+        margin-top: -30px;
+        margin-left: 0;
+    }
+
+    .code-box .orange {
+        margin-left: 20px;
+    }
+
+    .dashboard-info .dash-breakdown {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        position: initial;
+        overflow: visible;
+        height: fit-content;
+        padding-top: 30px;
+    }
+
+    .dash-breakdown p {
+        font-size: 20px;
+        position: absolute;
+        top: 2px;
+        left: 60px;
+    }
+
+    .dash-header {
+        margin-left: -10px;    
+    }
+
+    .dash-header i {
+        margin-left: -40px;
+    }
+
+    .payment-content .row {
+        width: 270px;
+        margin-left: -70px;
+    }
+
+    /* Mobile Style for Frequently Asked Questions */
+.faq-questions {
+    height: 400px;
+  }
+  .faq-questions .title {
+    font-size: 32px;
+  }
+  
+  .accordion {
+    width: 95%;
+  }
+  
+  .accordion-header {
+    font-size: 18px;
+    width: 85%;
+    padding: 20px 0 10px 20px;
+  }
+  
+  .header-pad {
+    padding-bottom: 30px;
+  }
+  
+  .accordion-header .arrow {
+    top: 20px;
+    right: 0px;
+  }
+  
+  .accordion-content {
+    width: fit-content;
+  }
 
 }
 
